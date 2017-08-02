@@ -2969,17 +2969,24 @@
 1501534604 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsapp.h
 	<wx/app.h>
 
-1501534871 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
+1501695664 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
+	<wx/notebook.h>
 	<wx/sizer.h>
+	<wx/stattext.h>
 	<wx/menu.h>
+	<wx/textctrl.h>
 	<wx/panel.h>
+	<wx/gbsizer.h>
+	<wx/button.h>
 	<wx/frame.h>
+	<wx/combobox.h>
 	<wx/statusbr.h>
 
-1501534877 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
+1501695664 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
 	"wx_pch.h"
 	"LoneWolfCombatResultsMain.h"
 	<wx/msgdlg.h>
+	<wx/font.h>
 	<wx/intl.h>
 	<wx/string.h>
 
@@ -3002,4 +3009,77 @@
 	<aygshell.h>
 
 1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\msw\rcdefs.h
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\gbsizer.h
+	"wx/sizer.h"
+
+1501535279 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\src\combatresults.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"../include/CombatResults.h"
+
+1501534411 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\include\combatresults.h
+	<string>
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\notebook.h
+	"wx/defs.h"
+	"wx/bookctrl.h"
+	"wx/univ/notebook.h"
+	"wx/msw/notebook.h"
+	"wx/generic/notebook.h"
+	"wx/gtk/notebook.h"
+	"wx/gtk1/notebook.h"
+	"wx/osx/notebook.h"
+	"wx/cocoa/notebook.h"
+	"wx/os2/notebook.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\bookctrl.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/dynarray.h"
+	"wx/withimages.h"
+	"wx/notebook.h"
+	"wx/choicebk.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\withimages.h
+	"wx/defs.h"
+	"wx/icon.h"
+	"wx/imaglist.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\choicebk.h
+	"wx/defs.h"
+	"wx/bookctrl.h"
+	"wx/choice.h"
+	"wx/containr.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\univ\notebook.h
+	"wx/arrstr.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\msw\notebook.h
+	"wx/control.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\generic\notebook.h
+	"wx/event.h"
+	"wx/control.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\gtk\notebook.h
+	"wx/list.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\gtk1\notebook.h
+	"wx/list.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\osx\notebook.h
+	"wx/event.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\cocoa\notebook.h
+	"wx/cocoa/NSTabView.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\cocoa\nstabview.h
+	"wx/hashmap.h"
+	"wx/cocoa/ObjcAssociate.h"
+	"wx/cocoa/ObjcRef.h"
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\os2\notebook.h
+	"wx/control.h"
 
