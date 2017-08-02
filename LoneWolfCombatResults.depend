@@ -2969,15 +2969,11 @@
 1501534604 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsapp.h
 	<wx/app.h>
 
-1501695664 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
-	<wx/notebook.h>
+1501697283 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
 	<wx/sizer.h>
 	<wx/stattext.h>
 	<wx/menu.h>
-	<wx/textctrl.h>
 	<wx/panel.h>
-	<wx/gbsizer.h>
-	<wx/button.h>
 	<wx/frame.h>
 	<wx/combobox.h>
 	<wx/statusbr.h>
