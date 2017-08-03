@@ -74,8 +74,7 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     wxFlexGridSizer* FlexGridSizer1;
     wxMenu* Menu2;
 
-    Create(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
-    SetClientSize(wxSize(500,54));
+    Create(parent, wxID_ANY, _("Lone Wolf Combat Results"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
     BoxSizer1 = new wxBoxSizer(wxHORIZONTAL);
     Panel1 = new wxPanel(this, ID_PANEL1, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));
     BoxSizer2 = new wxBoxSizer(wxVERTICAL);
@@ -91,22 +90,22 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     FlexGridSizer1->Add(StaticText2, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     ComboBox2 = new wxComboBox(Panel1, ID_COMBOBOX2, wxEmptyString, wxDefaultPosition, wxSize(50,21), 0, 0, 0, wxDefaultValidator, _T("ID_COMBOBOX2"));
     FlexGridSizer1->Add(ComboBox2, 1, wxALL, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     StaticText3 = new wxStaticText(Panel1, ID_STATICTEXT3, _("Combat Ratio"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT3"));
     wxFont StaticText3Font(12,wxFONTFAMILY_SWISS,wxFONTSTYLE_NORMAL,wxFONTWEIGHT_NORMAL,false,wxEmptyString,wxFONTENCODING_DEFAULT);
     StaticText3->SetFont(StaticText3Font);
     FlexGridSizer1->Add(StaticText3, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     StaticText4 = new wxStaticText(Panel1, ID_STATICTEXT4, _("0"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT4"));
     wxFont StaticText4Font(12,wxFONTFAMILY_SWISS,wxFONTSTYLE_NORMAL,wxFONTWEIGHT_NORMAL,false,wxEmptyString,wxFONTENCODING_DEFAULT);
     StaticText4->SetFont(StaticText4Font);
     FlexGridSizer1->Add(StaticText4, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
-    FlexGridSizer1->Add(0,0,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     StaticBoxSizer1->Add(FlexGridSizer1, 1, wxALL|wxEXPAND, 5);
     BoxSizer2->Add(StaticBoxSizer1, 1, wxALL|wxEXPAND, 5);
     Panel1->SetSizer(BoxSizer2);
@@ -130,8 +129,8 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
     StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
     SetStatusBar(StatusBar1);
-    SetSizer(BoxSizer1);
-    Layout();
+    BoxSizer1->Fit(this);
+    BoxSizer1->SetSizeHints(this);
 
     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnAbout);
