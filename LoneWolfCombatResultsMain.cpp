@@ -50,6 +50,12 @@ const long LoneWolfCombatResultsFrame::ID_STATICTEXT2 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_COMBOBOX2 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_STATICTEXT3 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_STATICTEXT4 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_RADIOBUTTON1 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_RADIOBUTTON2 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_TEXTCTRL1 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_BUTTON1 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_STATICTEXT5 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_STATICTEXT6 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_PANEL1 = wxNewId();
 const long LoneWolfCombatResultsFrame::idMenuQuit = wxNewId();
 const long LoneWolfCombatResultsFrame::idMenuAbout = wxNewId();
@@ -64,10 +70,13 @@ END_EVENT_TABLE()
 LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id)
 {
     //(*Initialize(LoneWolfCombatResultsFrame)
+    wxStaticBoxSizer* StaticBoxSizer2;
     wxMenuItem* MenuItem2;
     wxMenuItem* MenuItem1;
+    wxFlexGridSizer* FlexGridSizer2;
     wxBoxSizer* BoxSizer2;
     wxMenu* Menu1;
+    wxStaticBoxSizer* StaticBoxSizer3;
     wxBoxSizer* BoxSizer1;
     wxMenuBar* MenuBar1;
     wxStaticBoxSizer* StaticBoxSizer1;
@@ -107,7 +116,28 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     StaticBoxSizer1->Add(FlexGridSizer1, 1, wxALL|wxEXPAND, 5);
-    BoxSizer2->Add(StaticBoxSizer1, 1, wxALL|wxEXPAND, 5);
+    BoxSizer2->Add(StaticBoxSizer1, 1, wxTOP|wxLEFT|wxRIGHT|wxEXPAND, 5);
+    StaticBoxSizer2 = new wxStaticBoxSizer(wxVERTICAL, Panel1, _("DIE ROLLER"));
+    FlexGridSizer2 = new wxFlexGridSizer(0, 2, 0, 0);
+    RadioButton1 = new wxRadioButton(Panel1, ID_RADIOBUTTON1, _("Generate a random number"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_RADIOBUTTON1"));
+    RadioButton1->SetValue(true);
+    FlexGridSizer2->Add(RadioButton1, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
+    FlexGridSizer2->Add(139,20,1, wxALL|wxEXPAND, 5);
+    RadioButton2 = new wxRadioButton(Panel1, ID_RADIOBUTTON2, _("Enter a number from 0 to 9"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_RADIOBUTTON2"));
+    FlexGridSizer2->Add(RadioButton2, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
+    TextCtrl1 = new wxTextCtrl(Panel1, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxSize(50,21), 0, wxDefaultValidator, _T("ID_TEXTCTRL1"));
+    TextCtrl1->Disable();
+    FlexGridSizer2->Add(TextCtrl1, 0, wxALL, 5);
+    StaticBoxSizer2->Add(FlexGridSizer2, 1, wxALL|wxEXPAND, 5);
+    BoxSizer2->Add(StaticBoxSizer2, 0, wxLEFT|wxRIGHT|wxEXPAND, 5);
+    Button1 = new wxButton(Panel1, ID_BUTTON1, _("OK"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
+    BoxSizer2->Add(Button1, 0, wxTOP|wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    StaticBoxSizer3 = new wxStaticBoxSizer(wxVERTICAL, Panel1, _("RESULT"));
+    enemyResult = new wxStaticText(Panel1, ID_STATICTEXT5, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE, _T("ID_STATICTEXT5"));
+    StaticBoxSizer3->Add(enemyResult, 1, wxALL|wxEXPAND, 5);
+    heroResult = new wxStaticText(Panel1, ID_STATICTEXT6, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE, _T("ID_STATICTEXT6"));
+    StaticBoxSizer3->Add(heroResult, 1, wxALL|wxEXPAND, 5);
+    BoxSizer2->Add(StaticBoxSizer3, 0, wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND, 5);
     Panel1->SetSizer(BoxSizer2);
     BoxSizer2->Fit(Panel1);
     BoxSizer2->SetSizeHints(Panel1);
