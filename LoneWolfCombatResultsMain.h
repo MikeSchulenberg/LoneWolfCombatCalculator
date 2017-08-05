@@ -23,6 +23,10 @@
 #include <wx/statusbr.h>
 //*)
 
+#include "include/ForwardDeclarations.h"
+
+using std::string;
+
 class LoneWolfCombatResultsFrame: public wxFrame
 {
     public:
@@ -30,11 +34,19 @@ class LoneWolfCombatResultsFrame: public wxFrame
         LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~LoneWolfCombatResultsFrame();
 
+        void printCombatRatio(string msg);
+        void printGeneralOutput(string msg);
+
     private:
 
         //(*Handlers(LoneWolfCombatResultsFrame)
         void OnQuit(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);
+        void OnRadioButton1Select(wxCommandEvent& event);
+        void OnRadioButton2Select(wxCommandEvent& event);
+        void OnComboBox1Selected(wxCommandEvent& event);
+        void OnComboBox2Selected(wxCommandEvent& event);
+        void OnokButtonClick(wxCommandEvent& event);
         //*)
 
         void OnClose(wxCloseEvent& event);
@@ -50,6 +62,7 @@ class LoneWolfCombatResultsFrame: public wxFrame
         static const long ID_RADIOBUTTON2;
         static const long ID_TEXTCTRL1;
         static const long ID_BUTTON1;
+        static const long ID_STATICTEXT7;
         static const long ID_STATICTEXT5;
         static const long ID_STATICTEXT6;
         static const long ID_PANEL1;
@@ -59,23 +72,26 @@ class LoneWolfCombatResultsFrame: public wxFrame
         //*)
 
         //(*Declarations(LoneWolfCombatResultsFrame)
+        wxStaticText* combatRatioOutput;
         wxRadioButton* RadioButton1;
+        wxComboBox* enemyCSinput;
         wxStaticText* StaticText2;
         wxRadioButton* RadioButton2;
-        wxButton* Button1;
         wxPanel* Panel1;
         wxStaticText* StaticText1;
         wxStaticText* StaticText3;
         wxStaticText* enemyResult;
+        wxComboBox* heroCSinput;
         wxStaticText* heroResult;
         wxStatusBar* StatusBar1;
-        wxComboBox* ComboBox1;
         wxTextCtrl* TextCtrl1;
-        wxComboBox* ComboBox2;
-        wxStaticText* StaticText4;
+        wxButton* okButton;
+        wxStaticText* generalOutput;
         //*)
 
         DECLARE_EVENT_TABLE()
+
+        CombatResults* results;
 };
 
 #endif // LONEWOLFCOMBATRESULTSMAIN_H

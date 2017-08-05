@@ -2969,7 +2969,7 @@
 1501534604 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsapp.h
 	<wx/app.h>
 
-1501744658 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
+1501959072 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
 	<wx/sizer.h>
 	<wx/stattext.h>
 	<wx/menu.h>
@@ -2980,11 +2980,13 @@
 	<wx/frame.h>
 	<wx/combobox.h>
 	<wx/statusbr.h>
+	"include/ForwardDeclarations.h"
 
-1501744711 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
+1501957026 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
 	"wx_pch.h"
 	"LoneWolfCombatResultsMain.h"
 	<wx/msgdlg.h>
+	"include/CombatResults.h"
 	<wx/font.h>
 	<wx/intl.h>
 	<wx/string.h>
@@ -3012,14 +3014,16 @@
 1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\gbsizer.h
 	"wx/sizer.h"
 
-1501535279 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\src\combatresults.cpp
+1501957460 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\src\combatresults.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
 	"../include/CombatResults.h"
+	"../LoneWolfCombatResultsMain.h"
 
-1501534411 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\include\combatresults.h
+1501956800 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\include\combatresults.h
 	<string>
+	"../include/ForwardDeclarations.h"
 
 1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\notebook.h
 	"wx/defs.h"
@@ -3081,4 +3085,6 @@
 
 1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\os2\notebook.h
 	"wx/control.h"
+
+1501746346 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\include\forwarddeclarations.h
 

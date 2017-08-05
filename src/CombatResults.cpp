@@ -19,6 +19,7 @@
 #include <ctime>
 
 #include "../include/CombatResults.h"
+#include "../LoneWolfCombatResultsMain.h"
 
 using std::cout;
 using std::endl;
@@ -85,8 +86,8 @@ const string DAMAGE_TO_HERO[NUM_ROWS][NUM_COLS] =
     {"3", "3", "2", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"}               // dieRoll == 9
 };
 
-CombatResults::CombatResults()
-    : enemyCombatSkill(0), heroCombatSkill(0), combatRatio(0), dieRoll(0)
+CombatResults::CombatResults(LoneWolfCombatResultsFrame* newView)
+    : view(newView), enemyCombatSkill(0), heroCombatSkill(0), combatRatio(0), dieRoll(0)
 {
     // Intentionally empty
 }
@@ -95,6 +96,10 @@ CombatResults::~CombatResults()
 {
     // Intentionally empty
 }
+
+/////////////////////////////////////////////////////////////
+// MUTATORS
+/////////////////////////////////////////////////////////////
 
 void CombatResults::setEnemyCombatSkill(int newCombatSkill)
 {
@@ -112,6 +117,10 @@ void CombatResults::setDieRoll(int newDieRoll)
 {
     dieRoll = newDieRoll;
 }
+
+/////////////////////////////////////////////////////////////
+// ACCESSORS
+/////////////////////////////////////////////////////////////
 
 int CombatResults::getEnemyCombatSkill() const
 {
@@ -133,11 +142,20 @@ int CombatResults::getDieRoll() const
     return dieRoll;
 }
 
+/////////////////////////////////////////////////////////////
+// CORE FUNCTIONS
+/////////////////////////////////////////////////////////////
+
 void CombatResults::rollDie()
 {
     // Generate a random number from 0 to 9
     srand((int) time(0));
     dieRoll = (rand() % 9);
+}
+
+void CombatResults::outputCombatResults()
+{
+    view->printGeneralOutput("Test output");
 }
 
 void CombatResults::outputDamageToEnemy() const

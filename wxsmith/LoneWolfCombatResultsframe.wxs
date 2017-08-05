@@ -24,8 +24,14 @@
 											<option>1</option>
 										</object>
 										<object class="sizeritem">
-											<object class="wxComboBox" name="ID_COMBOBOX1" variable="ComboBox1" member="yes">
+											<object class="wxComboBox" name="ID_COMBOBOX1" variable="heroCSinput" member="yes">
+												<content>
+													<item>1</item>
+													<item>2</item>
+													<item>3</item>
+												</content>
 												<size>50,21</size>
+												<handler function="OnComboBox1Selected" entry="EVT_COMBOBOX" />
 											</object>
 											<flag>wxALL</flag>
 											<border>5</border>
@@ -46,8 +52,9 @@
 											<option>1</option>
 										</object>
 										<object class="sizeritem">
-											<object class="wxComboBox" name="ID_COMBOBOX2" variable="ComboBox2" member="yes">
+											<object class="wxComboBox" name="ID_COMBOBOX2" variable="enemyCSinput" member="yes">
 												<size>50,21</size>
+												<handler function="OnComboBox2Selected" entry="EVT_COMBOBOX" />
 											</object>
 											<flag>wxALL</flag>
 											<border>5</border>
@@ -99,7 +106,7 @@
 											<option>1</option>
 										</object>
 										<object class="sizeritem">
-											<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+											<object class="wxStaticText" name="ID_STATICTEXT4" variable="combatRatioOutput" member="yes">
 												<label>0</label>
 												<font>
 													<size>12</size>
@@ -135,7 +142,7 @@
 						</object>
 						<object class="sizeritem">
 							<object class="wxStaticBoxSizer" variable="StaticBoxSizer2" member="no">
-								<label>DIE ROLLER</label>
+								<label>RANDOM NUMBER</label>
 								<orient>wxVERTICAL</orient>
 								<object class="sizeritem">
 									<object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
@@ -144,6 +151,7 @@
 											<object class="wxRadioButton" name="ID_RADIOBUTTON1" variable="RadioButton1" member="yes">
 												<label>Generate a random number</label>
 												<selected>1</selected>
+												<handler function="OnRadioButton1Select" entry="EVT_RADIOBUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
@@ -158,6 +166,7 @@
 										<object class="sizeritem">
 											<object class="wxRadioButton" name="ID_RADIOBUTTON2" variable="RadioButton2" member="yes">
 												<label>Enter a number from 0 to 9</label>
+												<handler function="OnRadioButton2Select" entry="EVT_RADIOBUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
@@ -181,16 +190,26 @@
 							<border>5</border>
 						</object>
 						<object class="sizeritem">
-							<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+							<object class="wxButton" name="ID_BUTTON1" variable="okButton" member="yes">
 								<label>OK</label>
+								<handler function="OnokButtonClick" entry="EVT_BUTTON" />
 							</object>
 							<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
 						</object>
 						<object class="sizeritem">
 							<object class="wxStaticBoxSizer" variable="StaticBoxSizer3" member="no">
-								<label>RESULT</label>
+								<label>COMBAT RESULTS</label>
 								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT7" variable="generalOutput" member="yes">
+										<label></label>
+										<style>wxALIGN_CENTRE</style>
+									</object>
+									<flag>wxALL|wxEXPAND</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
 								<object class="sizeritem">
 									<object class="wxStaticText" name="ID_STATICTEXT5" variable="enemyResult" member="yes">
 										<label></label>

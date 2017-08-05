@@ -19,12 +19,14 @@
 
 #include <string>
 
+#include "../include/ForwardDeclarations.h"
+
 using std::string;
 
 class CombatResults
 {
     public:
-        CombatResults();
+        CombatResults(LoneWolfCombatResultsFrame* newView);
         ~CombatResults();
 
         /////////////////////////////////////////////////////////////
@@ -92,6 +94,12 @@ class CombatResults
          */
         void rollDie();
 
+        /** \brief Outputs the results of the combat exchange and forwards it
+         * to the GUI.
+         *
+         */
+        void outputCombatResults();
+
         /** \brief Outputs the number of "Endurance" points lost by the enemy.
          *
          */
@@ -103,10 +111,11 @@ class CombatResults
         void outputDamageToHero() const;
 
     private:
-        int enemyCombatSkill;       /**< The enemy's "Combat Skill". */
-        int heroCombatSkill;        /**< The Hero's "Combat Skill". */
-        int combatRatio;            /**< The difference between the enemy's and Hero's "Combat Skills". */
-        int dieRoll;                /**< A random number used to determine a combat result. */
+        LoneWolfCombatResultsFrame* view;   /**< The program's GUI. */
+        int enemyCombatSkill;               /**< The enemy's "Combat Skill". */
+        int heroCombatSkill;                /**< The Hero's "Combat Skill". */
+        int combatRatio;                    /**< The difference between the enemy's and Hero's "Combat Skills". */
+        int dieRoll;                        /**< A random number used to determine a combat result. */
 
         /////////////////////////////////////////////////////////////
         // HELPER FUNCTIONS
