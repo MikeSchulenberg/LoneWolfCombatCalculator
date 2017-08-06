@@ -111,6 +111,16 @@ class CombatResults
         // HELPER FUNCTIONS
         /////////////////////////////////////////////////////////////
 
+        /** \brief Verify that the "Combat Skill" entered by the user is valid.
+         *
+         */
+        bool verifyCombatSkill(int combatSkill);
+
+        /** \brief Notifies the user that they have entered an invalid value for a "Combat Skill".
+         *
+         */
+        void handleCombatSkillError();
+
         /** \brief Calculates the difference between the enemy's and Hero's "Combat Skills".
          * A negative number favors the enemy. A positive number favors the Hero.
          *

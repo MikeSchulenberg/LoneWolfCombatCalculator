@@ -103,14 +103,34 @@ CombatResults::~CombatResults()
 
 void CombatResults::setEnemyCombatSkill(int newCombatSkill)
 {
-    enemyCombatSkill = newCombatSkill;
-    calculateCombatRatio();     // Combat ratio should be recalculated after a change in "Combat Skill"
+    if (verifyCombatSkill(newCombatSkill))
+    {
+        enemyCombatSkill = newCombatSkill;
+        calculateCombatRatio();     // Combat ratio should be recalculated after a change in "Combat Skill"
+        view->printGeneralOutput("");
+    }
+
+    else
+    {
+        enemyCombatSkill = 0;
+        handleCombatSkillError();
+    }
 }
 
 void CombatResults::setHeroCombatSkill(int newCombatSkill)
 {
-    heroCombatSkill = newCombatSkill;
-    calculateCombatRatio();     // Combat ratio should be recalculated after a change in "Combat Skill"
+    if (verifyCombatSkill(newCombatSkill))
+    {
+        heroCombatSkill = newCombatSkill;
+        calculateCombatRatio();     // Combat ratio should be recalculated after a change in "Combat Skill"
+        view->printGeneralOutput("");
+    }
+
+    else
+    {
+        heroCombatSkill = 0;
+        handleCombatSkillError();
+    }
 }
 
 void CombatResults::setDieRoll(int newDieRoll)
@@ -163,6 +183,27 @@ void CombatResults::outputCombatResults()
 /////////////////////////////////////////////////////////
 // HELPER FUNCTIONS
 /////////////////////////////////////////////////////////
+
+bool CombatResults::verifyCombatSkill(int combatSkill)
+{
+    if (combatSkill > 0)
+    {
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }
+}
+
+void CombatResults::handleCombatSkillError()
+{
+    view->printCombatRatio("Error");
+    view->printGeneralOutput("Invalid Combat Skill.");
+    view->printDamageToEnemy("");
+    view->printDamageToHero("");
+}
 
 void CombatResults::calculateCombatRatio()
 {
