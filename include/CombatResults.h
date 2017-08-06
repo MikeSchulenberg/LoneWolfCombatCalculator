@@ -100,16 +100,6 @@ class CombatResults
          */
         void outputCombatResults();
 
-        /** \brief Outputs the number of "Endurance" points lost by the enemy.
-         *
-         */
-        void outputDamageToEnemy() const;
-
-        /** \brief Outputs the number of "Endurance" points lost by the Hero.
-         *
-         */
-        void outputDamageToHero() const;
-
     private:
         LoneWolfCombatResultsFrame* view;   /**< The program's GUI. */
         int enemyCombatSkill;               /**< The enemy's "Combat Skill". */
@@ -132,6 +122,30 @@ class CombatResults
          *
          */
         void translateRatioToIndex();
+
+        /** \brief Outputs the random number used to determine the result of the combat exchange.
+         * This number may either be generated internally by a function, or entered manually by
+         * the user.
+         *
+         */
+        void outputRandomNumber();
+
+        /** \brief Outputs the number of "Endurance" points lost by the enemy.
+         *
+         */
+        void outputDamageToEnemy() const;
+
+        /** \brief Outputs the number of "Endurance" points lost by the Hero.
+         *
+         */
+        void outputDamageToHero() const;
+
+        /** \brief Converts a value to a string.
+         *
+         * \param value An integer to be converted to a string.
+         *
+         */
+        string to_string(int value);
 };
 
 #endif // COMBATRESULTS_H

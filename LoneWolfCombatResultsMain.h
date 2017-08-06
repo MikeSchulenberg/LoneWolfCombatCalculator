@@ -19,7 +19,6 @@
 #include <wx/panel.h>
 #include <wx/button.h>
 #include <wx/frame.h>
-#include <wx/combobox.h>
 #include <wx/statusbr.h>
 //*)
 
@@ -34,8 +33,14 @@ class LoneWolfCombatResultsFrame: public wxFrame
         LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~LoneWolfCombatResultsFrame();
 
+        void processHeroCSinput();
+        void processEnemyCSinput();
+        void processRandomNumberInput();
+
         void printCombatRatio(string msg);
         void printGeneralOutput(string msg);
+        void printDamageToEnemy(string msg);
+        void printDamageToHero(string msg);
 
     private:
 
@@ -47,15 +52,18 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void OnComboBox1Selected(wxCommandEvent& event);
         void OnComboBox2Selected(wxCommandEvent& event);
         void OnokButtonClick(wxCommandEvent& event);
+        void OnheroCSinputTextEnter(wxCommandEvent& event);
+        void OnenemyCSinputTextEnter(wxCommandEvent& event);
+        void OnrandomNumberInputTextEnter(wxCommandEvent& event);
         //*)
 
         void OnClose(wxCloseEvent& event);
 
         //(*Identifiers(LoneWolfCombatResultsFrame)
         static const long ID_STATICTEXT1;
-        static const long ID_COMBOBOX1;
+        static const long ID_TEXTCTRL2;
         static const long ID_STATICTEXT2;
-        static const long ID_COMBOBOX2;
+        static const long ID_TEXTCTRL3;
         static const long ID_STATICTEXT3;
         static const long ID_STATICTEXT4;
         static const long ID_RADIOBUTTON1;
@@ -74,19 +82,19 @@ class LoneWolfCombatResultsFrame: public wxFrame
         //(*Declarations(LoneWolfCombatResultsFrame)
         wxStaticText* combatRatioOutput;
         wxRadioButton* RadioButton1;
-        wxComboBox* enemyCSinput;
         wxStaticText* StaticText2;
         wxRadioButton* RadioButton2;
         wxPanel* Panel1;
         wxStaticText* StaticText1;
         wxStaticText* StaticText3;
         wxStaticText* enemyResult;
-        wxComboBox* heroCSinput;
         wxStaticText* heroResult;
         wxStatusBar* StatusBar1;
-        wxTextCtrl* TextCtrl1;
+        wxTextCtrl* randomNumberInput;
         wxButton* okButton;
         wxStaticText* generalOutput;
+        wxTextCtrl* heroCSinput;
+        wxTextCtrl* enemyCSinput;
         //*)
 
         DECLARE_EVENT_TABLE()

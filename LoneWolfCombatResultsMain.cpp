@@ -7,8 +7,8 @@
  * License:
  **************************************************************/
 
- #include <wx/msgdlg.h>
- #include <string>
+#include <wx/msgdlg.h>
+#include <string>
 
 #include "wx_pch.h"
 #include "LoneWolfCombatResultsMain.h"
@@ -48,9 +48,9 @@ wxString wxbuildinfo(wxbuildinfoformat format)
 
 //(*IdInit(LoneWolfCombatResultsFrame)
 const long LoneWolfCombatResultsFrame::ID_STATICTEXT1 = wxNewId();
-const long LoneWolfCombatResultsFrame::ID_COMBOBOX1 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_TEXTCTRL2 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_STATICTEXT2 = wxNewId();
-const long LoneWolfCombatResultsFrame::ID_COMBOBOX2 = wxNewId();
+const long LoneWolfCombatResultsFrame::ID_TEXTCTRL3 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_STATICTEXT3 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_STATICTEXT4 = wxNewId();
 const long LoneWolfCombatResultsFrame::ID_RADIOBUTTON1 = wxNewId();
@@ -96,16 +96,13 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     FlexGridSizer1->AddGrowableCol(2);
     StaticText1 = new wxStaticText(Panel1, ID_STATICTEXT1, _("Hero"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT1"));
     FlexGridSizer1->Add(StaticText1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    heroCSinput = new wxComboBox(Panel1, ID_COMBOBOX1, wxEmptyString, wxDefaultPosition, wxSize(50,21), 0, 0, 0, wxDefaultValidator, _T("ID_COMBOBOX1"));
-    heroCSinput->Append(_("1"));
-    heroCSinput->Append(_("2"));
-    heroCSinput->Append(_("3"));
-    FlexGridSizer1->Add(heroCSinput, 1, wxALL, 5);
-    FlexGridSizer1->Add(102,20,1, wxALL|wxEXPAND, 5);
+    heroCSinput = new wxTextCtrl(Panel1, ID_TEXTCTRL2, wxEmptyString, wxDefaultPosition, wxSize(30,21), wxTE_PROCESS_ENTER, wxDefaultValidator, _T("ID_TEXTCTRL2"));
+    FlexGridSizer1->Add(heroCSinput, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    FlexGridSizer1->Add(98,21,1, wxALL|wxEXPAND, 5);
     StaticText2 = new wxStaticText(Panel1, ID_STATICTEXT2, _("Enemy"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT2"));
     FlexGridSizer1->Add(StaticText2, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    enemyCSinput = new wxComboBox(Panel1, ID_COMBOBOX2, wxEmptyString, wxDefaultPosition, wxSize(50,21), 0, 0, 0, wxDefaultValidator, _T("ID_COMBOBOX2"));
-    FlexGridSizer1->Add(enemyCSinput, 1, wxALL, 5);
+    enemyCSinput = new wxTextCtrl(Panel1, ID_TEXTCTRL3, wxEmptyString, wxDefaultPosition, wxSize(30,21), wxTE_PROCESS_ENTER, wxDefaultValidator, _T("ID_TEXTCTRL3"));
+    FlexGridSizer1->Add(enemyCSinput, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     StaticText3 = new wxStaticText(Panel1, ID_STATICTEXT3, _("Combat Ratio"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT3"));
@@ -129,12 +126,12 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     RadioButton1 = new wxRadioButton(Panel1, ID_RADIOBUTTON1, _("Generate a random number"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_RADIOBUTTON1"));
     RadioButton1->SetValue(true);
     FlexGridSizer2->Add(RadioButton1, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
-    FlexGridSizer2->Add(139,20,1, wxALL|wxEXPAND, 5);
+    FlexGridSizer2->Add(108,20,1, wxALL|wxEXPAND, 5);
     RadioButton2 = new wxRadioButton(Panel1, ID_RADIOBUTTON2, _("Enter a number from 0 to 9"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_RADIOBUTTON2"));
     FlexGridSizer2->Add(RadioButton2, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
-    TextCtrl1 = new wxTextCtrl(Panel1, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxSize(50,21), 0, wxDefaultValidator, _T("ID_TEXTCTRL1"));
-    TextCtrl1->Disable();
-    FlexGridSizer2->Add(TextCtrl1, 0, wxALL, 5);
+    randomNumberInput = new wxTextCtrl(Panel1, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxSize(50,21), wxTE_PROCESS_ENTER, wxDefaultValidator, _T("ID_TEXTCTRL1"));
+    randomNumberInput->Disable();
+    FlexGridSizer2->Add(randomNumberInput, 0, wxALL, 5);
     StaticBoxSizer2->Add(FlexGridSizer2, 1, wxALL|wxEXPAND, 5);
     BoxSizer2->Add(StaticBoxSizer2, 0, wxLEFT|wxRIGHT|wxEXPAND, 5);
     okButton = new wxButton(Panel1, ID_BUTTON1, _("OK"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
@@ -171,10 +168,11 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     BoxSizer1->Fit(this);
     BoxSizer1->SetSizeHints(this);
 
-    Connect(ID_COMBOBOX1,wxEVT_COMMAND_COMBOBOX_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnComboBox1Selected);
-    Connect(ID_COMBOBOX2,wxEVT_COMMAND_COMBOBOX_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnComboBox2Selected);
+    Connect(ID_TEXTCTRL2,wxEVT_COMMAND_TEXT_ENTER,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnheroCSinputTextEnter);
+    Connect(ID_TEXTCTRL3,wxEVT_COMMAND_TEXT_ENTER,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter);
     Connect(ID_RADIOBUTTON1,wxEVT_COMMAND_RADIOBUTTON_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnRadioButton1Select);
     Connect(ID_RADIOBUTTON2,wxEVT_COMMAND_RADIOBUTTON_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnRadioButton2Select);
+    Connect(ID_TEXTCTRL1,wxEVT_COMMAND_TEXT_ENTER,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnrandomNumberInputTextEnter);
     Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnokButtonClick);
     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnAbout);
@@ -209,39 +207,67 @@ void LoneWolfCombatResultsFrame::OnClose(wxCloseEvent& event)
 
 void LoneWolfCombatResultsFrame::OnRadioButton1Select(wxCommandEvent& event)
 {
-    TextCtrl1->Enable(false);
+    randomNumberInput->Enable(false);
+    randomNumberInput->SetLabel(_(""));
 }
 
 void LoneWolfCombatResultsFrame::OnRadioButton2Select(wxCommandEvent& event)
 {
-    TextCtrl1->Enable(true);
+    randomNumberInput->Enable(true);
 }
 
-void LoneWolfCombatResultsFrame::OnComboBox1Selected(wxCommandEvent& event)
+void LoneWolfCombatResultsFrame::OnheroCSinputTextEnter(wxCommandEvent& event)
 {
-    wxString combatSkillStr = heroCSinput->GetValue();
-    int heroCombatSkill = atoi(combatSkillStr.c_str());
-    results->setHeroCombatSkill(heroCombatSkill);
-
-    // debug
-    generalOutput->SetLabel(_("ComboBox1 Selected"));
-    Layout();
+    processHeroCSinput();
 }
 
-void LoneWolfCombatResultsFrame::OnComboBox2Selected(wxCommandEvent& event)
+void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
 {
-    wxString combatSkillStr = enemyCSinput->GetValue();
-    int enemyCombatSkill = atoi(combatSkillStr.c_str());
-    results->setEnemyCombatSkill(enemyCombatSkill);
+    processEnemyCSinput();
+}
 
-    // debug
-    generalOutput->SetLabel(_("ComboBox2 Selected"));
-    Layout();
+void LoneWolfCombatResultsFrame::OnrandomNumberInputTextEnter(wxCommandEvent& event)
+{
+    processRandomNumberInput();
 }
 
 void LoneWolfCombatResultsFrame::OnokButtonClick(wxCommandEvent& event)
 {
+    processHeroCSinput();
+    processEnemyCSinput();
+
+    if (randomNumberInput->IsEnabled())
+    {
+        processRandomNumberInput();
+    }
+
+    else
+    {
+        results->rollDie();
+    }
+
     results->outputCombatResults();
+}
+
+void LoneWolfCombatResultsFrame::processHeroCSinput()
+{
+    wxString combatSkillStr = heroCSinput->GetValue();
+    int heroCombatSkill = atoi(combatSkillStr.c_str());
+    results->setHeroCombatSkill(heroCombatSkill);
+}
+
+void LoneWolfCombatResultsFrame::processEnemyCSinput()
+{
+    wxString combatSkillStr = enemyCSinput->GetValue();
+    int enemyCombatSkill = atoi(combatSkillStr.c_str());
+    results->setEnemyCombatSkill(enemyCombatSkill);
+}
+
+void LoneWolfCombatResultsFrame::processRandomNumberInput()
+{
+    wxString randomNumberStr = randomNumberInput->GetValue();
+    int randomNumber = atoi(randomNumberStr.c_str());
+    results->setDieRoll(randomNumber);
 }
 
 void LoneWolfCombatResultsFrame::printCombatRatio(string msg)
@@ -252,5 +278,17 @@ void LoneWolfCombatResultsFrame::printCombatRatio(string msg)
 void LoneWolfCombatResultsFrame::printGeneralOutput(string msg)
 {
     generalOutput->SetLabel(_(msg));
+    Layout();
+}
+
+void LoneWolfCombatResultsFrame::printDamageToEnemy(string msg)
+{
+    enemyResult->SetLabel(_(msg));
+    Layout();
+}
+
+void LoneWolfCombatResultsFrame::printDamageToHero(string msg)
+{
+    heroResult->SetLabel(_(msg));
     Layout();
 }

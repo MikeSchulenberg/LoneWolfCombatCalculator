@@ -17,12 +17,12 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <sstream>
 
 #include "../include/CombatResults.h"
 #include "../LoneWolfCombatResultsMain.h"
 
-using std::cout;
-using std::endl;
+using std::stringstream;
 
 /** Used to translate the "Combat Ratio" column from the 'Lone Wolf' Combat Results Table
 to an array index. */
@@ -155,37 +155,9 @@ void CombatResults::rollDie()
 
 void CombatResults::outputCombatResults()
 {
-    view->printGeneralOutput("Test output");
-}
-
-void CombatResults::outputDamageToEnemy() const
-{
-    string damagetoEnemy = DAMAGE_TO_ENEMY[dieRoll][currentIndex];
-
-    if (damagetoEnemy == "K")
-    {
-        cout << "The enemy dies!" << endl;
-    }
-
-    else
-    {
-        cout << "The enemy loses " << damagetoEnemy << " ENDURANCE." << endl;
-    }
-}
-
-void CombatResults::outputDamageToHero() const
-{
-    string damagetoHero = DAMAGE_TO_HERO[dieRoll][currentIndex];
-
-    if (damagetoHero == "K")
-    {
-        cout << "The Hero dies!" << endl;
-    }
-
-    else
-    {
-        cout << "The Hero loses " << damagetoHero << " ENDURANCE." << endl;
-    }
+    outputRandomNumber();
+    outputDamageToEnemy();
+    outputDamageToHero();
 }
 
 /////////////////////////////////////////////////////////
@@ -196,6 +168,11 @@ void CombatResults::calculateCombatRatio()
 {
     combatRatio = heroCombatSkill - enemyCombatSkill;
     translateRatioToIndex();
+
+    /* Convert the combat ratio to a string,
+    then forward the string to the GUI. */
+    string combatRatioStr = to_string(combatRatio);
+    view->printCombatRatio(combatRatioStr);
 }
 
 void CombatResults::translateRatioToIndex()
@@ -256,4 +233,53 @@ void CombatResults::translateRatioToIndex()
             currentIndex = NEG_11_OR_GREATER;
         }
     }
+}
+
+void CombatResults::outputRandomNumber()
+{
+    string dieRollStr = to_string(dieRoll);
+    view->printGeneralOutput("Random Number: " + dieRollStr);
+}
+
+void CombatResults::outputDamageToEnemy() const
+{
+    string damagetoEnemy = DAMAGE_TO_ENEMY[dieRoll][currentIndex];
+    string resultStr;
+
+    if (damagetoEnemy == "K")
+    {
+        resultStr = "The enemy dies!";
+    }
+
+    else
+    {
+        resultStr = "The enemy loses " + damagetoEnemy + " ENDURANCE.";
+    }
+
+    view->printDamageToEnemy(resultStr);
+}
+
+void CombatResults::outputDamageToHero() const
+{
+    string damagetoHero = DAMAGE_TO_HERO[dieRoll][currentIndex];
+    string resultStr;
+
+    if (damagetoHero == "K")
+    {
+        resultStr = "The Hero dies!";
+    }
+
+    else
+    {
+        resultStr = "The Hero loses " + damagetoHero + " ENDURANCE.";
+    }
+
+    view->printDamageToHero(resultStr);
+}
+
+string CombatResults::to_string(int value)
+{
+    stringstream ss;
+    ss << value;
+    return ss.str();
 }

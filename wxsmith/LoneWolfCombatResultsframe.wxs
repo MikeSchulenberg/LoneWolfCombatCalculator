@@ -24,16 +24,12 @@
 											<option>1</option>
 										</object>
 										<object class="sizeritem">
-											<object class="wxComboBox" name="ID_COMBOBOX1" variable="heroCSinput" member="yes">
-												<content>
-													<item>1</item>
-													<item>2</item>
-													<item>3</item>
-												</content>
-												<size>50,21</size>
-												<handler function="OnComboBox1Selected" entry="EVT_COMBOBOX" />
+											<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="heroCSinput" member="yes">
+												<size>30,21</size>
+												<style>wxTE_PROCESS_ENTER</style>
+												<handler function="OnheroCSinputTextEnter" entry="EVT_TEXT_ENTER" />
 											</object>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -41,7 +37,7 @@
 											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<option>1</option>
-											<size>102,20</size>
+											<size>98,21</size>
 										</object>
 										<object class="sizeritem">
 											<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
@@ -52,11 +48,12 @@
 											<option>1</option>
 										</object>
 										<object class="sizeritem">
-											<object class="wxComboBox" name="ID_COMBOBOX2" variable="enemyCSinput" member="yes">
-												<size>50,21</size>
-												<handler function="OnComboBox2Selected" entry="EVT_COMBOBOX" />
+											<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="enemyCSinput" member="yes">
+												<size>30,21</size>
+												<style>wxTE_PROCESS_ENTER</style>
+												<handler function="OnenemyCSinputTextEnter" entry="EVT_TEXT_ENTER" />
 											</object>
-											<flag>wxALL</flag>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -161,7 +158,7 @@
 											<flag>wxALL|wxEXPAND</flag>
 											<border>5</border>
 											<option>1</option>
-											<size>139,20</size>
+											<size>108,20</size>
 										</object>
 										<object class="sizeritem">
 											<object class="wxRadioButton" name="ID_RADIOBUTTON2" variable="RadioButton2" member="yes">
@@ -173,9 +170,11 @@
 											<option>1</option>
 										</object>
 										<object class="sizeritem">
-											<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="randomNumberInput" member="yes">
 												<size>50,21</size>
 												<enabled>0</enabled>
+												<style>wxTE_PROCESS_ENTER</style>
+												<handler function="OnrandomNumberInputTextEnter" entry="EVT_TEXT_ENTER" />
 											</object>
 											<flag>wxALL</flag>
 											<border>5</border>

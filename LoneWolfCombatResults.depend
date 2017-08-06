@@ -2969,7 +2969,7 @@
 1501534604 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsapp.h
 	<wx/app.h>
 
-1501959072 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
+1502003548 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
 	<wx/sizer.h>
 	<wx/stattext.h>
 	<wx/menu.h>
@@ -2978,14 +2978,14 @@
 	<wx/panel.h>
 	<wx/button.h>
 	<wx/frame.h>
-	<wx/combobox.h>
 	<wx/statusbr.h>
 	"include/ForwardDeclarations.h"
 
-1501957026 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
+1502003548 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
+	<wx/msgdlg.h>
+	<string>
 	"wx_pch.h"
 	"LoneWolfCombatResultsMain.h"
-	<wx/msgdlg.h>
 	"include/CombatResults.h"
 	<wx/font.h>
 	<wx/intl.h>
@@ -3014,14 +3014,15 @@
 1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\gbsizer.h
 	"wx/sizer.h"
 
-1501957460 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\src\combatresults.cpp
+1502004084 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\src\combatresults.cpp
 	<iostream>
 	<cstdlib>
 	<ctime>
+	<sstream>
 	"../include/CombatResults.h"
 	"../LoneWolfCombatResultsMain.h"
 
-1501956800 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\include\combatresults.h
+1502003282 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\include\combatresults.h
 	<string>
 	"../include/ForwardDeclarations.h"
 
