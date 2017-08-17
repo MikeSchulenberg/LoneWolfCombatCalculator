@@ -62,6 +62,8 @@ class CombatResults
         // ACCESSORS
         /////////////////////////////////////////////////////////////
 
+        // TODO: delete accessors if unnecessary
+
         /** \brief Returns the "Combat Skill" for the enemy.
          *
          */
@@ -107,19 +109,32 @@ class CombatResults
         int combatRatio;                    /**< The difference between the enemy's and Hero's "Combat Skills". */
         int dieRoll;                        /**< A random number used to determine a combat result. */
 
+        const int INVALID_VALUE = -999;       /**< Used to indicate that a field is currently storing
+                                                an invalid value. */
+
         /////////////////////////////////////////////////////////////
         // HELPER FUNCTIONS
         /////////////////////////////////////////////////////////////
 
-        /** \brief Verify that the "Combat Skill" entered by the user is valid.
+        /** \brief Verifies that the "Combat Skill" entered by the user is valid.
          *
          */
-        bool verifyCombatSkill(int combatSkill);
+        bool verifyCombatSkill(int combatSkill) const;
 
         /** \brief Notifies the user that they have entered an invalid value for a "Combat Skill".
          *
          */
-        void handleCombatSkillError();
+        void handleCombatSkillError() const;
+
+        /** \brief Verifies that the "random number" manually entered by the user is valid.
+         *
+         */
+        bool verifyDieRoll(int dieRoll) const;
+
+        /** \brief Notifies the user that they have entered an invalid value for a "random number".
+         *
+         */
+        void handleDieRollError() const;
 
         /** \brief Calculates the difference between the enemy's and Hero's "Combat Skills".
          * A negative number favors the enemy. A positive number favors the Hero.
@@ -133,12 +148,17 @@ class CombatResults
          */
         void translateRatioToIndex();
 
+        /** \brief Outputs the current "Combat Ratio" to the GUI.
+         *
+         */
+        void outputCombatRatio();
+
         /** \brief Outputs the random number used to determine the result of the combat exchange.
          * This number may either be generated internally by a function, or entered manually by
          * the user.
          *
          */
-        void outputRandomNumber();
+        void outputDieRoll();
 
         /** \brief Outputs the number of "Endurance" points lost by the enemy.
          *

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Option projectLinkerOptionsRelation="2" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add directory="E:/Programs/ProgrammingTools/CodeBlocks/wxWidgets-3.0.3/lib/gcc_dll/mswu" />
 				</Compiler>
@@ -32,6 +33,7 @@
 				<Option projectLinkerOptionsRelation="2" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++11" />
 					<Add directory="E:/Programs/ProgrammingTools/CodeBlocks/wxWidgets-3.0.3/lib/gcc_dll/mswu" />
 				</Compiler>
 				<ResourceCompiler>
@@ -68,6 +70,7 @@
 		<Unit filename="LoneWolfCombatResultsMain.cpp" />
 		<Unit filename="LoneWolfCombatResultsMain.h" />
 		<Unit filename="include/CombatResults.h" />
+		<Unit filename="include/ForwardDeclarations.h" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>

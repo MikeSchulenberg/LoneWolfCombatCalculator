@@ -27,6 +27,7 @@
 											<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="heroCSinput" member="yes">
 												<size>30,21</size>
 												<style>wxTE_PROCESS_ENTER</style>
+												<handler function="OnheroCSinputText" entry="EVT_TEXT" />
 												<handler function="OnheroCSinputTextEnter" entry="EVT_TEXT_ENTER" />
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -51,6 +52,7 @@
 											<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="enemyCSinput" member="yes">
 												<size>30,21</size>
 												<style>wxTE_PROCESS_ENTER</style>
+												<handler function="OnenemyCSinputText" entry="EVT_TEXT" />
 												<handler function="OnenemyCSinputTextEnter" entry="EVT_TEXT_ENTER" />
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -104,7 +106,7 @@
 										</object>
 										<object class="sizeritem">
 											<object class="wxStaticText" name="ID_STATICTEXT4" variable="combatRatioOutput" member="yes">
-												<label>0</label>
+												<label>--</label>
 												<font>
 													<size>12</size>
 													<style>normal</style>
@@ -171,7 +173,7 @@
 										</object>
 										<object class="sizeritem">
 											<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="randomNumberInput" member="yes">
-												<size>50,21</size>
+												<size>30,21</size>
 												<enabled>0</enabled>
 												<style>wxTE_PROCESS_ENTER</style>
 												<handler function="OnrandomNumberInputTextEnter" entry="EVT_TEXT_ENTER" />
