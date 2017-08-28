@@ -33,6 +33,12 @@ class LoneWolfCombatResultsFrame: public wxFrame
         LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~LoneWolfCombatResultsFrame();
 
+        void printCurrentHeroCS(string msg);
+        void clearCurrentHeroCS();
+
+        void printCurrentEnemyCS(string msg);
+        void clearCurrentEnemyCS();
+
         void printCombatRatio(string msg);
         void clearCombatRatio();
 
@@ -40,7 +46,11 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void printDamageToEnemy(string msg);
         void printDamageToHero(string msg);
 
+        void printDieRollError();
+
         void clearAllOutput();
+
+        void toggleRandomNumberSection(bool enable);
 
     private:
 
@@ -63,7 +73,7 @@ class LoneWolfCombatResultsFrame: public wxFrame
 
         void processHeroCSinput();
         void processEnemyCSinput();
-        void processRandomNumberInput();
+        bool processRandomNumberInput();
         void calculateCombatResults();
 
         //(*Identifiers(LoneWolfCombatResultsFrame)

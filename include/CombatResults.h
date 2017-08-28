@@ -131,11 +131,6 @@ class CombatResults
          */
         bool verifyDieRoll(int dieRoll) const;
 
-        /** \brief Notifies the user that they have entered an invalid value for a "random number".
-         *
-         */
-        void handleDieRollError() const;
-
         /** \brief Calculates the difference between the enemy's and Hero's "Combat Skills".
          * A negative number favors the enemy. A positive number favors the Hero.
          *
@@ -147,6 +142,16 @@ class CombatResults
          *
          */
         void translateRatioToIndex();
+
+        /** \brief Outputs the current enemy "Combat Skill" to the GUI.
+         *
+         */
+        void outputEnemyCombatSkill();
+
+        /** \brief Outputs the current Hero "Combat Skill" to the GUI.
+         *
+         */
+        void outputHeroCombatSkill();
 
         /** \brief Outputs the current "Combat Ratio" to the GUI.
          *

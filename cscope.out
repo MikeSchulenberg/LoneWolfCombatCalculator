@@ -1,4 +1,4 @@
-cscope 15 E:\Dropbox\Programming\C++\CodeBlocks Projects\Projects\GUI\LoneWolfCombatResults"               0000038631
+cscope 15 E:\Dropbox\Programming\C++\CodeBlocks Projects\Projects\GUI\LoneWolfCombatResults"               0000041379
 	@E:\Dropbox\Programming\C++\CodeBlocks Projects\Projects\GUI\LoneWolfCombatResults\LoneWolfCombatResultsApp.cpp
 
 10 
@@ -943,7 +943,7 @@ wxVERTICAL
 P™ñ1
 , 
 	`_
-("RANDOM NUMBER"));
+("DIE ROLL"));
 
 125 
 FÀxGridSizî2
@@ -984,6 +984,12 @@ RadioBuâ⁄1
 );
 
 128 
+RadioBuâ⁄1
+->
+	`DißbÀ
+();
+
+129 
 FÀxGridSizî2
 ->
 	`Add
@@ -997,7 +1003,7 @@ wxALIGN_LEFT
 wxALIGN_CENTER_VERTICAL
 , 5);
 
-129 
+130 
 FÀxGridSizî2
 ->
 	`Add
@@ -1007,7 +1013,7 @@ wxALL
 wxEXPAND
 , 5);
 
-130 
+131 
 RadioBuâ⁄2
  = 
 √w
@@ -1029,7 +1035,13 @@ wxDeÁu…VÆid©‹
 	`_T
 ("ID_RADIOBUTTON2"));
 
-131 
+132 
+RadioBuâ⁄2
+->
+	`DißbÀ
+();
+
+133 
 FÀxGridSizî2
 ->
 	`Add
@@ -1043,7 +1055,7 @@ wxALIGN_LEFT
 wxALIGN_CENTER_VERTICAL
 , 5);
 
-132 
+134 
 øndomNumbîI≈ut
  = 
 √w
@@ -1067,13 +1079,13 @@ wxDeÁu…VÆid©‹
 	`_T
 ("ID_TEXTCTRL1"));
 
-133 
+135 
 øndomNumbîI≈ut
 ->
 	`DißbÀ
 ();
 
-134 
+136 
 FÀxGridSizî2
 ->
 	`Add
@@ -1083,7 +1095,7 @@ FÀxGridSizî2
 wxALL
 , 5);
 
-135 
+137 
 SèticBoxSizî2
 ->
 	`Add
@@ -1095,7 +1107,7 @@ wxALL
 wxEXPAND
 , 5);
 
-136 
+138 
 BoxSizî2
 ->
 	`Add
@@ -1109,7 +1121,7 @@ wxRIGHT
 wxEXPAND
 , 5);
 
-137 
+139 
 okBuâ⁄
  = 
 √w
@@ -1131,7 +1143,13 @@ wxDeÁu…VÆid©‹
 	`_T
 ("ID_BUTTON1"));
 
-138 
+140 
+okBuâ⁄
+->
+	`DißbÀ
+();
+
+141 
 BoxSizî2
 ->
 	`Add
@@ -1149,7 +1167,7 @@ wxALIGN_CENTER_HORIZONTAL
 wxALIGN_CENTER_VERTICAL
 , 5);
 
-139 
+142 
 SèticBoxSizî3
  = 
 √w
@@ -1163,7 +1181,7 @@ P™ñ1
 	`_
 ("COMBAT RESULTS"));
 
-140 
+143 
 gíîÆOuçut
  = 
 √w
@@ -1185,7 +1203,7 @@ wxALIGN_CENTRE
 	`_T
 ("ID_STATICTEXT7"));
 
-141 
+144 
 SèticBoxSizî3
 ->
 	`Add
@@ -1197,7 +1215,7 @@ wxALL
 wxEXPAND
 , 5);
 
-142 
+145 
 íemyResu…
  = 
 √w
@@ -1219,7 +1237,7 @@ wxALIGN_CENTRE
 	`_T
 ("ID_STATICTEXT5"));
 
-143 
+146 
 SèticBoxSizî3
 ->
 	`Add
@@ -1231,7 +1249,7 @@ wxALL
 wxEXPAND
 , 5);
 
-144 
+147 
 hîoResu…
  = 
 √w
@@ -1253,7 +1271,7 @@ wxALIGN_CENTRE
 	`_T
 ("ID_STATICTEXT6"));
 
-145 
+148 
 SèticBoxSizî3
 ->
 	`Add
@@ -1265,7 +1283,7 @@ wxALL
 wxEXPAND
 , 5);
 
-146 
+149 
 BoxSizî2
 ->
 	`Add
@@ -1281,7 +1299,7 @@ wxRIGHT
 wxEXPAND
 , 5);
 
-147 
+150 
 P™ñ1
 ->
 	`SëSizî
@@ -1289,7 +1307,7 @@ P™ñ1
 BoxSizî2
 );
 
-148 
+151 
 BoxSizî2
 ->
 	`Fô
@@ -1297,7 +1315,7 @@ BoxSizî2
 P™ñ1
 );
 
-149 
+152 
 BoxSizî2
 ->
 	`SëSizeHöts
@@ -1305,7 +1323,7 @@ BoxSizî2
 P™ñ1
 );
 
-150 
+153 
 BoxSizî1
 ->
 	`Add
@@ -1317,13 +1335,13 @@ wxALL
 wxEXPAND
 , 0);
 
-151 
+154 
 	`SëSizî
 (
 BoxSizî1
 );
 
-152 
+155 
 MíuB¨1
  = 
 √w
@@ -1331,7 +1349,7 @@ MíuB¨1
 	`wxMíuB¨
 ();
 
-153 
+156 
 Míu1
  = 
 √w
@@ -1339,7 +1357,7 @@ Míu1
 	`wxMíu
 ();
 
-154 
+157 
 MíuIãm1
  = 
 √w
@@ -1355,7 +1373,7 @@ idMíuQuô
 wxITEM_NORMAL
 );
 
-155 
+158 
 Míu1
 ->
 	`Aµíd
@@ -1363,7 +1381,7 @@ Míu1
 MíuIãm1
 );
 
-156 
+159 
 MíuB¨1
 ->
 	`Aµíd
@@ -1373,7 +1391,7 @@ Míu1
 	`_
 ("&File"));
 
-157 
+160 
 Míu2
  = 
 √w
@@ -1381,7 +1399,7 @@ Míu2
 	`wxMíu
 ();
 
-158 
+161 
 MíuIãm2
  = 
 √w
@@ -1397,7 +1415,7 @@ idMíuAbout
 wxITEM_NORMAL
 );
 
-159 
+162 
 Míu2
 ->
 	`Aµíd
@@ -1405,7 +1423,7 @@ Míu2
 MíuIãm2
 );
 
-160 
+163 
 MíuB¨1
 ->
 	`Aµíd
@@ -1415,13 +1433,13 @@ Míu2
 	`_
 ("Help"));
 
-161 
+164 
 	`SëMíuB¨
 (
 MíuB¨1
 );
 
-162 
+165 
 SètusB¨1
  = 
 √w
@@ -1435,39 +1453,39 @@ ID_STATUSBAR1
 	`_T
 ("ID_STATUSBAR1"));
 
-163 
+166 
 __wxSètusB¨Widths_1
-[1] = { -1 };
+[2] = { -5, -5 };
 
-164 
+167 
 __wxSètusB¨StyÀs_1
-[1] = { 
+[2] = { 
 wxSB_NORMAL
- };
+, wxSB_NORMAL };
 
-165 
+168 
 SètusB¨1
 ->
 	`SëFõldsCou¡
-(1,
+(2,
 __wxSètusB¨Widths_1
 );
 
-166 
+169 
 SètusB¨1
 ->
 	`SëSètusStyÀs
-(1,
+(2,
 __wxSètusB¨StyÀs_1
 );
 
-167 
+170 
 	`SëSètusB¨
 (
 SètusB¨1
 );
 
-168 
+171 
 BoxSizî1
 ->
 	`Fô
@@ -1475,7 +1493,7 @@ BoxSizî1
 this
 );
 
-169 
+172 
 BoxSizî1
 ->
 	`SëSizeHöts
@@ -1483,7 +1501,7 @@ BoxSizî1
 this
 );
 
-171 
+174 
 	`C⁄√˘
 (
 ID_TEXTCTRL2
@@ -1497,7 +1515,7 @@ L⁄eWﬁfComb©Resu…sFøme
 OnhîoCSöputText
 );
 
-172 
+175 
 	`C⁄√˘
 (
 ID_TEXTCTRL2
@@ -1511,7 +1529,7 @@ L⁄eWﬁfComb©Resu…sFøme
 OnhîoCSöputTextE¡î
 );
 
-173 
+176 
 	`C⁄√˘
 (
 ID_TEXTCTRL3
@@ -1525,7 +1543,7 @@ L⁄eWﬁfComb©Resu…sFøme
 O√√myCSöputText
 );
 
-174 
+177 
 	`C⁄√˘
 (
 ID_TEXTCTRL3
@@ -1539,7 +1557,7 @@ L⁄eWﬁfComb©Resu…sFøme
 O√√myCSöputTextE¡î
 );
 
-175 
+178 
 	`C⁄√˘
 (
 ID_RADIOBUTTON1
@@ -1553,7 +1571,7 @@ L⁄eWﬁfComb©Resu…sFøme
 OnRadioBuâ⁄1Sñe˘
 );
 
-176 
+179 
 	`C⁄√˘
 (
 ID_RADIOBUTTON2
@@ -1567,7 +1585,7 @@ L⁄eWﬁfComb©Resu…sFøme
 OnRadioBuâ⁄2Sñe˘
 );
 
-177 
+180 
 	`C⁄√˘
 (
 ID_TEXTCTRL1
@@ -1581,7 +1599,7 @@ L⁄eWﬁfComb©Resu…sFøme
 Oƒ™domNumbîI≈utTextE¡î
 );
 
-178 
+181 
 	`C⁄√˘
 (
 ID_BUTTON1
@@ -1595,7 +1613,7 @@ L⁄eWﬁfComb©Resu…sFøme
 OnokBuâ⁄Click
 );
 
-179 
+182 
 	`C⁄√˘
 (
 idMíuQuô
@@ -1609,7 +1627,7 @@ L⁄eWﬁfComb©Resu…sFøme
 OnQuô
 );
 
-180 
+183 
 	`C⁄√˘
 (
 idMíuAbout
@@ -1623,7 +1641,7 @@ L⁄eWﬁfComb©Resu…sFøme
 OnAbout
 );
 
-183 
+186 
 ªsu…s
  = 
 √w
@@ -1633,27 +1651,27 @@ OnAbout
 this
 );
 
-184 
+187 
 	}
 }
 
-186 
+189 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::~
 	$L⁄eWﬁfComb©Resu…sFøme
 ()
 
-191 
+194 
 dñëe
  
 ªsu…s
 ;
 
-192 
+195 
 	}
 }
 
-198 
+201 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnQuô
@@ -1663,15 +1681,15 @@ wxComm™dEvít
 evít
 )
 
-200 
+203 
 	`Clo£
 ();
 
-201 
+204 
 	}
 }
 
-203 
+206 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnAbout
@@ -1681,7 +1699,7 @@ wxComm™dEvít
 evít
 )
 
-205 
+208 
 wxSåög
  
 msg
@@ -1691,7 +1709,7 @@ msg
 l⁄g_f
 );
 
-206 
+209 
 	`wxMesßgeBox
 (
 msg
@@ -1699,11 +1717,11 @@ msg
 	`_
 ("WelcomeÅo..."));
 
-207 
+210 
 	}
 }
 
-209 
+212 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnClo£
@@ -1713,7 +1731,7 @@ wxClo£Evít
 evít
 )
 
-211 
+214 
 evít
 .
 	`Skù
@@ -1721,11 +1739,11 @@ evít
 åue
 );
 
-212 
+215 
 	}
 }
 
-217 
+223 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnhîoCSöputText
@@ -1735,15 +1753,37 @@ wxComm™dEvít
 evít
 )
 
-219 
+225 
+	`˛órCuºítHîoCS
+();
+
+226 
 	`˛órComb©R©io
 ();
 
-220 
+227 
+	`˛órAŒOuçut
+();
+
+232 
+	`toggÀR™domNumbîSe˘i⁄
+(
+Ál£
+);
+
+233 
+okBuâ⁄
+->
+	`E«bÀ
+(
+Ál£
+);
+
+234 
 	}
 }
 
-222 
+236 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnhîoCSöputTextE¡î
@@ -1753,15 +1793,15 @@ wxComm™dEvít
 evít
 )
 
-224 
+238 
 	`¥o˚ssHîoCSöput
 ();
 
-225 
+239 
 	}
 }
 
-227 
+241 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$O√√myCSöputText
@@ -1771,15 +1811,37 @@ wxComm™dEvít
 evít
 )
 
-229 
+243 
+	`˛órCuºítE√myCS
+();
+
+244 
 	`˛órComb©R©io
 ();
 
-230 
+245 
+	`˛órAŒOuçut
+();
+
+250 
+	`toggÀR™domNumbîSe˘i⁄
+(
+Ál£
+);
+
+251 
+okBuâ⁄
+->
+	`E«bÀ
+(
+Ál£
+);
+
+252 
 	}
 }
 
-232 
+254 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$O√√myCSöputTextE¡î
@@ -1789,15 +1851,15 @@ wxComm™dEvít
 evít
 )
 
-234 
+256 
 	`¥o˚ssE√myCSöput
 ();
 
-235 
+257 
 	}
 }
 
-240 
+262 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnRadioBuâ⁄1Sñe˘
@@ -1807,7 +1869,7 @@ wxComm™dEvít
 evít
 )
 
-242 
+264 
 øndomNumbîI≈ut
 ->
 	`E«bÀ
@@ -1815,7 +1877,7 @@ evít
 Ál£
 );
 
-243 
+265 
 øndomNumbîI≈ut
 ->
 	`SëLabñ
@@ -1823,11 +1885,11 @@ evít
 	`_
 (""));
 
-244 
+266 
 	}
 }
 
-246 
+268 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnRadioBuâ⁄2Sñe˘
@@ -1837,7 +1899,7 @@ wxComm™dEvít
 evít
 )
 
-248 
+270 
 øndomNumbîI≈ut
 ->
 	`E«bÀ
@@ -1845,11 +1907,11 @@ evít
 åue
 );
 
-249 
+271 
 	}
 }
 
-251 
+273 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$Oƒ™domNumbîI≈utTextE¡î
@@ -1859,15 +1921,15 @@ wxComm™dEvít
 evít
 )
 
-253 
-	`¥o˚ssR™domNumbîI≈ut
+275 
+	`ˇlcuœãComb©Resu…s
 ();
 
-254 
+276 
 	}
 }
 
-258 
+280 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnokBuâ⁄Click
@@ -1877,15 +1939,91 @@ wxComm™dEvít
 evít
 )
 
-260 
+282 
 	`ˇlcuœãComb©Resu…s
 ();
 
-261 
+283 
 	}
 }
 
-267 
+289 
+	gL⁄eWﬁfComb©Resu…sFøme
+::
+	$¥ötCuºítHîoCS
+(
+°rög
+ 
+msg
+)
+
+291 
+SètusB¨1
+->
+	`SëSètusText
+("HîÿCOMBAT SKILL: " + 
+msg
+, 0);
+
+292 
+	}
+}
+
+294 
+	gL⁄eWﬁfComb©Resu…sFøme
+::
+	$˛órCuºítHîoCS
+()
+
+296 
+SètusB¨1
+->
+	`SëSètusText
+("", 0);
+
+297 
+	}
+}
+
+299 
+	gL⁄eWﬁfComb©Resu…sFøme
+::
+	$¥ötCuºítE√myCS
+(
+°rög
+ 
+msg
+)
+
+301 
+SètusB¨1
+->
+	`SëSètusText
+("E√my COMBAT SKILL: " + 
+msg
+, 1);
+
+302 
+	}
+}
+
+304 
+	gL⁄eWﬁfComb©Resu…sFøme
+::
+	$˛órCuºítE√myCS
+()
+
+306 
+SètusB¨1
+->
+	`SëSètusText
+("", 1);
+
+307 
+	}
+}
+
+309 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötComb©R©io
@@ -1895,7 +2033,7 @@ evít
 msg
 )
 
-269 
+311 
 comb©R©ioOuçut
 ->
 	`SëLabñ
@@ -1905,21 +2043,21 @@ comb©R©ioOuçut
 msg
 ));
 
-270 
+312 
 	`Layout
 ();
 
-271 
+313 
 	}
 }
 
-273 
+315 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$˛órComb©R©io
 ()
 
-275 
+317 
 comb©R©ioOuçut
 ->
 	`SëLabñ
@@ -1927,15 +2065,15 @@ comb©R©ioOuçut
 	`_
 ("--"));
 
-276 
+318 
 	`Layout
 ();
 
-277 
+319 
 	}
 }
 
-279 
+321 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötGíîÆOuçut
@@ -1945,7 +2083,7 @@ comb©R©ioOuçut
 msg
 )
 
-281 
+323 
 gíîÆOuçut
 ->
 	`SëLabñ
@@ -1955,15 +2093,15 @@ gíîÆOuçut
 msg
 ));
 
-282 
+324 
 	`Layout
 ();
 
-283 
+325 
 	}
 }
 
-285 
+327 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötDamageToE√my
@@ -1973,7 +2111,7 @@ msg
 msg
 )
 
-287 
+329 
 íemyResu…
 ->
 	`SëLabñ
@@ -1983,15 +2121,15 @@ msg
 msg
 ));
 
-288 
+330 
 	`Layout
 ();
 
-289 
+331 
 	}
 }
 
-291 
+333 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötDamageToHîo
@@ -2001,7 +2139,7 @@ msg
 msg
 )
 
-293 
+335 
 hîoResu…
 ->
 	`SëLabñ
@@ -2011,21 +2149,43 @@ hîoResu…
 msg
 ));
 
-294 
+336 
 	`Layout
 ();
 
-295 
+337 
 	}
 }
 
-297 
+339 
+	gL⁄eWﬁfComb©Resu…sFøme
+::
+	$¥ötDõRﬁlEº‹
+()
+
+341 
+gíîÆOuçut
+->
+	`SëLabñ
+(
+	`_
+("Error: DIE ROLL must beá value from 0Åo 9"));
+
+342 
+	`Layout
+();
+
+343 
+	}
+}
+
+345 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$˛órAŒOuçut
 ()
 
-299 
+347 
 gíîÆOuçut
 ->
 	`SëLabñ
@@ -2033,7 +2193,7 @@ gíîÆOuçut
 	`_
 (""));
 
-300 
+348 
 íemyResu…
 ->
 	`SëLabñ
@@ -2041,7 +2201,7 @@ gíîÆOuçut
 	`_
 (""));
 
-301 
+349 
 hîoResu…
 ->
 	`SëLabñ
@@ -2049,21 +2209,101 @@ hîoResu…
 	`_
 (""));
 
-302 
+350 
 	`Layout
 ();
 
-303 
+351 
 	}
 }
 
-313 
+357 
+	gL⁄eWﬁfComb©Resu…sFøme
+::
+	$toggÀR™domNumbîSe˘i⁄
+(
+boﬁ
+ 
+íabÀ
+)
+
+359 i‡(
+íabÀ
+)
+
+361 
+RadioBuâ⁄1
+->
+	`E«bÀ
+(
+åue
+);
+
+362 
+RadioBuâ⁄2
+->
+	`E«bÀ
+(
+åue
+);
+
+363 
+okBuâ⁄
+->
+	`E«bÀ
+(
+åue
+);
+
+367 i‡(
+RadioBuâ⁄2
+->
+	`GëVÆue
+())
+
+369 
+øndomNumbîI≈ut
+->
+	`E«bÀ
+(
+åue
+);
+
+375 
+RadioBuâ⁄1
+->
+	`E«bÀ
+(
+Ál£
+);
+
+376 
+RadioBuâ⁄2
+->
+	`E«bÀ
+(
+Ál£
+);
+
+377 
+øndomNumbîI≈ut
+->
+	`E«bÀ
+(
+Ál£
+);
+
+379 
+	}
+}
+
+389 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥o˚ssHîoCSöput
 ()
 
-315 
+391 
 wxSåög
  
 comb©SkûlSå
@@ -2073,7 +2313,7 @@ hîoCSöput
 	`GëVÆue
 ();
 
-316 
+393 
 hîoComb©Skûl
  = 
 	`©oi
@@ -2083,7 +2323,7 @@ comb©SkûlSå
 	`c_°r
 ());
 
-317 
+394 
 ªsu…s
 ->
 	`£tHîoComb©Skûl
@@ -2091,17 +2331,17 @@ comb©SkûlSå
 hîoComb©Skûl
 );
 
-318 
+395 
 	}
 }
 
-324 
+401 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥o˚ssE√myCSöput
 ()
 
-326 
+403 
 wxSåög
  
 comb©SkûlSå
@@ -2111,7 +2351,7 @@ comb©SkûlSå
 	`GëVÆue
 ();
 
-327 
+405 
 íemyComb©Skûl
  = 
 	`©oi
@@ -2121,7 +2361,7 @@ comb©SkûlSå
 	`c_°r
 ());
 
-328 
+406 
 ªsu…s
 ->
 	`£tE√myComb©Skûl
@@ -2129,17 +2369,19 @@ comb©SkûlSå
 íemyComb©Skûl
 );
 
-329 
+407 
 	}
 }
 
-331 
+410 
+boﬁ
+ 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥o˚ssR™domNumbîI≈ut
 ()
 
-333 
+412 
 wxSåög
  
 øndomNumbîSå
@@ -2149,17 +2391,41 @@ wxSåög
 	`GëVÆue
 ();
 
-334 
-øndomNumbî
- = 
-	`©oi
-(
+414 i‡(
 øndomNumbîSå
 .
-	`c_°r
-());
+	`IsEm±y
+())
 
-335 
+416 
+	`¥ötDõRﬁlEº‹
+();
+
+417  
+Ál£
+;
+
+422 
+øndomNumbî
+;
+
+424 i‡(!
+øndomNumbîSå
+.
+	`ToL⁄g
+(&
+øndomNumbî
+))
+
+426 
+	`¥ötDõRﬁlEº‹
+();
+
+427  
+Ál£
+;
+
+432 
 ªsu…s
 ->
 	`£tDõRﬁl
@@ -2167,47 +2433,65 @@ wxSåög
 øndomNumbî
 );
 
-336 
+433  
+åue
+;
+
+436 
 	}
 }
 
-338 
+438 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$ˇlcuœãComb©Resu…s
 ()
 
-340 
+440 
 	`¥o˚ssHîoCSöput
 ();
 
-341 
+441 
 	`¥o˚ssE√myCSöput
 ();
 
-343 i‡(
+443 
+boﬁ
+ 
+doComb©Resu…s
+ = 
+åue
+;
+
+444 i‡(
 øndomNumbîI≈ut
 ->
 	`IsE«bÀd
 ())
 
-345 
+446 
+doComb©Resu…s
+ = 
 	`¥o˚ssR™domNumbîI≈ut
 ();
 
-350 
+451 
 ªsu…s
 ->
 	`rﬁlDõ
 ();
 
-353 
+454 i‡(
+doComb©Resu…s
+)
+
+456 
 ªsu…s
 ->
 	`ouçutComb©Resu…s
 ();
 
-354 
+458 
 	}
 }
 
@@ -2302,7 +2586,7 @@ L⁄eWﬁfComb©Resu…sFøme
 ();
 
 36 
-¥ötComb©R©io
+¥ötCuºítHîoCS
 (
 °rög
  
@@ -2310,11 +2594,11 @@ msg
 );
 
 37 
-˛órComb©R©io
+˛órCuºítHîoCS
 ();
 
 39 
-¥ötGíîÆOuçut
+¥ötCuºítE√myCS
 (
 °rög
  
@@ -2322,15 +2606,11 @@ msg
 );
 
 40 
-¥ötDamageToE√my
-(
-°rög
- 
-msg
-);
+˛órCuºítE√myCS
+();
 
-41 
-¥ötDamageToHîo
+42 
+¥ötComb©R©io
 (
 °rög
  
@@ -2338,14 +2618,54 @@ msg
 );
 
 43 
+˛órComb©R©io
+();
+
+45 
+¥ötGíîÆOuçut
+(
+°rög
+ 
+msg
+);
+
+46 
+¥ötDamageToE√my
+(
+°rög
+ 
+msg
+);
+
+47 
+¥ötDamageToHîo
+(
+°rög
+ 
+msg
+);
+
+49 
+¥ötDõRﬁlEº‹
+();
+
+51 
 ˛órAŒOuçut
 ();
 
-45 
+53 
+toggÀR™domNumbîSe˘i⁄
+(
+boﬁ
+ 
+íabÀ
+);
+
+55 
 	m¥iv©e
 :
 
-48 
+58 
 OnQuô
 (
 wxComm™dEvít
@@ -2353,7 +2673,7 @@ wxComm™dEvít
 evít
 );
 
-49 
+59 
 OnAbout
 (
 wxComm™dEvít
@@ -2361,7 +2681,7 @@ wxComm™dEvít
 evít
 );
 
-50 
+60 
 OnRadioBuâ⁄1Sñe˘
 (
 wxComm™dEvít
@@ -2369,7 +2689,7 @@ wxComm™dEvít
 evít
 );
 
-51 
+61 
 OnRadioBuâ⁄2Sñe˘
 (
 wxComm™dEvít
@@ -2377,7 +2697,7 @@ wxComm™dEvít
 evít
 );
 
-52 
+62 
 OnComboBox1Sñe˘ed
 (
 wxComm™dEvít
@@ -2385,7 +2705,7 @@ wxComm™dEvít
 evít
 );
 
-53 
+63 
 OnComboBox2Sñe˘ed
 (
 wxComm™dEvít
@@ -2393,7 +2713,7 @@ wxComm™dEvít
 evít
 );
 
-54 
+64 
 OnokBuâ⁄Click
 (
 wxComm™dEvít
@@ -2401,7 +2721,7 @@ wxComm™dEvít
 evít
 );
 
-55 
+65 
 OnhîoCSöputTextE¡î
 (
 wxComm™dEvít
@@ -2409,7 +2729,7 @@ wxComm™dEvít
 evít
 );
 
-56 
+66 
 O√√myCSöputTextE¡î
 (
 wxComm™dEvít
@@ -2417,7 +2737,7 @@ wxComm™dEvít
 evít
 );
 
-57 
+67 
 Oƒ™domNumbîI≈utTextE¡î
 (
 wxComm™dEvít
@@ -2425,7 +2745,7 @@ wxComm™dEvít
 evít
 );
 
-58 
+68 
 OnhîoCSöputText
 (
 wxComm™dEvít
@@ -2433,7 +2753,7 @@ wxComm™dEvít
 evít
 );
 
-59 
+69 
 O√√myCSöputText
 (
 wxComm™dEvít
@@ -2441,7 +2761,7 @@ wxComm™dEvít
 evít
 );
 
-62 
+72 
 OnClo£
 (
 wxClo£Evít
@@ -2449,185 +2769,187 @@ wxClo£Evít
 evít
 );
 
-64 
+74 
 ¥o˚ssHîoCSöput
 ();
 
-65 
+75 
 ¥o˚ssE√myCSöput
 ();
 
-66 
+76 
+boﬁ
+ 
 ¥o˚ssR™domNumbîI≈ut
 ();
 
-67 
+77 
 ˇlcuœãComb©Resu…s
 ();
 
-70 c⁄° 
+80 c⁄° 
 	mID_STATICTEXT1
 ;
 
-71 c⁄° 
+81 c⁄° 
 	mID_TEXTCTRL2
 ;
 
-72 c⁄° 
+82 c⁄° 
 	mID_STATICTEXT2
 ;
 
-73 c⁄° 
+83 c⁄° 
 	mID_TEXTCTRL3
 ;
 
-74 c⁄° 
+84 c⁄° 
 	mID_STATICTEXT3
 ;
 
-75 c⁄° 
+85 c⁄° 
 	mID_STATICTEXT4
 ;
 
-76 c⁄° 
+86 c⁄° 
 	mID_RADIOBUTTON1
 ;
 
-77 c⁄° 
+87 c⁄° 
 	mID_RADIOBUTTON2
 ;
 
-78 c⁄° 
+88 c⁄° 
 	mID_TEXTCTRL1
 ;
 
-79 c⁄° 
+89 c⁄° 
 	mID_BUTTON1
 ;
 
-80 c⁄° 
+90 c⁄° 
 	mID_STATICTEXT7
 ;
 
-81 c⁄° 
+91 c⁄° 
 	mID_STATICTEXT5
 ;
 
-82 c⁄° 
+92 c⁄° 
 	mID_STATICTEXT6
 ;
 
-83 c⁄° 
+93 c⁄° 
 	mID_PANEL1
 ;
 
-84 c⁄° 
+94 c⁄° 
 	midMíuQuô
 ;
 
-85 c⁄° 
+95 c⁄° 
 	midMíuAbout
 ;
 
-86 c⁄° 
+96 c⁄° 
 	mID_STATUSBAR1
 ;
 
-90 
+100 
 wxSèticText
 * 
 	mcomb©R©ioOuçut
 ;
 
-91 
+101 
 wxRadioBuâ⁄
 * 
 	mRadioBuâ⁄1
 ;
 
-92 
+102 
 wxSèticText
 * 
 	mSèticText2
 ;
 
-93 
+103 
 wxRadioBuâ⁄
 * 
 	mRadioBuâ⁄2
 ;
 
-94 
+104 
 wxP™ñ
 * 
 	mP™ñ1
 ;
 
-95 
+105 
 wxSèticText
 * 
 	mSèticText1
 ;
 
-96 
+106 
 wxSèticText
 * 
 	mSèticText3
 ;
 
-97 
+107 
 wxSèticText
 * 
 	míemyResu…
 ;
 
-98 
+108 
 wxSèticText
 * 
 	mhîoResu…
 ;
 
-99 
+109 
 wxSètusB¨
 * 
 	mSètusB¨1
 ;
 
-100 
+110 
 wxTextCål
 * 
 	møndomNumbîI≈ut
 ;
 
-101 
+111 
 wxBuâ⁄
 * 
 	mokBuâ⁄
 ;
 
-102 
+112 
 wxSèticText
 * 
 	mgíîÆOuçut
 ;
 
-103 
+113 
 wxTextCål
 * 
 	mhîoCSöput
 ;
 
-104 
+114 
 wxTextCål
 * 
 	míemyCSöput
 ;
 
-107 
+117 
 	$DECLARE_EVENT_TABLE
 ()
 
-109 
+119 
 Comb©Resu…s
 * 
 ªsu…s
@@ -2719,45 +3041,41 @@ Comb©Resu…s
 	`rﬁlDõ
 ();
 
-102 
-	`ouçutComb©R©io
-();
-
-108 
+103 
 	`ouçutComb©Resu…s
 ();
 
-110 
+105 
 ¥iv©e
 :
 
-111 
+106 
 L⁄eWﬁfComb©Resu…sFøme
 * 
 võw
 ;
 
-112 
+107 
 íemyComb©Skûl
 ;
 
-113 
+108 
 hîoComb©Skûl
 ;
 
-114 
+109 
 comb©R©io
 ;
 
-115 
+110 
 dõRﬁl
 ;
 
-117 c⁄° 
+112 c⁄° 
 INVALID_VALUE
  = -999;
 
-127 
+122 
 boﬁ
  
 	$vîifyComb©Skûl
@@ -2765,11 +3083,11 @@ boﬁ
 comb©Skûl
 ) const;
 
-132 
+127 
 	$h™dÀComb©SkûlEº‹
 () const;
 
-137 
+132 
 boﬁ
  
 	$vîifyDõRﬁl
@@ -2777,31 +3095,43 @@ boﬁ
 dõRﬁl
 ) const;
 
-142 
+137 
 	$h™dÀDõRﬁlEº‹
 () const;
 
-148 
+143 
 	`ˇlcuœãComb©R©io
 ();
 
-154 
+149 
 	`å™¶©eR©ioToIndex
 ();
 
-161 
+154 
+	`ouçutE√myComb©Skûl
+();
+
+159 
+	`ouçutHîoComb©Skûl
+();
+
+164 
+	`ouçutComb©R©io
+();
+
+171 
 	`ouçutDõRﬁl
 ();
 
-166 
+176 
 	$ouçutDamageToE√my
 () const;
 
-171 
+181 
 	$ouçutDamageToHîo
 () const;
 
-178 
+188 
 °rög
  
 	`to_°rög
@@ -3050,30 +3380,40 @@ Comb©Resu…s
 ;
 
 122 
+	`ouçutE√myComb©Skûl
+();
+
+124 i‡(
+hîoComb©Skûl
+ !
+INVALID_VALUE
+)
+
+126 
 	`ˇlcuœãComb©R©io
 ();
 
-123 
+129 
 võw
 ->
 	`˛órAŒOuçut
 ();
 
-128 
+134 
 íemyComb©Skûl
  = 
 INVALID_VALUE
 ;
 
-129 
+135 
 	`h™dÀComb©SkûlEº‹
 ();
 
-131 
+137 
 	}
 }
 
-133 
+139 
 	gComb©Resu…s
 ::
 	$£tHîoComb©Skûl
@@ -3081,29 +3421,27 @@ INVALID_VALUE
 √wComb©Skûl
 )
 
-135 i‡(
+141 i‡(
 	`vîifyComb©Skûl
 (
 √wComb©Skûl
 ))
 
-137 
+143 
 hîoComb©Skûl
  = 
 √wComb©Skûl
 ;
 
-141 i‡(
+144 
+	`ouçutHîoComb©Skûl
+();
+
+146 i‡(
 íemyComb©Skûl
- =
+ !
 INVALID_VALUE
 )
-
-143 
-comb©R©io
- = 
-hîoComb©Skûl
-;
 
 148 
 	`ˇlcuœãComb©R©io
@@ -3263,69 +3601,69 @@ dõRﬁl
 	}
 }
 
-216 
+217 
 	gComb©Resu…s
 ::
 	$ouçutComb©Resu…s
 ()
 
-218 
+219 
 võw
 ->
 	`˛órAŒOuçut
 ();
 
-220 i‡(
+221 i‡(
 hîoComb©Skûl
  =
 INVALID_VALUE
 )
 
-222 
+223 
 võw
 ->
 	`¥ötGíîÆOuçut
 ("Error: invalid Hero COMBAT SKILL");
 
-225 i‡(
+226 i‡(
 íemyComb©Skûl
  =
 INVALID_VALUE
 )
 
-227 
+228 
 võw
 ->
 	`¥ötGíîÆOuçut
 ("Error: invalid Enemy COMBAT SKILL");
 
-230 i‡(
+231 i‡(
 dõRﬁl
  =
 INVALID_VALUE
 )
 
-232 
+233 
 	`h™dÀDõRﬁlEº‹
 ();
 
-237 
+238 
 	`ouçutDõRﬁl
 ();
 
-238 
+239 
 	`ouçutDamageToE√my
 ();
 
-239 
+240 
 	`ouçutDamageToHîo
 ();
 
-241 
+242 
 	}
 }
 
-247 
+248 
 boﬁ
  
 	gComb©Resu…s
@@ -3335,117 +3673,117 @@ boﬁ
 comb©Skûl
 ) const
 
-249 i‡(
+250 i‡(
 comb©Skûl
  > 0)
 
-251  
+252  
 åue
 ;
 
-256  
+257  
 Ál£
 ;
 
-258 
+259 
 	}
 }
 
-260 
+261 
 	gComb©Resu…s
 ::
 	$h™dÀComb©SkûlEº‹
 () const
 
-262 
+263 
 võw
 ->
 	`˛órComb©R©io
 ();
 
-263 
+264 
 võw
 ->
 	`˛órAŒOuçut
 ();
 
-264 
+265 
 võw
 ->
 	`¥ötGíîÆOuçut
 ("Error: Combat Skill must beáÇumber greaterÅhan 0");
 
-265 
+266 
 	}
 }
 
-267 
+268 
 boﬁ
  
 	gComb©Resu…s
 ::
 	$vîifyDõRﬁl
 (
-dõRﬁl
+√wDõRﬁl
 ) const
 
-269 c⁄° 
+270 c⁄° 
 LOWER_BOUND
  = 0;
 
-270 c⁄° 
+271 c⁄° 
 UPPER_BOUND
  = 9;
 
-272 i‡(
-dõRﬁl
+273 i‡(
+√wDõRﬁl
  >
 LOWER_BOUND
- && dõRﬁ»<
+ &&ÇewDõRﬁ»<
 UPPER_BOUND
 )
 
-274  
+275  
 åue
 ;
 
-279  
+280  
 Ál£
 ;
 
-281 
+282 
 	}
 }
 
-283 
+284 
 	gComb©Resu…s
 ::
 	$h™dÀDõRﬁlEº‹
 () const
 
-285 
+286 
 võw
 ->
 	`˛órAŒOuçut
 ();
 
-286 
+287 
 võw
 ->
-	`¥ötGíîÆOuçut
-("Error:Çumber must beá value from 0Åo 9");
+	`¥ötDõRﬁlEº‹
+();
 
-287 
+288 
 	}
 }
 
-289 
+290 
 	gComb©Resu…s
 ::
 	$ˇlcuœãComb©R©io
 ()
 
-291 
+292 
 comb©R©io
  = 
 hîoComb©Skûl
@@ -3453,11 +3791,89 @@ hîoComb©Skûl
 íemyComb©Skûl
 ;
 
-292 
+293 
+	`ouçutComb©R©io
+();
+
+294 
 	`å™¶©eR©ioToIndex
 ();
 
-296 
+299 
+võw
+->
+	`toggÀR™domNumbîSe˘i⁄
+(
+åue
+);
+
+300 
+	}
+}
+
+302 
+	gComb©Resu…s
+::
+	$ouçutE√myComb©Skûl
+()
+
+304 
+°rög
+ 
+íemyComb©SkûlSå
+ = 
+	`to_°rög
+(
+íemyComb©Skûl
+);
+
+305 
+võw
+->
+	`¥ötCuºítE√myCS
+(
+íemyComb©SkûlSå
+);
+
+306 
+	}
+}
+
+308 
+	gComb©Resu…s
+::
+	$ouçutHîoComb©Skûl
+()
+
+310 
+°rög
+ 
+hîoComb©SkûlSå
+ = 
+	`to_°rög
+(
+hîoComb©Skûl
+);
+
+311 
+võw
+->
+	`¥ötCuºítHîoCS
+(
+hîoComb©SkûlSå
+);
+
+312 
+	}
+}
+
+314 
+	gComb©Resu…s
+::
+	$ouçutComb©R©io
+()
+
+316 
 °rög
  
 comb©R©ioSå
@@ -3467,7 +3883,7 @@ comb©R©ioSå
 comb©R©io
 );
 
-297 
+317 
 võw
 ->
 	`¥ötComb©R©io
@@ -3475,113 +3891,113 @@ võw
 comb©R©ioSå
 );
 
-298 
+318 
 	}
 }
 
-300 
+320 
 	gComb©Resu…s
 ::
 	$å™¶©eR©ioToIndex
 ()
 
-302 
+322 
 comb©R©io
 )
 
-306 
+326 
 cuºítIndex
  = 
 NEG_10_OR_NEG_9
 ;
 
-310 
+330 
 cuºítIndex
  = 
 NEG_8_OR_NEG_7
 ;
 
-314 
+334 
 cuºítIndex
  = 
 NEG_6_OR_NEG_5
 ;
 
-318 
+338 
 cuºítIndex
  = 
 NEG_4_OR_NEG_3
 ;
 
-322 
+342 
 cuºítIndex
  = 
 NEG_2_OR_NEG_1
 ;
 
-325 
+345 
 cuºítIndex
  = 
 ZERO
 ;
 
-329 
+349 
 cuºítIndex
  = 
 POS_1_OR_POS_2
 ;
 
-333 
+353 
 cuºítIndex
  = 
 POS_3_OR_POS_4
 ;
 
-337 
+357 
 cuºítIndex
  = 
 POS_5_OR_POS_6
 ;
 
-341 
+361 
 cuºítIndex
  = 
 POS_7_OR_POS_8
 ;
 
-345 
+365 
 cuºítIndex
  = 
 POS_9_OR_POS_10
 ;
 
-348 i‡(
+368 i‡(
 comb©R©io
  > 10)
 
-350 
+370 
 cuºítIndex
  = 
 POS_11_OR_GREATER
 ;
 
-355 
+375 
 cuºítIndex
  = 
 NEG_11_OR_GREATER
 ;
 
-358 
+378 
 	}
 }
 
-360 
+380 
 	gComb©Resu…s
 ::
 	$ouçutDõRﬁl
 ()
 
-362 
+382 
 °rög
  
 dõRﬁlSå
@@ -3591,7 +4007,7 @@ dõRﬁlSå
 dõRﬁl
 );
 
-363 
+383 
 võw
 ->
 	`¥ötGíîÆOuçut
@@ -3603,17 +4019,17 @@ cuºítMode
 dõRﬁlSå
 );
 
-364 
+384 
 	}
 }
 
-366 
+386 
 	gComb©Resu…s
 ::
 	$ouçutDamageToE√my
 () const
 
-368 
+388 
 °rög
  
 damagëoE√my
@@ -3625,27 +4041,27 @@ dõRﬁl
 cuºítIndex
 ];
 
-369 
+389 
 °rög
  
 ªsu…Så
 ;
 
-371 i‡(
+391 i‡(
 damagëoE√my
  == "K")
 
-373 
+393 
 ªsu…Så
  = "TheÉnemy dies!";
 
-378 
+398 
 ªsu…Så
  = "ThêíemyÜo£†" + 
 damagëoE√my
  + " ENDURANCE";
 
-381 
+401 
 võw
 ->
 	`¥ötDamageToE√my
@@ -3653,17 +4069,17 @@ võw
 ªsu…Så
 );
 
-382 
+402 
 	}
 }
 
-384 
+404 
 	gComb©Resu…s
 ::
 	$ouçutDamageToHîo
 () const
 
-386 
+406 
 °rög
  
 damagëoHîo
@@ -3675,27 +4091,27 @@ dõRﬁl
 cuºítIndex
 ];
 
-387 
+407 
 °rög
  
 ªsu…Så
 ;
 
-389 i‡(
+409 i‡(
 damagëoHîo
  == "K")
 
-391 
+411 
 ªsu…Så
  = "The Hero dies!";
 
-396 
+416 
 ªsu…Så
  = "ThêHîÿlo£†" + 
 damagëoHîo
  + " ENDURANCE";
 
-399 
+419 
 võw
 ->
 	`¥ötDamageToHîo
@@ -3703,11 +4119,11 @@ võw
 ªsu…Så
 );
 
-400 
+420 
 	}
 }
 
-402 
+422 
 °rög
  
 	gComb©Resu…s
@@ -3717,25 +4133,25 @@ võw
 vÆue
 )
 
-404 
+424 
 °rög°ªam
  
 ss
 ;
 
-405 
+425 
 ss
  << 
 vÆue
 ;
 
-406  
+426  
 ss
 .
 	`°r
 ();
 
-407 
+427 
 	}
 }
 
@@ -4628,9 +5044,9 @@ membî
 144 <
 œbñ
 >
-RANDOM
+DIE
  
-NUMBER
+ROLL
 </label>
 
 145 <
@@ -4694,6 +5110,10 @@ numbî
 >1</selected>
 
 153 <
+íabÀd
+>0</enabled>
+
+154 <
 h™dÀr
  
 fun˘i⁄
@@ -4701,11 +5121,11 @@ fun˘i⁄
 íåy
 ="EVT_RADIOBUTTON" />
 
-154 </
+155 </
 obje˘
 >
 
-155 <
+156 <
 Êag
 >
 wxALL
@@ -4715,25 +5135,25 @@ wxALIGN_LEFT
 wxALIGN_CENTER_VERTICAL
 </flag>
 
-156 <
+157 <
 b‹dî
 >5</border>
 
-157 <
+158 <
 ›ti⁄
 >1</option>
 
-158 </
+159 </
 obje˘
 >
 
-159 <
+160 <
 obje˘
  
 ˛ass
 ="spacer">
 
-160 <
+161 <
 Êag
 >
 wxALL
@@ -4741,31 +5161,31 @@ wxALL
 wxEXPAND
 </flag>
 
-161 <
+162 <
 b‹dî
 >5</border>
 
-162 <
+163 <
 ›ti⁄
 >1</option>
 
-163 <
+164 <
 size
 >108,20</
 	gsize
 >
 
-164 </
+165 </
 	gobje˘
 >
 
-165 <
+166 <
 obje˘
  
 	g˛ass
 ="sizeritem">
 
-166 <
+167 <
 obje˘
  
 ˛ass
@@ -4777,7 +5197,7 @@ v¨übÀ
 membî
 ="yes">
 
-167 <
+168 <
 œbñ
 >
 E¡î
@@ -4791,7 +5211,11 @@ numbî
 to
  9</label>
 
-168 <
+169 <
+íabÀd
+>0</enabled>
+
+170 <
 h™dÀr
  
 fun˘i⁄
@@ -4799,11 +5223,11 @@ fun˘i⁄
 íåy
 ="EVT_RADIOBUTTON" />
 
-169 </
+171 </
 obje˘
 >
 
-170 <
+172 <
 Êag
 >
 wxALL
@@ -4813,25 +5237,25 @@ wxALIGN_LEFT
 wxALIGN_CENTER_VERTICAL
 </flag>
 
-171 <
+173 <
 b‹dî
 >5</border>
 
-172 <
+174 <
 ›ti⁄
 >1</option>
 
-173 </
+175 </
 obje˘
 >
 
-174 <
+176 <
 obje˘
  
 ˛ass
 ="sizeritem">
 
-175 <
+177 <
 obje˘
  
 ˛ass
@@ -4843,23 +5267,23 @@ v¨übÀ
 membî
 ="yes">
 
-176 <
+178 <
 size
 >30,21</
 	gsize
 >
 
-177 <
+179 <
 	gíabÀd
 >0</enabled>
 
-178 <
+180 <
 	g°yÀ
 >
 	gwxTE_PROCESS_ENTER
 </style>
 
-179 <
+181 <
 h™dÀr
  
 	gfun˘i⁄
@@ -4867,29 +5291,29 @@ h™dÀr
 íåy
 ="EVT_TEXT_ENTER" />
 
-180 </
+182 </
 obje˘
 >
 
-181 <
+183 <
 Êag
 >
 wxALL
 </flag>
 
-182 <
+184 <
 b‹dî
 >5</border>
 
-183 </
+185 </
 obje˘
 >
 
-184 </
+186 </
 obje˘
 >
 
-185 <
+187 <
 Êag
 >
 wxALL
@@ -4897,23 +5321,23 @@ wxALL
 wxEXPAND
 </flag>
 
-186 <
+188 <
 b‹dî
 >5</border>
 
-187 <
+189 <
 ›ti⁄
 >1</option>
 
-188 </
+190 </
 obje˘
 >
 
-189 </
+191 </
 obje˘
 >
 
-190 <
+192 <
 Êag
 >
 wxLEFT
@@ -4923,21 +5347,21 @@ wxRIGHT
 wxEXPAND
 </flag>
 
-191 <
+193 <
 b‹dî
 >5</border>
 
-192 </
+194 </
 obje˘
 >
 
-193 <
+195 <
 obje˘
  
 ˛ass
 ="sizeritem">
 
-194 <
+196 <
 obje˘
  
 ˛ass
@@ -4949,13 +5373,17 @@ v¨übÀ
 membî
 ="yes">
 
-195 <
+197 <
 œbñ
 >
 OK
 </label>
 
-196 <
+198 <
+íabÀd
+>0</enabled>
+
+199 <
 h™dÀr
  
 fun˘i⁄
@@ -4963,11 +5391,11 @@ fun˘i⁄
 íåy
 ="EVT_BUTTON" />
 
-197 </
+200 </
 obje˘
 >
 
-198 <
+201 <
 Êag
 >
 wxTOP
@@ -4981,21 +5409,21 @@ wxALIGN_CENTER_HORIZONTAL
 wxALIGN_CENTER_VERTICAL
 </flag>
 
-199 <
+202 <
 b‹dî
 >5</border>
 
-200 </
+203 </
 obje˘
 >
 
-201 <
+204 <
 obje˘
  
 ˛ass
 ="sizeritem">
 
-202 <
+205 <
 obje˘
  
 ˛ass
@@ -5005,7 +5433,7 @@ v¨übÀ
 membî
 ="no">
 
-203 <
+206 <
 œbñ
 >
 COMBAT
@@ -5013,19 +5441,19 @@ COMBAT
 RESULTS
 </label>
 
-204 <
+207 <
 ‹õ¡
 >
 wxVERTICAL
 </orient>
 
-205 <
+208 <
 obje˘
  
 ˛ass
 ="sizeritem">
 
-206 <
+209 <
 obje˘
  
 ˛ass
@@ -5037,21 +5465,21 @@ v¨übÀ
 membî
 ="yes">
 
-207 <
+210 <
 œbñ
 ></label>
 
-208 <
+211 <
 °yÀ
 >
 wxALIGN_CENTRE
 </style>
 
-209 </
+212 </
 obje˘
 >
 
-210 <
+213 <
 Êag
 >
 wxALL
@@ -5059,25 +5487,25 @@ wxALL
 wxEXPAND
 </flag>
 
-211 <
+214 <
 b‹dî
 >5</border>
 
-212 <
+215 <
 ›ti⁄
 >1</option>
 
-213 </
+216 </
 obje˘
 >
 
-214 <
+217 <
 obje˘
  
 ˛ass
 ="sizeritem">
 
-215 <
+218 <
 obje˘
  
 ˛ass
@@ -5089,21 +5517,21 @@ v¨übÀ
 membî
 ="yes">
 
-216 <
+219 <
 œbñ
 ></label>
 
-217 <
+220 <
 °yÀ
 >
 wxALIGN_CENTRE
 </style>
 
-218 </
+221 </
 obje˘
 >
 
-219 <
+222 <
 Êag
 >
 wxALL
@@ -5111,25 +5539,25 @@ wxALL
 wxEXPAND
 </flag>
 
-220 <
+223 <
 b‹dî
 >5</border>
 
-221 <
+224 <
 ›ti⁄
 >1</option>
 
-222 </
+225 </
 obje˘
 >
 
-223 <
+226 <
 obje˘
  
 ˛ass
 ="sizeritem">
 
-224 <
+227 <
 obje˘
  
 ˛ass
@@ -5141,21 +5569,21 @@ v¨übÀ
 membî
 ="yes">
 
-225 <
+228 <
 œbñ
 ></label>
 
-226 <
+229 <
 °yÀ
 >
 wxALIGN_CENTRE
 </style>
 
-227 </
+230 </
 obje˘
 >
 
-228 <
+231 <
 Êag
 >
 wxALL
@@ -5163,23 +5591,23 @@ wxALL
 wxEXPAND
 </flag>
 
-229 <
+232 <
 b‹dî
 >5</border>
 
-230 <
+233 <
 ›ti⁄
 >1</option>
 
-231 </
+234 </
 obje˘
 >
 
-232 </
+235 </
 obje˘
 >
 
-233 <
+236 <
 Êag
 >
 wxBOTTOM
@@ -5191,23 +5619,23 @@ wxRIGHT
 wxEXPAND
 </flag>
 
-234 <
+237 <
 b‹dî
 >5</border>
 
-235 </
+238 </
 obje˘
 >
 
-236 </
+239 </
 obje˘
 >
 
-237 </
+240 </
 obje˘
 >
 
-238 <
+241 <
 Êag
 >
 wxALL
@@ -5215,19 +5643,19 @@ wxALL
 wxEXPAND
 </flag>
 
-239 <
+242 <
 ›ti⁄
 >1</option>
 
-240 </
+243 </
 obje˘
 >
 
-241 </
+244 </
 obje˘
 >
 
-242 <
+245 <
 obje˘
  
 ˛ass
@@ -5237,7 +5665,7 @@ v¨übÀ
 membî
 ="no">
 
-243 <
+246 <
 obje˘
  
 ˛ass
@@ -5247,7 +5675,7 @@ v¨übÀ
 membî
 ="no">
 
-244 <
+247 <
 œbñ
 >&
 amp
@@ -5257,7 +5685,7 @@ amp
 	gœbñ
 >
 
-245 <
+248 <
 obje˘
  
 	g˛ass
@@ -5269,13 +5697,13 @@ v¨übÀ
 membî
 ="no">
 
-246 <
+249 <
 œbñ
 >
 Quô
 </label>
 
-247 <
+250 <
 ac˚l
 >
 A…
@@ -5283,7 +5711,7 @@ A…
 F4
 </accel>
 
-248 <
+251 <
 hñp
 >
 Quô
@@ -5293,7 +5721,7 @@ the
 ≠∂iˇti⁄
 </help>
 
-249 <
+252 <
 h™dÀr
  
 fun˘i⁄
@@ -5301,15 +5729,15 @@ fun˘i⁄
 íåy
 ="EVT_MENU" />
 
-250 </
+253 </
 obje˘
 >
 
-251 </
+254 </
 obje˘
 >
 
-252 <
+255 <
 obje˘
  
 ˛ass
@@ -5319,13 +5747,13 @@ v¨übÀ
 membî
 ="no">
 
-253 <
+256 <
 œbñ
 >
 Hñp
 </label>
 
-254 <
+257 <
 obje˘
  
 ˛ass
@@ -5337,19 +5765,19 @@ v¨übÀ
 membî
 ="no">
 
-255 <
+258 <
 œbñ
 >
 About
 </label>
 
-256 <
+259 <
 ac˚l
 >
 F1
 </accel>
 
-257 <
+260 <
 hñp
 >
 Show
@@ -5363,7 +5791,7 @@ this
 ≠∂iˇti⁄
 </help>
 
-258 <
+261 <
 h™dÀr
  
 fun˘i⁄
@@ -5371,19 +5799,19 @@ fun˘i⁄
 íåy
 ="EVT_MENU" />
 
-259 </
+262 </
 obje˘
 >
 
-260 </
+263 </
 obje˘
 >
 
-261 </
+264 </
 obje˘
 >
 
-262 <
+265 <
 obje˘
  
 ˛ass
@@ -5395,30 +5823,32 @@ v¨übÀ
 membî
 ="yes">
 
-263 <
+266 <
 fõlds
->1</fields>
+>2</fields>
 
-264 <
+267 <
 widths
->-1</widths>
-
-265 <
-°yÀs
->
-wxSB_NORMAL
-</styles>
-
-266 </
-obje˘
+>-5,-5</
+	gwidths
 >
 
-267 </
-obje˘
+268 <
+	g°yÀs
+>
+	gwxSB_NORMAL
+,wxSB_NORMAL</styles>
+
+269 </
+	gobje˘
 >
 
-268 </
-wxsmôh
+270 </
+	gobje˘
+>
+
+271 </
+	gwxsmôh
 >
 
 	@LoneWolfCombatResultsApp.h
@@ -5548,7 +5978,7 @@ L⁄eWﬁfComb©Resu…sFøme
 ();
 
 36 
-¥ötComb©R©io
+¥ötCuºítHîoCS
 (
 °rög
  
@@ -5556,11 +5986,11 @@ msg
 );
 
 37 
-˛órComb©R©io
+˛órCuºítHîoCS
 ();
 
 39 
-¥ötGíîÆOuçut
+¥ötCuºítE√myCS
 (
 °rög
  
@@ -5568,15 +5998,11 @@ msg
 );
 
 40 
-¥ötDamageToE√my
-(
-°rög
- 
-msg
-);
+˛órCuºítE√myCS
+();
 
-41 
-¥ötDamageToHîo
+42 
+¥ötComb©R©io
 (
 °rög
  
@@ -5584,14 +6010,54 @@ msg
 );
 
 43 
+˛órComb©R©io
+();
+
+45 
+¥ötGíîÆOuçut
+(
+°rög
+ 
+msg
+);
+
+46 
+¥ötDamageToE√my
+(
+°rög
+ 
+msg
+);
+
+47 
+¥ötDamageToHîo
+(
+°rög
+ 
+msg
+);
+
+49 
+¥ötDõRﬁlEº‹
+();
+
+51 
 ˛órAŒOuçut
 ();
 
-45 
+53 
+toggÀR™domNumbîSe˘i⁄
+(
+boﬁ
+ 
+íabÀ
+);
+
+55 
 	m¥iv©e
 :
 
-48 
+58 
 OnQuô
 (
 wxComm™dEvít
@@ -5599,7 +6065,7 @@ wxComm™dEvít
 evít
 );
 
-49 
+59 
 OnAbout
 (
 wxComm™dEvít
@@ -5607,7 +6073,7 @@ wxComm™dEvít
 evít
 );
 
-50 
+60 
 OnRadioBuâ⁄1Sñe˘
 (
 wxComm™dEvít
@@ -5615,7 +6081,7 @@ wxComm™dEvít
 evít
 );
 
-51 
+61 
 OnRadioBuâ⁄2Sñe˘
 (
 wxComm™dEvít
@@ -5623,7 +6089,7 @@ wxComm™dEvít
 evít
 );
 
-52 
+62 
 OnComboBox1Sñe˘ed
 (
 wxComm™dEvít
@@ -5631,7 +6097,7 @@ wxComm™dEvít
 evít
 );
 
-53 
+63 
 OnComboBox2Sñe˘ed
 (
 wxComm™dEvít
@@ -5639,7 +6105,7 @@ wxComm™dEvít
 evít
 );
 
-54 
+64 
 OnokBuâ⁄Click
 (
 wxComm™dEvít
@@ -5647,7 +6113,7 @@ wxComm™dEvít
 evít
 );
 
-55 
+65 
 OnhîoCSöputTextE¡î
 (
 wxComm™dEvít
@@ -5655,7 +6121,7 @@ wxComm™dEvít
 evít
 );
 
-56 
+66 
 O√√myCSöputTextE¡î
 (
 wxComm™dEvít
@@ -5663,7 +6129,7 @@ wxComm™dEvít
 evít
 );
 
-57 
+67 
 Oƒ™domNumbîI≈utTextE¡î
 (
 wxComm™dEvít
@@ -5671,7 +6137,7 @@ wxComm™dEvít
 evít
 );
 
-58 
+68 
 OnhîoCSöputText
 (
 wxComm™dEvít
@@ -5679,7 +6145,7 @@ wxComm™dEvít
 evít
 );
 
-59 
+69 
 O√√myCSöputText
 (
 wxComm™dEvít
@@ -5687,7 +6153,7 @@ wxComm™dEvít
 evít
 );
 
-62 
+72 
 OnClo£
 (
 wxClo£Evít
@@ -5695,185 +6161,187 @@ wxClo£Evít
 evít
 );
 
-64 
+74 
 ¥o˚ssHîoCSöput
 ();
 
-65 
+75 
 ¥o˚ssE√myCSöput
 ();
 
-66 
+76 
+boﬁ
+ 
 ¥o˚ssR™domNumbîI≈ut
 ();
 
-67 
+77 
 ˇlcuœãComb©Resu…s
 ();
 
-70 c⁄° 
+80 c⁄° 
 	mID_STATICTEXT1
 ;
 
-71 c⁄° 
+81 c⁄° 
 	mID_TEXTCTRL2
 ;
 
-72 c⁄° 
+82 c⁄° 
 	mID_STATICTEXT2
 ;
 
-73 c⁄° 
+83 c⁄° 
 	mID_TEXTCTRL3
 ;
 
-74 c⁄° 
+84 c⁄° 
 	mID_STATICTEXT3
 ;
 
-75 c⁄° 
+85 c⁄° 
 	mID_STATICTEXT4
 ;
 
-76 c⁄° 
+86 c⁄° 
 	mID_RADIOBUTTON1
 ;
 
-77 c⁄° 
+87 c⁄° 
 	mID_RADIOBUTTON2
 ;
 
-78 c⁄° 
+88 c⁄° 
 	mID_TEXTCTRL1
 ;
 
-79 c⁄° 
+89 c⁄° 
 	mID_BUTTON1
 ;
 
-80 c⁄° 
+90 c⁄° 
 	mID_STATICTEXT7
 ;
 
-81 c⁄° 
+91 c⁄° 
 	mID_STATICTEXT5
 ;
 
-82 c⁄° 
+92 c⁄° 
 	mID_STATICTEXT6
 ;
 
-83 c⁄° 
+93 c⁄° 
 	mID_PANEL1
 ;
 
-84 c⁄° 
+94 c⁄° 
 	midMíuQuô
 ;
 
-85 c⁄° 
+95 c⁄° 
 	midMíuAbout
 ;
 
-86 c⁄° 
+96 c⁄° 
 	mID_STATUSBAR1
 ;
 
-90 
+100 
 wxSèticText
 * 
 	mcomb©R©ioOuçut
 ;
 
-91 
+101 
 wxRadioBuâ⁄
 * 
 	mRadioBuâ⁄1
 ;
 
-92 
+102 
 wxSèticText
 * 
 	mSèticText2
 ;
 
-93 
+103 
 wxRadioBuâ⁄
 * 
 	mRadioBuâ⁄2
 ;
 
-94 
+104 
 wxP™ñ
 * 
 	mP™ñ1
 ;
 
-95 
+105 
 wxSèticText
 * 
 	mSèticText1
 ;
 
-96 
+106 
 wxSèticText
 * 
 	mSèticText3
 ;
 
-97 
+107 
 wxSèticText
 * 
 	míemyResu…
 ;
 
-98 
+108 
 wxSèticText
 * 
 	mhîoResu…
 ;
 
-99 
+109 
 wxSètusB¨
 * 
 	mSètusB¨1
 ;
 
-100 
+110 
 wxTextCål
 * 
 	møndomNumbîI≈ut
 ;
 
-101 
+111 
 wxBuâ⁄
 * 
 	mokBuâ⁄
 ;
 
-102 
+112 
 wxSèticText
 * 
 	mgíîÆOuçut
 ;
 
-103 
+113 
 wxTextCål
 * 
 	mhîoCSöput
 ;
 
-104 
+114 
 wxTextCål
 * 
 	míemyCSöput
 ;
 
-107 
+117 
 	$DECLARE_EVENT_TABLE
 ()
 
-109 
+119 
 Comb©Resu…s
 * 
 ªsu…s
@@ -5965,45 +6433,41 @@ Comb©Resu…s
 	`rﬁlDõ
 ();
 
-102 
-	`ouçutComb©R©io
-();
-
-108 
+103 
 	`ouçutComb©Resu…s
 ();
 
-110 
+105 
 ¥iv©e
 :
 
-111 
+106 
 L⁄eWﬁfComb©Resu…sFøme
 * 
 võw
 ;
 
-112 
+107 
 íemyComb©Skûl
 ;
 
-113 
+108 
 hîoComb©Skûl
 ;
 
-114 
+109 
 comb©R©io
 ;
 
-115 
+110 
 dõRﬁl
 ;
 
-117 c⁄° 
+112 c⁄° 
 INVALID_VALUE
  = -999;
 
-127 
+122 
 boﬁ
  
 	$vîifyComb©Skûl
@@ -6011,11 +6475,11 @@ boﬁ
 comb©Skûl
 ) const;
 
-132 
+127 
 	$h™dÀComb©SkûlEº‹
 () const;
 
-137 
+132 
 boﬁ
  
 	$vîifyDõRﬁl
@@ -6023,31 +6487,43 @@ boﬁ
 dõRﬁl
 ) const;
 
-142 
+137 
 	$h™dÀDõRﬁlEº‹
 () const;
 
-148 
+143 
 	`ˇlcuœãComb©R©io
 ();
 
-154 
+149 
 	`å™¶©eR©ioToIndex
 ();
 
-161 
+154 
+	`ouçutE√myComb©Skûl
+();
+
+159 
+	`ouçutHîoComb©Skûl
+();
+
+164 
+	`ouçutComb©R©io
+();
+
+171 
 	`ouçutDõRﬁl
 ();
 
-166 
+176 
 	$ouçutDamageToE√my
 () const;
 
-171 
+181 
 	$ouçutDamageToHîo
 () const;
 
-178 
+188 
 °rög
  
 	`to_°rög

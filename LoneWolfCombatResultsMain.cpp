@@ -121,7 +121,7 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     FlexGridSizer1->Add(-1,-1,1, wxALL|wxEXPAND, 5);
     StaticBoxSizer1->Add(FlexGridSizer1, 1, wxALL|wxEXPAND, 5);
     BoxSizer2->Add(StaticBoxSizer1, 1, wxTOP|wxLEFT|wxRIGHT|wxEXPAND, 5);
-    StaticBoxSizer2 = new wxStaticBoxSizer(wxVERTICAL, Panel1, _("RANDOM NUMBER"));
+    StaticBoxSizer2 = new wxStaticBoxSizer(wxVERTICAL, Panel1, _("DIE ROLL"));
     FlexGridSizer2 = new wxFlexGridSizer(0, 2, 0, 0);
     RadioButton1 = new wxRadioButton(Panel1, ID_RADIOBUTTON1, _("Generate a random number"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_RADIOBUTTON1"));
     RadioButton1->SetValue(true);
@@ -163,10 +163,10 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     MenuBar1->Append(Menu2, _("Help"));
     SetMenuBar(MenuBar1);
     StatusBar1 = new wxStatusBar(this, ID_STATUSBAR1, 0, _T("ID_STATUSBAR1"));
-    int __wxStatusBarWidths_1[1] = { -1 };
-    int __wxStatusBarStyles_1[1] = { wxSB_NORMAL };
-    StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
-    StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
+    int __wxStatusBarWidths_1[2] = { -5, -5 };
+    int __wxStatusBarStyles_1[2] = { wxSB_NORMAL, wxSB_NORMAL };
+    StatusBar1->SetFieldsCount(2,__wxStatusBarWidths_1);
+    StatusBar1->SetStatusStyles(2,__wxStatusBarStyles_1);
     SetStatusBar(StatusBar1);
     BoxSizer1->Fit(this);
     BoxSizer1->SetSizeHints(this);
@@ -222,8 +222,15 @@ the Combat Ratio gets updated to the correct value. */
 
 void LoneWolfCombatResultsFrame::OnheroCSinputText(wxCommandEvent& event)
 {
+    clearCurrentHeroCS();
     clearCombatRatio();
     clearAllOutput();
+
+    /* Because the user is entering a "Combat Skill" value that has not yet been
+    verified, disable the functionality that selects whether the "die roll" will
+    be randomly generated or manually entered. */
+    toggleRandomNumberSection(false);
+    okButton->Enable(false);
 }
 
 void LoneWolfCombatResultsFrame::OnheroCSinputTextEnter(wxCommandEvent& event)
@@ -233,8 +240,15 @@ void LoneWolfCombatResultsFrame::OnheroCSinputTextEnter(wxCommandEvent& event)
 
 void LoneWolfCombatResultsFrame::OnenemyCSinputText(wxCommandEvent& event)
 {
+    clearCurrentEnemyCS();
     clearCombatRatio();
     clearAllOutput();
+
+    /* Because the user is entering a "Combat Skill" value that has not yet been
+    verified, disable the functionality that selects whether the "die roll" will
+    be randomly generated or manually entered. */
+    toggleRandomNumberSection(false);
+    okButton->Enable(false);
 }
 
 void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
@@ -244,10 +258,6 @@ void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
 
 // Random Number
 //-----------------------------------------------------------
-
-/* TODO: Experiment with updating the Combat Ratio when the user toggles the radio buttons,
-as long as doing so wouldn't cause CS user input errors when it doesn't make sense e.g.,
-if the user left one or both of the Combat Skill inputs blank. */
 
 void LoneWolfCombatResultsFrame::OnRadioButton1Select(wxCommandEvent& event)
 {
@@ -262,7 +272,7 @@ void LoneWolfCombatResultsFrame::OnRadioButton2Select(wxCommandEvent& event)
 
 void LoneWolfCombatResultsFrame::OnrandomNumberInputTextEnter(wxCommandEvent& event)
 {
-    processRandomNumberInput();
+    calculateCombatResults();
 }
 
 //-----------------------------------------------------------
@@ -275,6 +285,26 @@ void LoneWolfCombatResultsFrame::OnokButtonClick(wxCommandEvent& event)
 /////////////////////////////////////////////////////////////
 // PRINT OUTPUT
 /////////////////////////////////////////////////////////////
+
+void LoneWolfCombatResultsFrame::printCurrentHeroCS(string msg)
+{
+    StatusBar1->SetStatusText("Hero COMBAT SKILL: " + msg, 0);
+}
+
+void LoneWolfCombatResultsFrame::clearCurrentHeroCS()
+{
+    StatusBar1->SetStatusText("", 0);
+}
+
+void LoneWolfCombatResultsFrame::printCurrentEnemyCS(string msg)
+{
+    StatusBar1->SetStatusText("Enemy COMBAT SKILL: " + msg, 1);
+}
+
+void LoneWolfCombatResultsFrame::clearCurrentEnemyCS()
+{
+    StatusBar1->SetStatusText("", 1);
+}
 
 void LoneWolfCombatResultsFrame::printCombatRatio(string msg)
 {
@@ -306,12 +336,46 @@ void LoneWolfCombatResultsFrame::printDamageToHero(string msg)
     Layout();
 }
 
+void LoneWolfCombatResultsFrame::printDieRollError()
+{
+    generalOutput->SetLabel(_("Error: DIE ROLL must be a whole number from 0 to 9"));
+    Layout();
+}
+
 void LoneWolfCombatResultsFrame::clearAllOutput()
 {
     generalOutput->SetLabel(_(""));
     enemyResult->SetLabel(_(""));
     heroResult->SetLabel(_(""));
     Layout();
+}
+
+/////////////////////////////////////////////////////////////
+// GENERAL FUNCTIONS
+/////////////////////////////////////////////////////////////
+
+void LoneWolfCombatResultsFrame::toggleRandomNumberSection(bool enable)
+{
+    if (enable)
+    {
+        RadioButton1->Enable(true);
+        RadioButton2->Enable(true);
+        okButton->Enable(true);
+
+        /* If the option to manually enter a "die roll" has been selected,
+        enable the wxTextCtrl that allows the user to enter a value. */
+        if (RadioButton2->GetValue())
+        {
+            randomNumberInput->Enable(true);
+        }
+    }
+
+    else
+    {
+        RadioButton1->Enable(false);
+        RadioButton2->Enable(false);
+        randomNumberInput->Enable(false);
+    }
 }
 
 /////////////////////////////////////////////////////////////
@@ -325,6 +389,7 @@ void LoneWolfCombatResultsFrame::clearAllOutput()
 void LoneWolfCombatResultsFrame::processHeroCSinput()
 {
     wxString combatSkillStr = heroCSinput->GetValue();
+    // TODO: replace atoi() call with wxString conversion as used in processRandomNumberInput()
     int heroCombatSkill = atoi(combatSkillStr.c_str());
     results->setHeroCombatSkill(heroCombatSkill);
 }
@@ -336,17 +401,38 @@ void LoneWolfCombatResultsFrame::processHeroCSinput()
 void LoneWolfCombatResultsFrame::processEnemyCSinput()
 {
     wxString combatSkillStr = enemyCSinput->GetValue();
+    // TODO: replace atoi() call with wxString conversion as used in processRandomNumberInput()
     int enemyCombatSkill = atoi(combatSkillStr.c_str());
     results->setEnemyCombatSkill(enemyCombatSkill);
-
-    //processHeroCSinput();
 }
 
-void LoneWolfCombatResultsFrame::processRandomNumberInput()
+// TODO: change "random number" references to "die roll" references
+bool LoneWolfCombatResultsFrame::processRandomNumberInput()
 {
     wxString randomNumberStr = randomNumberInput->GetValue();
-    int randomNumber = atoi(randomNumberStr.c_str());
-    results->setDieRoll(randomNumber);
+
+    if (randomNumberStr.IsEmpty())
+    {
+        printDieRollError();
+        return false;
+    }
+
+    else
+    {
+        long randomNumber;
+
+        if (!randomNumberStr.ToLong(&randomNumber))
+        {
+            printDieRollError();
+            return false;
+        }
+
+        else
+        {
+            results->setDieRoll(randomNumber);
+            return true;
+        }
+    }
 }
 
 void LoneWolfCombatResultsFrame::calculateCombatResults()
@@ -354,9 +440,10 @@ void LoneWolfCombatResultsFrame::calculateCombatResults()
     processHeroCSinput();
     processEnemyCSinput();
 
+    bool doCombatResults = true;
     if (randomNumberInput->IsEnabled())
     {
-        processRandomNumberInput();
+        doCombatResults = processRandomNumberInput();
     }
 
     else
@@ -364,5 +451,8 @@ void LoneWolfCombatResultsFrame::calculateCombatResults()
         results->rollDie();
     }
 
-    results->outputCombatResults();
+    if (doCombatResults)
+    {
+        results->outputCombatResults();
+    }
 }

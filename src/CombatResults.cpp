@@ -119,21 +119,9 @@ void CombatResults::setEnemyCombatSkill(int newCombatSkill)
     if (verifyCombatSkill(newCombatSkill))
     {
         enemyCombatSkill = newCombatSkill;
+        outputEnemyCombatSkill();
 
-        /* Update the "Combat Ratio" depending on whether or not the Hero
-        "Combat Skill" currently stores a valid value. */
-        if (heroCombatSkill == INVALID_VALUE)
-        {
-            /* Because "Combat Ratio" is calculated by subtracting the enemy
-            "Combat Skill" from the Hero "Combat Skill", and the user hasn't
-            entered a valid value for the Hero "Combat Skill", the new "Combat
-            Ratio" should simply be the enemy's "Combat Skill" as a negative
-            value. */
-            combatRatio = -enemyCombatSkill;
-            outputCombatRatio();
-        }
-
-        else
+        if (heroCombatSkill != INVALID_VALUE)
         {
             calculateCombatRatio();
         }
@@ -153,21 +141,9 @@ void CombatResults::setHeroCombatSkill(int newCombatSkill)
     if (verifyCombatSkill(newCombatSkill))
     {
         heroCombatSkill = newCombatSkill;
+        outputHeroCombatSkill();
 
-        /* Update the "Combat Ratio" depending on whether or not the enemy
-        "Combat Skill" currently stores a valid value. */
-        if (enemyCombatSkill == INVALID_VALUE)
-        {
-            /* Because "Combat Ratio" is calculated by subtracting the enemy
-            "Combat Skill" from the Hero "Combat Skill", and the user hasn't
-            entered a valid value for the enemy "Combat Skill", the new "Combat
-            Ratio" should simply be the Hero's "Combat Skill" as a positive
-            value. */
-            combatRatio = heroCombatSkill;
-            outputCombatRatio();
-        }
-
-        else
+        if (enemyCombatSkill != INVALID_VALUE)
         {
             calculateCombatRatio();
         }
@@ -196,7 +172,7 @@ void CombatResults::setDieRoll(int newDieRoll)
     else
     {
         dieRoll = INVALID_VALUE;
-        handleDieRollError();
+        view->printDieRollError();
     }
 }
 
@@ -237,6 +213,7 @@ void CombatResults::rollDie()
     dieRoll = (rand() % 9);
 }
 
+// TODO: clean out cruft in outputCombatResults()
 void CombatResults::outputCombatResults()
 {
     view->clearAllOutput();
@@ -251,10 +228,9 @@ void CombatResults::outputCombatResults()
         view->printGeneralOutput("Error: invalid Enemy COMBAT SKILL");
     }
 
-    // TODO: figure out why 0 gets stored in dieRoll before this point
     else if (dieRoll == INVALID_VALUE)
     {
-        handleDieRollError();
+        view->printDieRollError();
     }
 
     else
@@ -289,12 +265,12 @@ void CombatResults::handleCombatSkillError() const
     view->printGeneralOutput("Error: Combat Skill must be a number greater than 0");
 }
 
-bool CombatResults::verifyDieRoll(int dieRoll) const
+bool CombatResults::verifyDieRoll(int newDieRoll) const
 {
     const int LOWER_BOUND = 0;
     const int UPPER_BOUND = 9;
 
-    if (dieRoll >= LOWER_BOUND && dieRoll <= UPPER_BOUND)
+    if (newDieRoll >= LOWER_BOUND && newDieRoll <= UPPER_BOUND)
     {
         return true;
     }
@@ -305,17 +281,28 @@ bool CombatResults::verifyDieRoll(int dieRoll) const
     }
 }
 
-void CombatResults::handleDieRollError() const
-{
-    view->clearAllOutput();
-    view->printGeneralOutput("Error: number must be a value from 0 to 9");
-}
-
 void CombatResults::calculateCombatRatio()
 {
     combatRatio = heroCombatSkill - enemyCombatSkill;
     outputCombatRatio();
     translateRatioToIndex();
+
+    /* Since valid values have been entered for the enemy and Hero "Combat Skills",
+    allow the user to select whether to generate a random number for the "die roll",
+    or manually enter one. */
+    view->toggleRandomNumberSection(true);
+}
+
+void CombatResults::outputEnemyCombatSkill()
+{
+    string enemyCombatSkillStr = to_string(enemyCombatSkill);
+    view->printCurrentEnemyCS(enemyCombatSkillStr);
+}
+
+void CombatResults::outputHeroCombatSkill()
+{
+    string heroCombatSkillStr = to_string(heroCombatSkill);
+    view->printCurrentHeroCS(heroCombatSkillStr);
 }
 
 void CombatResults::outputCombatRatio()

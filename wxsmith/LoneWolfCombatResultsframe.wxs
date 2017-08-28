@@ -141,7 +141,7 @@
 						</object>
 						<object class="sizeritem">
 							<object class="wxStaticBoxSizer" variable="StaticBoxSizer2" member="no">
-								<label>RANDOM NUMBER</label>
+								<label>DIE ROLL</label>
 								<orient>wxVERTICAL</orient>
 								<object class="sizeritem">
 									<object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
@@ -150,6 +150,7 @@
 											<object class="wxRadioButton" name="ID_RADIOBUTTON1" variable="RadioButton1" member="yes">
 												<label>Generate a random number</label>
 												<selected>1</selected>
+												<enabled>0</enabled>
 												<handler function="OnRadioButton1Select" entry="EVT_RADIOBUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
@@ -165,6 +166,7 @@
 										<object class="sizeritem">
 											<object class="wxRadioButton" name="ID_RADIOBUTTON2" variable="RadioButton2" member="yes">
 												<label>Enter a number from 0 to 9</label>
+												<enabled>0</enabled>
 												<handler function="OnRadioButton2Select" entry="EVT_RADIOBUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
@@ -193,6 +195,7 @@
 						<object class="sizeritem">
 							<object class="wxButton" name="ID_BUTTON1" variable="okButton" member="yes">
 								<label>OK</label>
+								<enabled>0</enabled>
 								<handler function="OnokButtonClick" entry="EVT_BUTTON" />
 							</object>
 							<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -260,9 +263,9 @@
 			</object>
 		</object>
 		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
-			<fields>1</fields>
-			<widths>-1</widths>
-			<styles>wxSB_NORMAL</styles>
+			<fields>2</fields>
+			<widths>-5,-5</widths>
+			<styles>wxSB_NORMAL,wxSB_NORMAL</styles>
 		</object>
 	</object>
 </wxsmith>
