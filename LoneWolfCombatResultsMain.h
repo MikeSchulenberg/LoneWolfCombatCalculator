@@ -78,7 +78,7 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void processEnemyCSinput();
         void prepCSErrorMessage();
 
-        bool processRandomNumberInput();
+        bool processDieRoll();
         void calculateCombatResults();
 
         //(*Identifiers(LoneWolfCombatResultsFrame)
@@ -112,7 +112,7 @@ class LoneWolfCombatResultsFrame: public wxFrame
         wxStaticText* enemyResult;
         wxStaticText* heroResult;
         wxStatusBar* StatusBar1;
-        wxTextCtrl* randomNumberInput;
+        wxTextCtrl* dieRollInput;
         wxButton* okButton;
         wxStaticText* generalOutput;
         wxTextCtrl* heroCSinput;

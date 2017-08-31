@@ -133,9 +133,9 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     RadioButton2 = new wxRadioButton(Panel1, ID_RADIOBUTTON2, _("Enter a number from 0 to 9"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_RADIOBUTTON2"));
     RadioButton2->Disable();
     FlexGridSizer2->Add(RadioButton2, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
-    randomNumberInput = new wxTextCtrl(Panel1, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxSize(30,21), wxTE_PROCESS_ENTER, wxDefaultValidator, _T("ID_TEXTCTRL1"));
-    randomNumberInput->Disable();
-    FlexGridSizer2->Add(randomNumberInput, 0, wxALL, 5);
+    dieRollInput = new wxTextCtrl(Panel1, ID_TEXTCTRL1, wxEmptyString, wxDefaultPosition, wxSize(30,21), wxTE_PROCESS_ENTER, wxDefaultValidator, _T("ID_TEXTCTRL1"));
+    dieRollInput->Disable();
+    FlexGridSizer2->Add(dieRollInput, 0, wxALL, 5);
     StaticBoxSizer2->Add(FlexGridSizer2, 1, wxALL|wxEXPAND, 5);
     BoxSizer2->Add(StaticBoxSizer2, 0, wxLEFT|wxRIGHT|wxEXPAND, 5);
     okButton = new wxButton(Panel1, ID_BUTTON1, _("OK"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
@@ -265,14 +265,14 @@ void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
 void LoneWolfCombatResultsFrame::OnRadioButton1Select(wxCommandEvent& event)
 {
     clearAllOutput();
-    randomNumberInput->Enable(false);
-    randomNumberInput->SetLabel(_(""));
+    dieRollInput->Enable(false);
+    dieRollInput->SetLabel(_(""));
 }
 
 void LoneWolfCombatResultsFrame::OnRadioButton2Select(wxCommandEvent& event)
 {
     clearAllOutput();
-    randomNumberInput->Enable(true);
+    dieRollInput->Enable(true);
 }
 
 void LoneWolfCombatResultsFrame::OnrandomNumberInputText(wxCommandEvent& event)
@@ -390,7 +390,7 @@ void LoneWolfCombatResultsFrame::toggleRandomNumberSection(bool enable)
         enable the wxTextCtrl that allows the user to enter a value. */
         if (RadioButton2->GetValue())
         {
-            randomNumberInput->Enable(true);
+            dieRollInput->Enable(true);
         }
     }
 
@@ -398,7 +398,7 @@ void LoneWolfCombatResultsFrame::toggleRandomNumberSection(bool enable)
     {
         RadioButton1->Enable(false);
         RadioButton2->Enable(false);
-        randomNumberInput->Enable(false);
+        dieRollInput->Enable(false);
     }
 }
 
@@ -457,13 +457,12 @@ void LoneWolfCombatResultsFrame::prepCSErrorMessage()
     enemyResult->SetLabel(_("COMBAT SKILL must be a whole number greater than 0"));
 }
 
-// TODO: change "random number" references to "die roll" references
-bool LoneWolfCombatResultsFrame::processRandomNumberInput()
+bool LoneWolfCombatResultsFrame::processDieRoll()
 {
-    wxString randomNumberStr = randomNumberInput->GetValue();
-    long randomNumber;
+    wxString dieRollStr = dieRollInput->GetValue();
+    long dieRoll;
 
-    if (!randomNumberStr.ToLong(&randomNumber))
+    if (!dieRollStr.ToLong(&dieRoll))
     {
         printDieRollError();
         return false;
@@ -471,7 +470,7 @@ bool LoneWolfCombatResultsFrame::processRandomNumberInput()
 
     else
     {
-        results->setDieRoll(randomNumber);
+        results->setDieRoll(dieRoll);
         return true;
     }
 }
@@ -482,9 +481,9 @@ void LoneWolfCombatResultsFrame::calculateCombatResults()
     processEnemyCSinput();
 
     bool doCombatResults = true;
-    if (randomNumberInput->IsEnabled())
+    if (dieRollInput->IsEnabled())
     {
-        doCombatResults = processRandomNumberInput();
+        doCombatResults = processDieRoll();
     }
 
     else
