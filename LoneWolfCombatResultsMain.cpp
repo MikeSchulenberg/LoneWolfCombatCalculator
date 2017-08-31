@@ -220,9 +220,6 @@ void LoneWolfCombatResultsFrame::OnClose(wxCloseEvent& event)
 // Combat Skill
 //-----------------------------------------------------------
 
-/* TODO: Make it so that if the user types values for both Combat Skills, but only hits Enter one one of them
-the Combat Ratio gets updated to the correct value. */
-
 void LoneWolfCombatResultsFrame::OnheroCSinputText(wxCommandEvent& event)
 {
     clearCurrentHeroCS();
@@ -239,6 +236,12 @@ void LoneWolfCombatResultsFrame::OnheroCSinputText(wxCommandEvent& event)
 void LoneWolfCombatResultsFrame::OnheroCSinputTextEnter(wxCommandEvent& event)
 {
     processHeroCSinput();
+
+    wxString enemyCSstr = enemyCSinput->GetValue();
+    if (!enemyCSstr.IsEmpty())
+    {
+        processEnemyCSinput();
+    }
 }
 
 void LoneWolfCombatResultsFrame::OnenemyCSinputText(wxCommandEvent& event)
@@ -257,6 +260,12 @@ void LoneWolfCombatResultsFrame::OnenemyCSinputText(wxCommandEvent& event)
 void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
 {
     processEnemyCSinput();
+
+    wxString heroCSstr = heroCSinput->GetValue();
+    if (!heroCSstr.IsEmpty())
+    {
+        processHeroCSinput();
+    }
 }
 
 // Random Number
