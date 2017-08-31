@@ -132,7 +132,7 @@ void CombatResults::setEnemyCombatSkill(int newCombatSkill)
     else
     {
         enemyCombatSkill = INVALID_VALUE;
-        handleCombatSkillError();
+        view->printEnemyCSError();
     }
 }
 
@@ -154,7 +154,7 @@ void CombatResults::setHeroCombatSkill(int newCombatSkill)
     else
     {
         heroCombatSkill = INVALID_VALUE;
-        handleCombatSkillError();
+        view->printHeroCSError();
     }
 }
 
@@ -220,12 +220,12 @@ void CombatResults::outputCombatResults()
 
     if (heroCombatSkill == INVALID_VALUE)
     {
-        view->printGeneralOutput("Error: invalid Hero COMBAT SKILL");
+        view->printHeroCSError();
     }
 
     else if (enemyCombatSkill == INVALID_VALUE)
     {
-        view->printGeneralOutput("Error: invalid Enemy COMBAT SKILL");
+        view->printEnemyCSError();
     }
 
     else if (dieRoll == INVALID_VALUE)
@@ -256,13 +256,6 @@ bool CombatResults::verifyCombatSkill(int combatSkill) const
     {
         return false;
     }
-}
-
-void CombatResults::handleCombatSkillError() const
-{
-    view->clearCombatRatio();
-    view->clearAllOutput();
-    view->printGeneralOutput("Error: Combat Skill must be a number greater than 0");
 }
 
 bool CombatResults::verifyDieRoll(int newDieRoll) const

@@ -29,7 +29,7 @@ using std::string;
 class LoneWolfCombatResultsFrame: public wxFrame
 {
     public:
-
+        // TODO: make functions that don't need to be public into private functions
         LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~LoneWolfCombatResultsFrame();
 
@@ -46,6 +46,8 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void printDamageToEnemy(string msg);
         void printDamageToHero(string msg);
 
+        void printHeroCSError();
+        void printEnemyCSError();
         void printDieRollError();
 
         void clearAllOutput();
@@ -67,12 +69,15 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void OnrandomNumberInputTextEnter(wxCommandEvent& event);
         void OnheroCSinputText(wxCommandEvent& event);
         void OnenemyCSinputText(wxCommandEvent& event);
+        void OnrandomNumberInputText(wxCommandEvent& event);
         //*)
 
         void OnClose(wxCloseEvent& event);
 
         void processHeroCSinput();
         void processEnemyCSinput();
+        void prepCSErrorMessage();
+
         bool processRandomNumberInput();
         void calculateCombatResults();
 

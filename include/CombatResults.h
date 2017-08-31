@@ -121,11 +121,6 @@ class CombatResults
          */
         bool verifyCombatSkill(int combatSkill) const;
 
-        /** \brief Notifies the user that they have entered an invalid value for a "Combat Skill".
-         *
-         */
-        void handleCombatSkillError() const;
-
         /** \brief Verifies that the "random number" manually entered by the user is valid.
          *
          */
