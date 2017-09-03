@@ -78,7 +78,7 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void processEnemyCSinput();
         void prepCSErrorMessage();
 
-        bool processDieRoll();
+        bool processManualDieRoll();
         void calculateCombatResults();
 
         //(*Identifiers(LoneWolfCombatResultsFrame)

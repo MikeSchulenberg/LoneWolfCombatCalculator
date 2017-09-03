@@ -468,7 +468,7 @@ void LoneWolfCombatResultsFrame::prepCSErrorMessage()
     enemyResult->SetLabel(_("COMBAT SKILL must be a whole number greater than 0"));
 }
 
-bool LoneWolfCombatResultsFrame::processDieRoll()
+bool LoneWolfCombatResultsFrame::processManualDieRoll()
 {
     wxString dieRollStr = dieRollInput->GetValue();
     long dieRoll;
@@ -502,7 +502,7 @@ void LoneWolfCombatResultsFrame::calculateCombatResults()
     bool doCombatResults = true;
     if (dieRollInput->IsEnabled())
     {
-        doCombatResults = processDieRoll();
+        doCombatResults = processManualDieRoll();
     }
 
     else
