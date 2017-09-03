@@ -54,9 +54,11 @@ class CombatResults
          *
          * \param newDieRoll The value to use for determining
          * a combat result. Must be a number from 0 to 9, inclusive.
+         * \return true if the current die roll was set to a valid value;
+         * false otherwise.
          *
          */
-        void setDieRoll(int newDieRoll);
+        bool setDieRoll(int newDieRoll);
 
         /////////////////////////////////////////////////////////////
         // ACCESSORS

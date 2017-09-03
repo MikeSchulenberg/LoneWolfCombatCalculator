@@ -481,8 +481,16 @@ bool LoneWolfCombatResultsFrame::processDieRoll()
 
     else
     {
-        results->setDieRoll(dieRoll);
-        return true;
+        bool setDieRollSuccessful = results->setDieRoll(dieRoll);
+        if (setDieRollSuccessful)
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
     }
 }
 

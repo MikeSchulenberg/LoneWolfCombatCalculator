@@ -154,7 +154,7 @@ void CombatResults::setHeroCombatSkill(int newCombatSkill)
     }
 }
 
-void CombatResults::setDieRoll(int newDieRoll)
+bool CombatResults::setDieRoll(int newDieRoll)
 {
     if (verifyDieRoll(newDieRoll))
     {
@@ -163,12 +163,14 @@ void CombatResults::setDieRoll(int newDieRoll)
         dieRoll = newDieRoll;
         view->clearAllOutput();
         outputDieRoll();
+        return true;
     }
 
     else
     {
         dieRoll = INVALID_VALUE;
         view->printDieRollError();
+        return false;
     }
 }
 
@@ -223,17 +225,9 @@ void CombatResults::outputCombatResults()
 {
     view->clearAllOutput();
 
-    if (dieRoll == INVALID_VALUE)
-    {
-        view->printDieRollError();
-    }
-
-    else
-    {
-        outputDieRoll();
-        outputDamageToEnemy();
-        outputDamageToHero();
-    }
+    outputDieRoll();
+    outputDamageToEnemy();
+    outputDamageToHero();
 }
 
 /////////////////////////////////////////////////////////
