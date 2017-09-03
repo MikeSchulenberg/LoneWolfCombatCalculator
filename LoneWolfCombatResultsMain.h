@@ -110,9 +110,9 @@ class LoneWolfCombatResultsFrame: public wxFrame
         wxStaticText* StaticText1;
         wxStaticText* StaticText3;
         wxStaticText* enemyResult;
+        wxTextCtrl* dieRollInput;
         wxStaticText* heroResult;
         wxStatusBar* StatusBar1;
-        wxTextCtrl* dieRollInput;
         wxButton* okButton;
         wxStaticText* generalOutput;
         wxTextCtrl* heroCSinput;

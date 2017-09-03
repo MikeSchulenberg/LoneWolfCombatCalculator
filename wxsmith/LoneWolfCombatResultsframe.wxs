@@ -176,7 +176,7 @@
 											<option>1</option>
 										</object>
 										<object class="sizeritem">
-											<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="randomNumberInput" member="yes">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="dieRollInput" member="yes">
 												<size>30,21</size>
 												<enabled>0</enabled>
 												<style>wxTE_PROCESS_ENTER</style>

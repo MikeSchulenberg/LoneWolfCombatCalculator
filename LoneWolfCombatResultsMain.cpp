@@ -268,7 +268,7 @@ void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
     }
 }
 
-// Random Number
+// Die Roll
 //-----------------------------------------------------------
 
 void LoneWolfCombatResultsFrame::OnRadioButton1Select(wxCommandEvent& event)
@@ -427,6 +427,7 @@ void LoneWolfCombatResultsFrame::processHeroCSinput()
     if (!combatSkillStr.ToLong(&heroCombatSkill))
     {
         printHeroCSError();
+        results->invalidateHeroCombatSkill();
     }
 
     else
@@ -447,6 +448,7 @@ void LoneWolfCombatResultsFrame::processEnemyCSinput()
     if (!combatSkillStr.ToLong(&enemyCombatSkill))
     {
         printEnemyCSError();
+        results->invalidateEnemyCombatSkill();
     }
 
     else

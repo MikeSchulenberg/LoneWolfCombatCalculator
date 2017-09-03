@@ -125,8 +125,6 @@ void CombatResults::setEnemyCombatSkill(int newCombatSkill)
         {
             calculateCombatRatio();
         }
-
-        view->clearAllOutput();
     }
 
     else
@@ -147,8 +145,6 @@ void CombatResults::setHeroCombatSkill(int newCombatSkill)
         {
             calculateCombatRatio();
         }
-
-        view->clearAllOutput();
     }
 
     else
@@ -203,6 +199,16 @@ int CombatResults::getDieRoll() const
 /////////////////////////////////////////////////////////////
 // CORE FUNCTIONS
 /////////////////////////////////////////////////////////////
+
+void CombatResults::invalidateEnemyCombatSkill()
+{
+    enemyCombatSkill = INVALID_VALUE;
+}
+
+void CombatResults::invalidateHeroCombatSkill()
+{
+    heroCombatSkill = INVALID_VALUE;
+}
 
 void CombatResults::rollDie()
 {
@@ -377,12 +383,12 @@ void CombatResults::outputDamageToEnemy() const
 
     if (damagetoEnemy == "K")
     {
-        resultStr = "The enemy dies!";
+        resultStr = "The Enemy dies!";
     }
 
     else
     {
-        resultStr = "The enemy loses " + damagetoEnemy + " ENDURANCE";
+        resultStr = "The Enemy loses " + damagetoEnemy + " ENDURANCE";
     }
 
     view->printDamageToEnemy(resultStr);

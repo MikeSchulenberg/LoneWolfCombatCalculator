@@ -90,6 +90,18 @@ class CombatResults
         // CORE FUNCTIONS
         /////////////////////////////////////////////////////////////
 
+        /** \brief Sets the enemy "Combat Skill" to a value known to be invalid
+         * to assist with user input verification.
+         *
+         */
+        void invalidateEnemyCombatSkill();
+
+        /** \brief Sets the Hero "Combat Skill" to a value known to be invalid
+         * to assist with user input verification.
+         *
+         */
+        void invalidateHeroCombatSkill();
+
         /** \brief Randomly generates the die roll used for determining
          * a combat result.
          *
