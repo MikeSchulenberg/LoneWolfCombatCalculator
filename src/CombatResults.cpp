@@ -219,22 +219,11 @@ void CombatResults::rollDie()
     dieRoll = (rand() % 9);
 }
 
-// TODO: clean out cruft in outputCombatResults()
 void CombatResults::outputCombatResults()
 {
     view->clearAllOutput();
 
-    if (heroCombatSkill == INVALID_VALUE)
-    {
-        view->printHeroCSError();
-    }
-
-    else if (enemyCombatSkill == INVALID_VALUE)
-    {
-        view->printEnemyCSError();
-    }
-
-    else if (dieRoll == INVALID_VALUE)
+    if (dieRoll == INVALID_VALUE)
     {
         view->printDieRollError();
     }
