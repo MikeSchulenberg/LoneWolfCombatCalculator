@@ -175,30 +175,6 @@ bool CombatResults::setDieRoll(int newDieRoll)
 }
 
 /////////////////////////////////////////////////////////////
-// ACCESSORS
-/////////////////////////////////////////////////////////////
-
-int CombatResults::getEnemyCombatSkill() const
-{
-    return enemyCombatSkill;
-}
-
-int CombatResults::getHeroCombatSkill() const
-{
-    return heroCombatSkill;
-}
-
-int CombatResults::getCombatRatio() const
-{
-    return combatRatio;
-}
-
-int CombatResults::getDieRoll() const
-{
-    return dieRoll;
-}
-
-/////////////////////////////////////////////////////////////
 // CORE FUNCTIONS
 /////////////////////////////////////////////////////////////
 

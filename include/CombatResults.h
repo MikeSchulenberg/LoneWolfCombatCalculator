@@ -61,34 +61,6 @@ class CombatResults
         bool setDieRoll(int newDieRoll);
 
         /////////////////////////////////////////////////////////////
-        // ACCESSORS
-        /////////////////////////////////////////////////////////////
-
-        // TODO: delete accessors if unnecessary
-
-        /** \brief Returns the "Combat Skill" for the enemy.
-         *
-         */
-        int getEnemyCombatSkill() const;
-
-        /** \brief Returns the "Combat Skill" for the Hero.
-         *
-         */
-        int getHeroCombatSkill() const;
-
-        /** \brief Returns the ratio between the "Combat Skills"
-         * of the enemy and the Hero.
-         *
-         */
-        int getCombatRatio() const;
-
-        /** \brief Returns the die roll used for determining
-         * a combat result.
-         *
-         */
-        int getDieRoll() const;
-
-        /////////////////////////////////////////////////////////////
         // CORE FUNCTIONS
         /////////////////////////////////////////////////////////////
 

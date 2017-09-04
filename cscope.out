@@ -1,4 +1,4 @@
-cscope 15 E:\Dropbox\Programming\C++\CodeBlocks Projects\Projects\GUI\LoneWolfCombatResults"               0000042858
+cscope 15 E:\Dropbox\Programming\C++\CodeBlocks Projects\Projects\GUI\LoneWolfCombatResults"               0000042729
 	@E:\Dropbox\Programming\C++\CodeBlocks Projects\Projects\GUI\LoneWolfCombatResults\LoneWolfCombatResultsApp.cpp
 
 10 
@@ -1952,18 +1952,10 @@ dõRﬁlI≈ut
 );
 
 278 
-dõRﬁlI≈ut
-->
-	`SëLabñ
-(
-	`_
-(""));
-
-279 
 	}
 }
 
-281 
+280 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnRadioBuâ⁄2Sñe˘
@@ -1973,11 +1965,11 @@ wxComm™dEvít
 evít
 )
 
-283 
+282 
 	`˛órAŒOuçut
 ();
 
-284 
+283 
 dõRﬁlI≈ut
 ->
 	`E«bÀ
@@ -1985,11 +1977,11 @@ dõRﬁlI≈ut
 åue
 );
 
-285 
+284 
 	}
 }
 
-287 
+286 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$Oƒ™domNumbîI≈utText
@@ -1999,15 +1991,15 @@ wxComm™dEvít
 evít
 )
 
-289 
+288 
 	`˛órAŒOuçut
 ();
 
-290 
+289 
 	}
 }
 
-292 
+291 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$Oƒ™domNumbîI≈utTextE¡î
@@ -2017,15 +2009,15 @@ wxComm™dEvít
 evít
 )
 
-294 
+293 
 	`ˇlcuœãComb©Resu…s
 ();
 
-295 
+294 
 	}
 }
 
-299 
+298 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$OnokBuâ⁄Click
@@ -2035,15 +2027,15 @@ wxComm™dEvít
 evít
 )
 
-301 
+300 
 	`ˇlcuœãComb©Resu…s
 ();
 
-302 
+301 
 	}
 }
 
-308 
+307 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötCuºítHîoCS
@@ -2053,7 +2045,7 @@ evít
 msg
 )
 
-310 
+309 
 SètusB¨1
 ->
 	`SëSètusText
@@ -2061,27 +2053,27 @@ SètusB¨1
 msg
 , 0);
 
-311 
+310 
 	}
 }
 
-313 
+312 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$˛órCuºítHîoCS
 ()
 
-315 
+314 
 SètusB¨1
 ->
 	`SëSètusText
 ("", 0);
 
-316 
+315 
 	}
 }
 
-318 
+317 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötCuºítE√myCS
@@ -2091,7 +2083,7 @@ SètusB¨1
 msg
 )
 
-320 
+319 
 SètusB¨1
 ->
 	`SëSètusText
@@ -2099,27 +2091,27 @@ SètusB¨1
 msg
 , 1);
 
-321 
+320 
 	}
 }
 
-323 
+322 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$˛órCuºítE√myCS
 ()
 
-325 
+324 
 SètusB¨1
 ->
 	`SëSètusText
 ("", 1);
 
-326 
+325 
 	}
 }
 
-328 
+327 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötComb©R©io
@@ -2129,7 +2121,7 @@ SètusB¨1
 msg
 )
 
-330 
+329 
 comb©R©ioOuçut
 ->
 	`SëLabñ
@@ -2139,21 +2131,21 @@ comb©R©ioOuçut
 msg
 ));
 
-331 
+330 
 	`Layout
 ();
 
-332 
+331 
 	}
 }
 
-334 
+333 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$˛órComb©R©io
 ()
 
-336 
+335 
 comb©R©ioOuçut
 ->
 	`SëLabñ
@@ -2161,15 +2153,15 @@ comb©R©ioOuçut
 	`_
 ("--"));
 
-337 
+336 
 	`Layout
 ();
 
-338 
+337 
 	}
 }
 
-340 
+339 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötGíîÆOuçut
@@ -2179,7 +2171,7 @@ comb©R©ioOuçut
 msg
 )
 
-342 
+341 
 gíîÆOuçut
 ->
 	`SëLabñ
@@ -2189,15 +2181,15 @@ gíîÆOuçut
 msg
 ));
 
-343 
+342 
 	`Layout
 ();
 
-344 
+343 
 	}
 }
 
-346 
+345 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötDamageToE√my
@@ -2207,7 +2199,7 @@ msg
 msg
 )
 
-348 
+347 
 íemyResu…
 ->
 	`SëLabñ
@@ -2217,15 +2209,15 @@ msg
 msg
 ));
 
-349 
+348 
 	`Layout
 ();
 
-350 
+349 
 	}
 }
 
-352 
+351 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötDamageToHîo
@@ -2235,7 +2227,7 @@ msg
 msg
 )
 
-354 
+353 
 hîoResu…
 ->
 	`SëLabñ
@@ -2245,25 +2237,25 @@ hîoResu…
 msg
 ));
 
-355 
+354 
 	`Layout
 ();
 
-356 
+355 
 	}
 }
 
-358 
+357 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötHîoCSEº‹
 ()
 
-360 
+359 
 	`¥ïCSEº‹Mesßge
 ();
 
-361 
+360 
 gíîÆOuçut
 ->
 	`SëLabñ
@@ -2271,25 +2263,25 @@ gíîÆOuçut
 	`_
 ("Error: invalid Hero COMBAT SKILL"));
 
-362 
+361 
 	`Layout
 ();
 
-363 
+362 
 	}
 }
 
-365 
+364 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötE√myCSEº‹
 ()
 
-367 
+366 
 	`¥ïCSEº‹Mesßge
 ();
 
-368 
+367 
 gíîÆOuçut
 ->
 	`SëLabñ
@@ -2297,21 +2289,21 @@ gíîÆOuçut
 	`_
 ("Error: invalid Enemy COMBAT SKILL"));
 
-369 
+368 
 	`Layout
 ();
 
-370 
+369 
 	}
 }
 
-372 
+371 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ötDõRﬁlEº‹
 ()
 
-374 
+373 
 gíîÆOuçut
 ->
 	`SëLabñ
@@ -2319,21 +2311,21 @@ gíîÆOuçut
 	`_
 ("Error: DIE ROLL must beá wholeÇumber from 0Åo 9"));
 
-375 
+374 
 	`Layout
 ();
 
-376 
+375 
 	}
 }
 
-378 
+377 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$˛órAŒOuçut
 ()
 
-380 
+379 
 gíîÆOuçut
 ->
 	`SëLabñ
@@ -2341,7 +2333,7 @@ gíîÆOuçut
 	`_
 (""));
 
-381 
+380 
 íemyResu…
 ->
 	`SëLabñ
@@ -2349,7 +2341,7 @@ gíîÆOuçut
 	`_
 (""));
 
-382 
+381 
 hîoResu…
 ->
 	`SëLabñ
@@ -2357,15 +2349,15 @@ hîoResu…
 	`_
 (""));
 
-383 
+382 
 	`Layout
 ();
 
-384 
+383 
 	}
 }
 
-390 
+389 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$toggÀR™domNumbîSe˘i⁄
@@ -2375,12 +2367,20 @@ boﬁ
 íabÀ
 )
 
-392 i‡(
+391 i‡(
 íabÀ
 )
 
-394 
+393 
 RadioBuâ⁄1
+->
+	`E«bÀ
+(
+åue
+);
+
+394 
+RadioBuâ⁄2
 ->
 	`E«bÀ
 (
@@ -2388,14 +2388,6 @@ RadioBuâ⁄1
 );
 
 395 
-RadioBuâ⁄2
-->
-	`E«bÀ
-(
-åue
-);
-
-396 
 okBuâ⁄
 ->
 	`E«bÀ
@@ -2403,13 +2395,13 @@ okBuâ⁄
 åue
 );
 
-400 i‡(
+399 i‡(
 RadioBuâ⁄2
 ->
 	`GëVÆue
 ())
 
-402 
+401 
 dõRﬁlI≈ut
 ->
 	`E«bÀ
@@ -2417,7 +2409,7 @@ dõRﬁlI≈ut
 åue
 );
 
-408 
+407 
 RadioBuâ⁄1
 ->
 	`E«bÀ
@@ -2425,7 +2417,7 @@ RadioBuâ⁄1
 Ál£
 );
 
-409 
+408 
 RadioBuâ⁄2
 ->
 	`E«bÀ
@@ -2433,7 +2425,7 @@ RadioBuâ⁄2
 Ál£
 );
 
-410 
+409 
 dõRﬁlI≈ut
 ->
 	`E«bÀ
@@ -2441,17 +2433,17 @@ dõRﬁlI≈ut
 Ál£
 );
 
-412 
+411 
 	}
 }
 
-422 
+421 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥o˚ssHîoCSöput
 ()
 
-424 
+423 
 wxSåög
  
 comb©SkûlSå
@@ -2461,11 +2453,11 @@ hîoCSöput
 	`GëVÆue
 ();
 
-425 
+424 
 hîoComb©Skûl
 ;
 
-427 i‡(!
+426 i‡(!
 comb©SkûlSå
 .
 	`ToL⁄g
@@ -2473,17 +2465,17 @@ comb©SkûlSå
 hîoComb©Skûl
 ))
 
-429 
+428 
 	`¥ötHîoCSEº‹
 ();
 
-430 
+429 
 ªsu…s
 ->
 	`övÆid©eHîoComb©Skûl
 ();
 
-435 
+434 
 ªsu…s
 ->
 	`£tHîoComb©Skûl
@@ -2491,17 +2483,17 @@ hîoComb©Skûl
 hîoComb©Skûl
 );
 
-437 
+436 
 	}
 }
 
-443 
+442 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥o˚ssE√myCSöput
 ()
 
-445 
+444 
 wxSåög
  
 comb©SkûlSå
@@ -2511,11 +2503,11 @@ comb©SkûlSå
 	`GëVÆue
 ();
 
-446 
+445 
 íemyComb©Skûl
 ;
 
-448 i‡(!
+447 i‡(!
 comb©SkûlSå
 .
 	`ToL⁄g
@@ -2523,17 +2515,17 @@ comb©SkûlSå
 íemyComb©Skûl
 ))
 
-450 
+449 
 	`¥ötE√myCSEº‹
 ();
 
-451 
+450 
 ªsu…s
 ->
 	`övÆid©eE√myComb©Skûl
 ();
 
-456 
+455 
 ªsu…s
 ->
 	`£tE√myComb©Skûl
@@ -2541,25 +2533,25 @@ comb©SkûlSå
 íemyComb©Skûl
 );
 
-458 
+457 
 	}
 }
 
-464 
+463 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$¥ïCSEº‹Mesßge
 ()
 
-466 
+465 
 	`˛órComb©R©io
 ();
 
-467 
+466 
 	`˛órAŒOuçut
 ();
 
-468 
+467 
 íemyResu…
 ->
 	`SëLabñ
@@ -2567,19 +2559,19 @@ comb©SkûlSå
 	`_
 ("COMBAT SKILL must beá wholeÇumber greaterÅhan 0"));
 
-469 
+468 
 	}
 }
 
-471 
+470 
 boﬁ
  
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
-	$¥o˚ssDõRﬁl
+	$¥o˚ssM™uÆDõRﬁl
 ()
 
-473 
+472 
 wxSåög
  
 dõRﬁlSå
@@ -2589,11 +2581,11 @@ dõRﬁlI≈ut
 	`GëVÆue
 ();
 
-474 
+473 
 dõRﬁl
 ;
 
-476 i‡(!
+475 i‡(!
 dõRﬁlSå
 .
 	`ToL⁄g
@@ -2601,15 +2593,19 @@ dõRﬁlSå
 dõRﬁl
 ))
 
-478 
+477 
 	`¥ötDõRﬁlEº‹
 ();
 
-479  
+478  
 Ál£
 ;
 
-484 
+483 
+boﬁ
+ 
+£tDõRﬁlSuc˚ssful
+ = 
 ªsu…s
 ->
 	`£tDõRﬁl
@@ -2617,29 +2613,37 @@ dõRﬁl
 dõRﬁl
 );
 
-485  
+484 i‡(
+£tDõRﬁlSuc˚ssful
+)
+
+486  
 åue
 ;
 
-487 
+491  
+Ál£
+;
+
+494 
 	}
 }
 
-489 
+496 
 	gL⁄eWﬁfComb©Resu…sFøme
 ::
 	$ˇlcuœãComb©Resu…s
 ()
 
-491 
+498 
 	`¥o˚ssHîoCSöput
 ();
 
-492 
+499 
 	`¥o˚ssE√myCSöput
 ();
 
-494 
+501 
 boﬁ
  
 doComb©Resu…s
@@ -2647,35 +2651,35 @@ doComb©Resu…s
 åue
 ;
 
-495 i‡(
+502 i‡(
 dõRﬁlI≈ut
 ->
 	`IsE«bÀd
 ())
 
-497 
+504 
 doComb©Resu…s
  = 
-	`¥o˚ssDõRﬁl
+	`¥o˚ssM™uÆDõRﬁl
 ();
 
-502 
+509 
 ªsu…s
 ->
 	`rﬁlDõ
 ();
 
-505 i‡(
+512 i‡(
 doComb©Resu…s
 )
 
-507 
+514 
 ªsu…s
 ->
 	`ouçutComb©Resu…s
 ();
 
-509 
+516 
 	}
 }
 
@@ -2984,7 +2988,7 @@ evít
 81 
 boﬁ
  
-¥o˚ssDõRﬁl
+¥o˚ssM™uÆDõRﬁl
 ();
 
 82 
@@ -3219,75 +3223,77 @@ Comb©Resu…s
 √wComb©Skûl
 );
 
-59 
+61 
+boﬁ
+ 
 £tDõRﬁl
 (
 √wDõRﬁl
 );
 
-70 
+72 
 	$gëE√myComb©Skûl
 () const;
 
-75 
+77 
 	$gëHîoComb©Skûl
 () const;
 
-81 
+83 
 	$gëComb©R©io
 () const;
 
-87 
+89 
 	$gëDõRﬁl
 () const;
 
-97 
+99 
 	`övÆid©eE√myComb©Skûl
 ();
 
-103 
+105 
 	`övÆid©eHîoComb©Skûl
 ();
 
-109 
+111 
 	`rﬁlDõ
 ();
 
-115 
+117 
 	`ouçutComb©Resu…s
 ();
 
-117 
+119 
 ¥iv©e
 :
 
-118 
+120 
 L⁄eWﬁfComb©Resu…sFøme
 * 
 võw
 ;
 
-119 
+121 
 íemyComb©Skûl
 ;
 
-120 
+122 
 hîoComb©Skûl
 ;
 
-121 
+123 
 comb©R©io
 ;
 
-122 
+124 
 dõRﬁl
 ;
 
-124 c⁄° 
+126 c⁄° 
 INVALID_VALUE
  = -999;
 
-134 
+136 
 boﬁ
  
 	$vîifyComb©Skûl
@@ -3295,7 +3301,7 @@ boﬁ
 comb©Skûl
 ) const;
 
-139 
+141 
 boﬁ
  
 	$vîifyDõRﬁl
@@ -3303,39 +3309,39 @@ boﬁ
 dõRﬁl
 ) const;
 
-145 
+147 
 	`ˇlcuœãComb©R©io
 ();
 
-151 
+153 
 	`å™¶©eR©ioToIndex
 ();
 
-156 
+158 
 	`ouçutE√myComb©Skûl
 ();
 
-161 
+163 
 	`ouçutHîoComb©Skûl
 ();
 
-166 
+168 
 	`ouçutComb©R©io
 ();
 
-173 
+175 
 	`ouçutDõRﬁl
 ();
 
-178 
+180 
 	$ouçutDamageToE√my
 () const;
 
-183 
+185 
 	$ouçutDamageToHîo
 () const;
 
-190 
+192 
 °rög
  
 	`to_°rög
@@ -3563,7 +3569,7 @@ INVALID_VALUE
 	}
 }
 
-127 
+117 
 Comb©Resu…s
 ::
 	$£tE√myComb©Skûl
@@ -3571,49 +3577,49 @@ Comb©Resu…s
 √wComb©Skûl
 )
 
-129 i‡(
+119 i‡(
 	`vîifyComb©Skûl
 (
 √wComb©Skûl
 ))
 
-131 
+121 
 íemyComb©Skûl
  = 
 √wComb©Skûl
 ;
 
-132 
+122 
 	`ouçutE√myComb©Skûl
 ();
 
-134 i‡(
+124 i‡(
 hîoComb©Skûl
  !
 INVALID_VALUE
 )
 
-136 
+126 
 	`ˇlcuœãComb©R©io
 ();
 
-142 
+132 
 íemyComb©Skûl
  = 
 INVALID_VALUE
 ;
 
-143 
+133 
 võw
 ->
 	`¥ötE√myCSEº‹
 ();
 
-145 
+135 
 	}
 }
 
-147 
+137 
 	gComb©Resu…s
 ::
 	$£tHîoComb©Skûl
@@ -3621,49 +3627,51 @@ võw
 √wComb©Skûl
 )
 
-149 i‡(
+139 i‡(
 	`vîifyComb©Skûl
 (
 √wComb©Skûl
 ))
 
-151 
+141 
 hîoComb©Skûl
  = 
 √wComb©Skûl
 ;
 
-152 
+142 
 	`ouçutHîoComb©Skûl
 ();
 
-154 i‡(
+144 i‡(
 íemyComb©Skûl
  !
 INVALID_VALUE
 )
 
-156 
+146 
 	`ˇlcuœãComb©R©io
 ();
 
-162 
+152 
 hîoComb©Skûl
  = 
 INVALID_VALUE
 ;
 
-163 
+153 
 võw
 ->
 	`¥ötHîoCSEº‹
 ();
 
-165 
+155 
 	}
 }
 
-167 
+157 
+boﬁ
+ 
 	gComb©Resu…s
 ::
 	$£tDõRﬁl
@@ -3671,231 +3679,203 @@ võw
 √wDõRﬁl
 )
 
-169 i‡(
+159 i‡(
 	`vîifyDõRﬁl
 (
 √wDõRﬁl
 ))
 
-171 
+161 
 cuºítMode
  = 
 USER_MODE
 ;
 
-173 
+163 
 dõRﬁl
  = 
 √wDõRﬁl
 ;
 
-174 
+164 
 võw
 ->
 	`˛órAŒOuçut
 ();
 
-175 
+165 
 	`ouçutDõRﬁl
 ();
 
-180 
+166  
+åue
+;
+
+171 
 dõRﬁl
  = 
 INVALID_VALUE
 ;
 
-181 
+172 
 võw
 ->
 	`¥ötDõRﬁlEº‹
 ();
 
-183 
+173  
+Ál£
+;
+
+175 
 	}
 }
 
-189 
+181 
 	gComb©Resu…s
 ::
 	$gëE√myComb©Skûl
 () const
 
-191  
+183  
 íemyComb©Skûl
 ;
 
-192 
+184 
 	}
 }
 
-194 
+186 
 	gComb©Resu…s
 ::
 	$gëHîoComb©Skûl
 () const
 
-196  
+188  
 hîoComb©Skûl
 ;
 
-197 
+189 
 	}
 }
 
-199 
+191 
 	gComb©Resu…s
 ::
 	$gëComb©R©io
 () const
 
-201  
+193  
 comb©R©io
 ;
 
-202 
+194 
 	}
 }
 
-204 
+196 
 	gComb©Resu…s
 ::
 	$gëDõRﬁl
 () const
 
-206  
+198  
 dõRﬁl
 ;
 
-207 
+199 
 	}
 }
 
-213 
+205 
 	gComb©Resu…s
 ::
 	$övÆid©eE√myComb©Skûl
 ()
 
-215 
+207 
 íemyComb©Skûl
  = 
 INVALID_VALUE
 ;
 
-216 
+208 
 	}
 }
 
-218 
+210 
 	gComb©Resu…s
 ::
 	$övÆid©eHîoComb©Skûl
 ()
 
-220 
+212 
 hîoComb©Skûl
  = 
 INVALID_VALUE
 ;
 
-221 
+213 
 	}
 }
 
-223 
+215 
 	gComb©Resu…s
 ::
 	$rﬁlDõ
 ()
 
-225 
+217 
 cuºítMode
  = 
 RANDOM_MODE
 ;
 
-228 
+220 
 	`§™d
 ((Ë
 	`time
 (0));
 
-229 
+221 
 dõRﬁl
  = (
 	`ønd
 () % 9);
 
-230 
+222 
 	}
 }
 
-233 
+224 
 	gComb©Resu…s
 ::
 	$ouçutComb©Resu…s
 ()
 
-235 
+226 
 võw
 ->
 	`˛órAŒOuçut
 ();
 
-237 i‡(
-hîoComb©Skûl
- =
-INVALID_VALUE
-)
-
-239 
-võw
-->
-	`¥ötHîoCSEº‹
-();
-
-242 i‡(
-íemyComb©Skûl
- =
-INVALID_VALUE
-)
-
-244 
-võw
-->
-	`¥ötE√myCSEº‹
-();
-
-247 i‡(
-dõRﬁl
- =
-INVALID_VALUE
-)
-
-249 
-võw
-->
-	`¥ötDõRﬁlEº‹
-();
-
-254 
+228 
 	`ouçutDõRﬁl
 ();
 
-255 
+229 
 	`ouçutDamageToE√my
 ();
 
-256 
+230 
 	`ouçutDamageToHîo
 ();
 
-258 
+231 
 	}
 }
 
-264 
+237 
 boﬁ
  
 	gComb©Resu…s
@@ -3905,23 +3885,23 @@ boﬁ
 comb©Skûl
 ) const
 
-266 i‡(
+239 i‡(
 comb©Skûl
  > 0)
 
-268  
+241  
 åue
 ;
 
-273  
+246  
 Ál£
 ;
 
-275 
+248 
 	}
 }
 
-277 
+250 
 boﬁ
  
 	gComb©Resu…s
@@ -3931,15 +3911,15 @@ boﬁ
 √wDõRﬁl
 ) const
 
-279 c⁄° 
+252 c⁄° 
 LOWER_BOUND
  = 0;
 
-280 c⁄° 
+253 c⁄° 
 UPPER_BOUND
  = 9;
 
-282 i‡(
+255 i‡(
 √wDõRﬁl
  >
 LOWER_BOUND
@@ -3947,25 +3927,25 @@ LOWER_BOUND
 UPPER_BOUND
 )
 
-284  
+257  
 åue
 ;
 
-289  
+262  
 Ál£
 ;
 
-291 
+264 
 	}
 }
 
-293 
+266 
 	gComb©Resu…s
 ::
 	$ˇlcuœãComb©R©io
 ()
 
-295 
+268 
 comb©R©io
  = 
 hîoComb©Skûl
@@ -3973,15 +3953,15 @@ hîoComb©Skûl
 íemyComb©Skûl
 ;
 
-296 
+269 
 	`ouçutComb©R©io
 ();
 
-297 
+270 
 	`å™¶©eR©ioToIndex
 ();
 
-302 
+275 
 võw
 ->
 	`toggÀR™domNumbîSe˘i⁄
@@ -3989,17 +3969,17 @@ võw
 åue
 );
 
-303 
+276 
 	}
 }
 
-305 
+278 
 	gComb©Resu…s
 ::
 	$ouçutE√myComb©Skûl
 ()
 
-307 
+280 
 °rög
  
 íemyComb©SkûlSå
@@ -4009,7 +3989,7 @@ võw
 íemyComb©Skûl
 );
 
-308 
+281 
 võw
 ->
 	`¥ötCuºítE√myCS
@@ -4017,17 +3997,17 @@ võw
 íemyComb©SkûlSå
 );
 
-309 
+282 
 	}
 }
 
-311 
+284 
 	gComb©Resu…s
 ::
 	$ouçutHîoComb©Skûl
 ()
 
-313 
+286 
 °rög
  
 hîoComb©SkûlSå
@@ -4037,7 +4017,7 @@ hîoComb©SkûlSå
 hîoComb©Skûl
 );
 
-314 
+287 
 võw
 ->
 	`¥ötCuºítHîoCS
@@ -4045,17 +4025,17 @@ võw
 hîoComb©SkûlSå
 );
 
-315 
+288 
 	}
 }
 
-317 
+290 
 	gComb©Resu…s
 ::
 	$ouçutComb©R©io
 ()
 
-319 
+292 
 °rög
  
 comb©R©ioSå
@@ -4065,7 +4045,7 @@ comb©R©ioSå
 comb©R©io
 );
 
-320 
+293 
 võw
 ->
 	`¥ötComb©R©io
@@ -4073,113 +4053,113 @@ võw
 comb©R©ioSå
 );
 
-321 
+294 
 	}
 }
 
-323 
+296 
 	gComb©Resu…s
 ::
 	$å™¶©eR©ioToIndex
 ()
 
-325 
+298 
 comb©R©io
 )
 
-329 
+302 
 cuºítIndex
  = 
 NEG_10_OR_NEG_9
 ;
 
-333 
+306 
 cuºítIndex
  = 
 NEG_8_OR_NEG_7
 ;
 
-337 
+310 
 cuºítIndex
  = 
 NEG_6_OR_NEG_5
 ;
 
-341 
+314 
 cuºítIndex
  = 
 NEG_4_OR_NEG_3
 ;
 
-345 
+318 
 cuºítIndex
  = 
 NEG_2_OR_NEG_1
 ;
 
-348 
+321 
 cuºítIndex
  = 
 ZERO
 ;
 
-352 
+325 
 cuºítIndex
  = 
 POS_1_OR_POS_2
 ;
 
-356 
+329 
 cuºítIndex
  = 
 POS_3_OR_POS_4
 ;
 
-360 
+333 
 cuºítIndex
  = 
 POS_5_OR_POS_6
 ;
 
-364 
+337 
 cuºítIndex
  = 
 POS_7_OR_POS_8
 ;
 
-368 
+341 
 cuºítIndex
  = 
 POS_9_OR_POS_10
 ;
 
-371 i‡(
+344 i‡(
 comb©R©io
  > 10)
 
-373 
+346 
 cuºítIndex
  = 
 POS_11_OR_GREATER
 ;
 
-378 
+351 
 cuºítIndex
  = 
 NEG_11_OR_GREATER
 ;
 
-381 
+354 
 	}
 }
 
-383 
+356 
 	gComb©Resu…s
 ::
 	$ouçutDõRﬁl
 ()
 
-385 
+358 
 °rög
  
 dõRﬁlSå
@@ -4189,7 +4169,7 @@ dõRﬁlSå
 dõRﬁl
 );
 
-386 
+359 
 võw
 ->
 	`¥ötGíîÆOuçut
@@ -4201,17 +4181,17 @@ cuºítMode
 dõRﬁlSå
 );
 
-387 
+360 
 	}
 }
 
-389 
+362 
 	gComb©Resu…s
 ::
 	$ouçutDamageToE√my
 () const
 
-391 
+364 
 °rög
  
 damagëoE√my
@@ -4223,27 +4203,27 @@ dõRﬁl
 cuºítIndex
 ];
 
-392 
+365 
 °rög
  
 ªsu…Så
 ;
 
-394 i‡(
+367 i‡(
 damagëoE√my
  == "K")
 
-396 
+369 
 ªsu…Så
  = "The Enemy dies!";
 
-401 
+374 
 ªsu…Så
  = "ThêE√myÜo£†" + 
 damagëoE√my
  + " ENDURANCE";
 
-404 
+377 
 võw
 ->
 	`¥ötDamageToE√my
@@ -4251,17 +4231,17 @@ võw
 ªsu…Så
 );
 
-405 
+378 
 	}
 }
 
-407 
+380 
 	gComb©Resu…s
 ::
 	$ouçutDamageToHîo
 () const
 
-409 
+382 
 °rög
  
 damagëoHîo
@@ -4273,27 +4253,27 @@ dõRﬁl
 cuºítIndex
 ];
 
-410 
+383 
 °rög
  
 ªsu…Så
 ;
 
-412 i‡(
+385 i‡(
 damagëoHîo
  == "K")
 
-414 
+387 
 ªsu…Så
  = "The Hero dies!";
 
-419 
+392 
 ªsu…Så
  = "ThêHîÿlo£†" + 
 damagëoHîo
  + " ENDURANCE";
 
-422 
+395 
 võw
 ->
 	`¥ötDamageToHîo
@@ -4301,11 +4281,11 @@ võw
 ªsu…Så
 );
 
-423 
+396 
 	}
 }
 
-425 
+398 
 °rög
  
 	gComb©Resu…s
@@ -4315,25 +4295,25 @@ võw
 vÆue
 )
 
-427 
+400 
 °rög°ªam
  
 ss
 ;
 
-428 
+401 
 ss
  << 
 vÆue
 ;
 
-429  
+402  
 ss
 .
 	`°r
 ();
 
-430 
+403 
 	}
 }
 
@@ -6426,7 +6406,7 @@ evít
 81 
 boﬁ
  
-¥o˚ssDõRﬁl
+¥o˚ssM™uÆDõRﬁl
 ();
 
 82 
@@ -6661,75 +6641,77 @@ Comb©Resu…s
 √wComb©Skûl
 );
 
-59 
+61 
+boﬁ
+ 
 £tDõRﬁl
 (
 √wDõRﬁl
 );
 
-70 
+72 
 	$gëE√myComb©Skûl
 () const;
 
-75 
+77 
 	$gëHîoComb©Skûl
 () const;
 
-81 
+83 
 	$gëComb©R©io
 () const;
 
-87 
+89 
 	$gëDõRﬁl
 () const;
 
-97 
+99 
 	`övÆid©eE√myComb©Skûl
 ();
 
-103 
+105 
 	`övÆid©eHîoComb©Skûl
 ();
 
-109 
+111 
 	`rﬁlDõ
 ();
 
-115 
+117 
 	`ouçutComb©Resu…s
 ();
 
-117 
+119 
 ¥iv©e
 :
 
-118 
+120 
 L⁄eWﬁfComb©Resu…sFøme
 * 
 võw
 ;
 
-119 
+121 
 íemyComb©Skûl
 ;
 
-120 
+122 
 hîoComb©Skûl
 ;
 
-121 
+123 
 comb©R©io
 ;
 
-122 
+124 
 dõRﬁl
 ;
 
-124 c⁄° 
+126 c⁄° 
 INVALID_VALUE
  = -999;
 
-134 
+136 
 boﬁ
  
 	$vîifyComb©Skûl
@@ -6737,7 +6719,7 @@ boﬁ
 comb©Skûl
 ) const;
 
-139 
+141 
 boﬁ
  
 	$vîifyDõRﬁl
@@ -6745,39 +6727,39 @@ boﬁ
 dõRﬁl
 ) const;
 
-145 
+147 
 	`ˇlcuœãComb©R©io
 ();
 
-151 
+153 
 	`å™¶©eR©ioToIndex
 ();
 
-156 
+158 
 	`ouçutE√myComb©Skûl
 ();
 
-161 
+163 
 	`ouçutHîoComb©Skûl
 ();
 
-166 
+168 
 	`ouçutComb©R©io
 ();
 
-173 
+175 
 	`ouçutDõRﬁl
 ();
 
-178 
+180 
 	$ouçutDamageToE√my
 () const;
 
-183 
+185 
 	$ouçutDamageToHîo
 () const;
 
-190 
+192 
 °rög
  
 	`to_°rög
