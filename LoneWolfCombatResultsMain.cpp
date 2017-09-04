@@ -275,7 +275,6 @@ void LoneWolfCombatResultsFrame::OnRadioButton1Select(wxCommandEvent& event)
 {
     clearAllOutput();
     dieRollInput->Enable(false);
-    dieRollInput->SetLabel(_(""));
 }
 
 void LoneWolfCombatResultsFrame::OnRadioButton2Select(wxCommandEvent& event)
