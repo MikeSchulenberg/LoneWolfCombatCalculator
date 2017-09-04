@@ -7,6 +7,10 @@
  * License:
  **************************************************************/
 
+ // TODO: finish adding code comments
+ // TODO: update text that appears in the "About" dialog
+ // TODO: add `const` keyword where possible
+
 #ifndef LONEWOLFCOMBATRESULTSMAIN_H
 #define LONEWOLFCOMBATRESULTSMAIN_H
 
@@ -29,18 +33,13 @@ using std::string;
 class LoneWolfCombatResultsFrame: public wxFrame
 {
     public:
-        // TODO: make functions that don't need to be public into private functions
         LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~LoneWolfCombatResultsFrame();
 
         void printCurrentHeroCS(string msg);
-        void clearCurrentHeroCS();
-
         void printCurrentEnemyCS(string msg);
-        void clearCurrentEnemyCS();
 
         void printCombatRatio(string msg);
-        void clearCombatRatio();
 
         void printGeneralOutput(string msg);
         void printDamageToEnemy(string msg);
@@ -75,8 +74,14 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void OnClose(wxCloseEvent& event);
 
         void processHeroCSinput();
+        void clearCurrentHeroCS();
+
         void processEnemyCSinput();
+        void clearCurrentEnemyCS();
+
         void prepCSErrorMessage();
+
+        void clearCombatRatio();
 
         bool processManualDieRoll();
         void calculateCombatResults();

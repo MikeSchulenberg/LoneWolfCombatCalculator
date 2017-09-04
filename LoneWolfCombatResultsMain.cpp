@@ -309,30 +309,14 @@ void LoneWolfCombatResultsFrame::printCurrentHeroCS(string msg)
     StatusBar1->SetStatusText("Hero COMBAT SKILL: " + msg, 0);
 }
 
-void LoneWolfCombatResultsFrame::clearCurrentHeroCS()
-{
-    StatusBar1->SetStatusText("", 0);
-}
-
 void LoneWolfCombatResultsFrame::printCurrentEnemyCS(string msg)
 {
     StatusBar1->SetStatusText("Enemy COMBAT SKILL: " + msg, 1);
 }
 
-void LoneWolfCombatResultsFrame::clearCurrentEnemyCS()
-{
-    StatusBar1->SetStatusText("", 1);
-}
-
 void LoneWolfCombatResultsFrame::printCombatRatio(string msg)
 {
     combatRatioOutput->SetLabel(_(msg));
-    Layout();
-}
-
-void LoneWolfCombatResultsFrame::clearCombatRatio()
-{
-    combatRatioOutput->SetLabel(_("--"));
     Layout();
 }
 
@@ -435,6 +419,11 @@ void LoneWolfCombatResultsFrame::processHeroCSinput()
     }
 }
 
+void LoneWolfCombatResultsFrame::clearCurrentHeroCS()
+{
+    StatusBar1->SetStatusText("", 0);
+}
+
 /** \brief Processes the value being input for the enemy's "Combat Skill".
  * Forwards the result to the "Combat Results" object.
  *
@@ -456,6 +445,11 @@ void LoneWolfCombatResultsFrame::processEnemyCSinput()
     }
 }
 
+void LoneWolfCombatResultsFrame::clearCurrentEnemyCS()
+{
+    StatusBar1->SetStatusText("", 1);
+}
+
 /** \brief Prepares the GUI to display an error message regarding bad
  * "Combat Skill" input.
  *
@@ -465,6 +459,12 @@ void LoneWolfCombatResultsFrame::prepCSErrorMessage()
     clearCombatRatio();
     clearAllOutput();
     enemyResult->SetLabel(_("COMBAT SKILL must be a whole number greater than 0"));
+}
+
+void LoneWolfCombatResultsFrame::clearCombatRatio()
+{
+    combatRatioOutput->SetLabel(_("--"));
+    Layout();
 }
 
 bool LoneWolfCombatResultsFrame::processManualDieRoll()
