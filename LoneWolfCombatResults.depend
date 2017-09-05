@@ -2969,7 +2969,7 @@
 1501534604 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsapp.h
 	<wx/app.h>
 
-1504557887 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
+1504585663 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.h
 	<wx/sizer.h>
 	<wx/stattext.h>
 	<wx/menu.h>
@@ -2981,8 +2981,9 @@
 	<wx/statusbr.h>
 	"include/ForwardDeclarations.h"
 
-1504557076 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
+1504585598 source:e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\lonewolfcombatresultsmain.cpp
 	<wx/msgdlg.h>
+	<wx/aboutdlg.h>
 	<string>
 	"wx_pch.h"
 	"LoneWolfCombatResultsMain.h"
@@ -3088,4 +3089,9 @@
 	"wx/control.h"
 
 1501746346 e:\dropbox\programming\c++\codeblocks projects\projects\gui\lonewolfcombatresults\include\forwarddeclarations.h
+
+1493470838 e:\programs\programmingtools\codeblocks\wxwidgets-3.0.3\include\wx\aboutdlg.h
+	"wx/defs.h"
+	"wx/app.h"
+	"wx/icon.h"
 

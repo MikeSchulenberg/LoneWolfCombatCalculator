@@ -8,7 +8,6 @@
  **************************************************************/
 
  // TODO: finish adding code comments
- // TODO: update text that appears in the "About" dialog
  // TODO: add `const` keyword where possible
 
 #ifndef LONEWOLFCOMBATRESULTSMAIN_H

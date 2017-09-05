@@ -8,6 +8,7 @@
  **************************************************************/
 
 #include <wx/msgdlg.h>
+#include <wx/aboutdlg.h>
 #include <string>
 
 #include "wx_pch.h"
@@ -87,7 +88,7 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     wxFlexGridSizer* FlexGridSizer1;
     wxMenu* Menu2;
 
-    Create(parent, wxID_ANY, _("Lone Wolf Combat Results"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    Create(parent, wxID_ANY, _("Lone Wolf Combat Calculator"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
     BoxSizer1 = new wxBoxSizer(wxHORIZONTAL);
     Panel1 = new wxPanel(this, ID_PANEL1, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL, _T("ID_PANEL1"));
     BoxSizer2 = new wxBoxSizer(wxVERTICAL);
@@ -208,8 +209,13 @@ void LoneWolfCombatResultsFrame::OnQuit(wxCommandEvent& event)
 
 void LoneWolfCombatResultsFrame::OnAbout(wxCommandEvent& event)
 {
-    wxString msg = wxbuildinfo(long_f);
-    wxMessageBox(msg, _("Welcome to..."));
+    wxAboutDialogInfo info;
+    info.SetName(_("Lone Wolf Combat Calculator"));
+    info.SetVersion(_("1.0"));
+    info.SetDescription(_("This program calculates combat results for the 'Lone Wolf' adventure gamebooks by Joe Dever."));
+    info.SetCopyright(_("Code (C) 2017 Mike Schulenberg <mike.schulenberg@gmail.com>"));
+
+    wxAboutBox(info);
 }
 
 void LoneWolfCombatResultsFrame::OnClose(wxCloseEvent& event)
