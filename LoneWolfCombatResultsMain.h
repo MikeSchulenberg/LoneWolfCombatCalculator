@@ -8,7 +8,6 @@
  **************************************************************/
 
  // TODO: finish adding code comments
- // TODO: add `const` keyword where possible
 
 #ifndef LONEWOLFCOMBATRESULTSMAIN_H
 #define LONEWOLFCOMBATRESULTSMAIN_H
@@ -35,8 +34,8 @@ class LoneWolfCombatResultsFrame: public wxFrame
         LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~LoneWolfCombatResultsFrame();
 
-        void printCurrentHeroCS(string msg);
-        void printCurrentEnemyCS(string msg);
+        void printCurrentHeroCS(string msg) const;
+        void printCurrentEnemyCS(string msg) const;
 
         void printCombatRatio(string msg);
 
@@ -50,7 +49,7 @@ class LoneWolfCombatResultsFrame: public wxFrame
 
         void clearAllOutput();
 
-        void toggleRandomNumberSection(bool enable);
+        void toggleRandomNumberSection(bool enable) const;
 
     private:
 
@@ -73,10 +72,10 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void OnClose(wxCloseEvent& event);
 
         void processHeroCSinput();
-        void clearCurrentHeroCS();
+        void clearCurrentHeroCS() const;
 
         void processEnemyCSinput();
-        void clearCurrentEnemyCS();
+        void clearCurrentEnemyCS() const;
 
         void prepCSErrorMessage();
 

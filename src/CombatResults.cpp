@@ -251,25 +251,7 @@ void CombatResults::calculateCombatRatio()
     view->toggleRandomNumberSection(true);
 }
 
-void CombatResults::outputEnemyCombatSkill()
-{
-    string enemyCombatSkillStr = to_string(enemyCombatSkill);
-    view->printCurrentEnemyCS(enemyCombatSkillStr);
-}
-
-void CombatResults::outputHeroCombatSkill()
-{
-    string heroCombatSkillStr = to_string(heroCombatSkill);
-    view->printCurrentHeroCS(heroCombatSkillStr);
-}
-
-void CombatResults::outputCombatRatio()
-{
-    string combatRatioStr = to_string(combatRatio);
-    view->printCombatRatio(combatRatioStr);
-}
-
-void CombatResults::translateRatioToIndex()
+void CombatResults::translateRatioToIndex() const
 {
     switch (combatRatio)
     {
@@ -329,6 +311,24 @@ void CombatResults::translateRatioToIndex()
     }
 }
 
+void CombatResults::outputEnemyCombatSkill()
+{
+    string enemyCombatSkillStr = to_string(enemyCombatSkill);
+    view->printCurrentEnemyCS(enemyCombatSkillStr);
+}
+
+void CombatResults::outputHeroCombatSkill()
+{
+    string heroCombatSkillStr = to_string(heroCombatSkill);
+    view->printCurrentHeroCS(heroCombatSkillStr);
+}
+
+void CombatResults::outputCombatRatio()
+{
+    string combatRatioStr = to_string(combatRatio);
+    view->printCombatRatio(combatRatioStr);
+}
+
 void CombatResults::outputDieRoll()
 {
     string dieRollStr = to_string(dieRoll);
@@ -371,7 +371,7 @@ void CombatResults::outputDamageToHero() const
     view->printDamageToHero(resultStr);
 }
 
-string CombatResults::to_string(int value)
+string CombatResults::to_string(int value) const
 {
     stringstream ss;
     ss << value;

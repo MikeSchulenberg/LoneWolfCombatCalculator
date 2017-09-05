@@ -122,7 +122,7 @@ class CombatResults
          * in the 2D arrays that store combat result data.
          *
          */
-        void translateRatioToIndex();
+        void translateRatioToIndex() const;
 
         /** \brief Outputs the current enemy "Combat Skill" to the GUI.
          *
@@ -161,7 +161,7 @@ class CombatResults
          * \param value An integer to be converted to a string.
          *
          */
-        string to_string(int value);
+        string to_string(int value) const;
 };
 
 #endif // COMBATRESULTS_H

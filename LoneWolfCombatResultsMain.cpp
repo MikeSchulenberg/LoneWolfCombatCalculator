@@ -310,12 +310,12 @@ void LoneWolfCombatResultsFrame::OnokButtonClick(wxCommandEvent& event)
 // PRINT OUTPUT
 /////////////////////////////////////////////////////////////
 
-void LoneWolfCombatResultsFrame::printCurrentHeroCS(string msg)
+void LoneWolfCombatResultsFrame::printCurrentHeroCS(string msg) const
 {
     StatusBar1->SetStatusText("Hero COMBAT SKILL: " + msg, 0);
 }
 
-void LoneWolfCombatResultsFrame::printCurrentEnemyCS(string msg)
+void LoneWolfCombatResultsFrame::printCurrentEnemyCS(string msg) const
 {
     StatusBar1->SetStatusText("Enemy COMBAT SKILL: " + msg, 1);
 }
@@ -376,7 +376,7 @@ void LoneWolfCombatResultsFrame::clearAllOutput()
 // GENERAL FUNCTIONS
 /////////////////////////////////////////////////////////////
 
-void LoneWolfCombatResultsFrame::toggleRandomNumberSection(bool enable)
+void LoneWolfCombatResultsFrame::toggleRandomNumberSection(bool enable) const
 {
     if (enable)
     {
@@ -425,7 +425,7 @@ void LoneWolfCombatResultsFrame::processHeroCSinput()
     }
 }
 
-void LoneWolfCombatResultsFrame::clearCurrentHeroCS()
+void LoneWolfCombatResultsFrame::clearCurrentHeroCS() const
 {
     StatusBar1->SetStatusText("", 0);
 }
@@ -451,7 +451,7 @@ void LoneWolfCombatResultsFrame::processEnemyCSinput()
     }
 }
 
-void LoneWolfCombatResultsFrame::clearCurrentEnemyCS()
+void LoneWolfCombatResultsFrame::clearCurrentEnemyCS() const
 {
     StatusBar1->SetStatusText("", 1);
 }
