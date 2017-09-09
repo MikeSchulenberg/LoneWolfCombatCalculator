@@ -34,6 +34,10 @@ class LoneWolfCombatResultsFrame: public wxFrame
         LoneWolfCombatResultsFrame(wxWindow* parent,wxWindowID id = -1);
         virtual ~LoneWolfCombatResultsFrame();
 
+        /////////////////////////////////////////////////////////////
+        // PRINT OUTPUT
+        /////////////////////////////////////////////////////////////
+
         void printCurrentHeroCS(string msg) const;
         void printCurrentEnemyCS(string msg) const;
 
@@ -48,6 +52,10 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void printDieRollError();
 
         void clearAllOutput();
+
+        /////////////////////////////////////////////////////////////
+        // GENERAL FUNCTIONS
+        /////////////////////////////////////////////////////////////
 
         void toggleRandomNumberSection(bool enable) const;
 
@@ -68,6 +76,10 @@ class LoneWolfCombatResultsFrame: public wxFrame
         void OnenemyCSinputText(wxCommandEvent& event);
         void OnrandomNumberInputText(wxCommandEvent& event);
         //*)
+
+        /////////////////////////////////////////////////////////////
+        // HELPER FUNCTIONS
+        /////////////////////////////////////////////////////////////
 
         void OnClose(wxCloseEvent& event);
 
@@ -124,7 +136,7 @@ class LoneWolfCombatResultsFrame: public wxFrame
 
         DECLARE_EVENT_TABLE()
 
-        CombatResults* results;
+        CombatResults* results;     // stores a 'Lone Wolf' Combat Calculator object
 };
 
 #endif // LONEWOLFCOMBATRESULTSMAIN_H

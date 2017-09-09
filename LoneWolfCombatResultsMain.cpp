@@ -187,6 +187,7 @@ LoneWolfCombatResultsFrame::LoneWolfCombatResultsFrame(wxWindow* parent,wxWindow
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&LoneWolfCombatResultsFrame::OnAbout);
     //*)
 
+    // Create a 'Lone Wolf' Combat Calculator object
     results = new CombatResults(this);
 }
 
@@ -226,6 +227,14 @@ void LoneWolfCombatResultsFrame::OnClose(wxCloseEvent& event)
 // Combat Skill
 //-----------------------------------------------------------
 
+/** \brief Prepares the program for a Hero "Combat Skill" that is about to change.
+ * Clears all output from the GUI except for Enemy "Combat Skill", disables the ability to
+ * select a method for determining the "die roll," and disables the OK button.
+ *
+ * \param event An event triggered when the user inputs text in the
+ * wxTextCtrl for changing the Hero "Combat Skill".
+ *
+ */
 void LoneWolfCombatResultsFrame::OnheroCSinputText(wxCommandEvent& event)
 {
     clearCurrentHeroCS();
@@ -239,10 +248,19 @@ void LoneWolfCombatResultsFrame::OnheroCSinputText(wxCommandEvent& event)
     okButton->Enable(false);
 }
 
+/** \brief Changes the Hero "Combat Skill" to a value set by the user.
+ * If the Enemy "Combat Skill" wxTextCtrl contains text, this function
+ * processes it as well in case the user input a value without entering it.
+ *
+ * \param even An event triggered when the user enters text in the
+ * wxTextCtrl for changing the Hero "Combat Skill".
+ *
+ */
 void LoneWolfCombatResultsFrame::OnheroCSinputTextEnter(wxCommandEvent& event)
 {
     processHeroCSinput();
 
+    // Does the wxTextCtrl for changing the Enemy "Combat Skill" contain text?
     wxString enemyCSstr = enemyCSinput->GetValue();
     if (!enemyCSstr.IsEmpty())
     {
@@ -250,6 +268,14 @@ void LoneWolfCombatResultsFrame::OnheroCSinputTextEnter(wxCommandEvent& event)
     }
 }
 
+/** \brief Prepares the program for an Enemy "Combat Skill" that is about to change.
+ * Clears all output from the GUI except for Hero "Combat Skill", disables the ability to
+ * select a method for determining the "die roll," and disables the OK button.
+ *
+ * \param event An event triggered when the user inputs text in the
+ * wxTextCtrl for changing the Enemy "Combat Skill".
+ *
+ */
 void LoneWolfCombatResultsFrame::OnenemyCSinputText(wxCommandEvent& event)
 {
     clearCurrentEnemyCS();
@@ -263,10 +289,19 @@ void LoneWolfCombatResultsFrame::OnenemyCSinputText(wxCommandEvent& event)
     okButton->Enable(false);
 }
 
+/** \brief Changes the Enemy "Combat Skill" to a value set by the user.
+ * If the Hero "Combat Skill" wxTextCtrl contains text, this function
+ * processes it as well in case the user input a value without entering it.
+ *
+ * \param even An event triggered when the user enters text in the
+ * wxTextCtrl for changing the Enemy "Combat Skill".
+ *
+ */
 void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
 {
     processEnemyCSinput();
 
+    // Does the wxTextCtrl for changing the Hero "Combat Skill" contain text?
     wxString heroCSstr = heroCSinput->GetValue();
     if (!heroCSstr.IsEmpty())
     {
@@ -277,23 +312,52 @@ void LoneWolfCombatResultsFrame::OnenemyCSinputTextEnter(wxCommandEvent& event)
 // Die Roll
 //-----------------------------------------------------------
 
+/** \brief Indicates that the user has selected the option to randomly generate
+ * a result for the combat die roll, rather then enter one manually.
+ *
+ * \param event An event triggered when the user selects the "random method"
+ * of generating a value for the die roll.
+ *
+ */
 void LoneWolfCombatResultsFrame::OnRadioButton1Select(wxCommandEvent& event)
 {
     clearAllOutput();
     dieRollInput->Enable(false);
 }
 
+/** \brief Indicates that the user has selected the option to manually enter
+ * die roll, rather than have the program generate one randomly.
+ *
+ * \param event An event triggered when the user selects the option to manually
+ * enter a value for the die roll.
+ *
+ */
 void LoneWolfCombatResultsFrame::OnRadioButton2Select(wxCommandEvent& event)
 {
     clearAllOutput();
     dieRollInput->Enable(true);
 }
 
+/** \brief Prepares the program for a change in the current die roll value
+ * by clearing all current output from the GUI.
+ *
+ * \param event An event triggered when the user inputs text in the
+ * wxTextCtrl for manually entering a die roll.
+ *
+ */
 void LoneWolfCombatResultsFrame::OnrandomNumberInputText(wxCommandEvent& event)
 {
     clearAllOutput();
 }
 
+/** \brief Calculates the results of a combat exchange when the user
+ * enters a manual die roll, allowing the user to do so without having
+ * to take the additional action of a button click.
+ *
+ * \param event An event triggered when the user enters text in the
+ * wxTextCtrl for manually entering a die roll.
+ *
+ */
 void LoneWolfCombatResultsFrame::OnrandomNumberInputTextEnter(wxCommandEvent& event)
 {
     calculateCombatResults();
@@ -301,6 +365,11 @@ void LoneWolfCombatResultsFrame::OnrandomNumberInputTextEnter(wxCommandEvent& ev
 
 //-----------------------------------------------------------
 
+/** \brief Calculates the results of a combat exchange.
+ *
+ * \param event An event triggered when the user clicks the "OK" button.
+ *
+ */
 void LoneWolfCombatResultsFrame::OnokButtonClick(wxCommandEvent& event)
 {
     calculateCombatResults();
@@ -310,40 +379,85 @@ void LoneWolfCombatResultsFrame::OnokButtonClick(wxCommandEvent& event)
 // PRINT OUTPUT
 /////////////////////////////////////////////////////////////
 
+/** \brief Prints the Hero's current "Combat Skill" to the GUI.
+ *
+ * \param msg A string representing a "Combat Skill" value.
+ *
+ */
 void LoneWolfCombatResultsFrame::printCurrentHeroCS(string msg) const
 {
     StatusBar1->SetStatusText("Hero COMBAT SKILL: " + msg, 0);
 }
 
+/** \brief Prints the Enemy's current "Combat Skill" to the GUI.
+ *
+ * \param msg A string representing a "Combat Skill" value.
+ *
+ */
 void LoneWolfCombatResultsFrame::printCurrentEnemyCS(string msg) const
 {
     StatusBar1->SetStatusText("Enemy COMBAT SKILL: " + msg, 1);
 }
 
+/** \brief Prints the current "Combat Ratio" to the GUI.
+ *
+ * \param msg A string representing a "Combat Ratio" value.
+ *
+ */
 void LoneWolfCombatResultsFrame::printCombatRatio(string msg)
 {
     combatRatioOutput->SetLabel(_(msg));
     Layout();
 }
 
+/** \brief Prints general messages to the GUI.
+ *
+ * \param msg A string containing the text to be printed.
+ *
+ */
 void LoneWolfCombatResultsFrame::printGeneralOutput(string msg)
 {
+    // Print on the first line of the "COMBAT RESULTS" panel
     generalOutput->SetLabel(_(msg));
     Layout();
 }
 
+/** \brief Prints to the GUI the number of "ENDURANCE" points
+ * lost by the Enemy in a combat exchange.
+ *
+ * Optionally, this function may be used to display general messages
+ * in cases where more than one line is required.
+ *
+ * \param msg A string describing the Enemy's "ENDURANCE" loss.
+ *
+ */
 void LoneWolfCombatResultsFrame::printDamageToEnemy(string msg)
 {
+    // Print on the second line of the "COMBAT RESULTS" panel
     enemyResult->SetLabel(_(msg));
     Layout();
 }
 
+/** \brief Prints to the GUI the number of "ENDURANCE" points
+ * lost by the Hero in a combat exchange.
+ *
+ * Optionally, this function may be used to display general messages
+ * in cases where more than one line is required.
+ *
+ * \param msg A string describing the Hero's "ENDURANCE" loss.
+ *
+ */
 void LoneWolfCombatResultsFrame::printDamageToHero(string msg)
 {
+    // Print on the third line of the "COMBAT RESULTS" panel
     heroResult->SetLabel(_(msg));
     Layout();
 }
 
+/** \brief Prints an error message to the GUI indicating that the
+ * user has entered an invalid value for the Hero "COMBAT SKILL".
+ *
+ */
 void LoneWolfCombatResultsFrame::printHeroCSError()
 {
     prepCSErrorMessage();
@@ -351,6 +465,10 @@ void LoneWolfCombatResultsFrame::printHeroCSError()
     Layout();
 }
 
+/** \brief Prints an error message to the GUI indicating that the
+ * user has entered an invalid value for the Enemy "COMBAT SKILL".
+ *
+ */
 void LoneWolfCombatResultsFrame::printEnemyCSError()
 {
     prepCSErrorMessage();
@@ -358,12 +476,19 @@ void LoneWolfCombatResultsFrame::printEnemyCSError()
     Layout();
 }
 
+/** \brief Prints an error message to the GUI indicating that the
+ * user has used an invalid value when entering a manual die roll.
+ *
+ */
 void LoneWolfCombatResultsFrame::printDieRollError()
 {
     generalOutput->SetLabel(_("Error: DIE ROLL must be a whole number from 0 to 9"));
     Layout();
 }
 
+/** \brief Clears the GUI of all output except for "Combat Ratio".
+ *
+ */
 void LoneWolfCombatResultsFrame::clearAllOutput()
 {
     generalOutput->SetLabel(_(""));
@@ -376,6 +501,12 @@ void LoneWolfCombatResultsFrame::clearAllOutput()
 // GENERAL FUNCTIONS
 /////////////////////////////////////////////////////////////
 
+/** \brief Enables and disables the "DIE ROLL" panel, which lets the user select which
+ * method they want to use to calculate the combat result.
+ *
+ * \param enable True if the panel should be enabled; false if it should be disabled.
+ *
+ */
 void LoneWolfCombatResultsFrame::toggleRandomNumberSection(bool enable) const
 {
     if (enable)
@@ -425,6 +556,9 @@ void LoneWolfCombatResultsFrame::processHeroCSinput()
     }
 }
 
+/** \brief Clears the current Hero "Combat Skill" from the GUI.
+ *
+ */
 void LoneWolfCombatResultsFrame::clearCurrentHeroCS() const
 {
     StatusBar1->SetStatusText("", 0);
@@ -451,6 +585,9 @@ void LoneWolfCombatResultsFrame::processEnemyCSinput()
     }
 }
 
+/** \brief Clears the current Enemy "Combat Skill" from the GUI.
+ *
+ */
 void LoneWolfCombatResultsFrame::clearCurrentEnemyCS() const
 {
     StatusBar1->SetStatusText("", 1);
@@ -467,17 +604,31 @@ void LoneWolfCombatResultsFrame::prepCSErrorMessage()
     enemyResult->SetLabel(_("COMBAT SKILL must be a whole number greater than 0"));
 }
 
+/** \brief Clears the "Combat Ratio" from the GUI. This function is
+ * normally called when "Combat Skill" values are being changed.
+ *
+ */
 void LoneWolfCombatResultsFrame::clearCombatRatio()
 {
     combatRatioOutput->SetLabel(_("--"));
     Layout();
 }
 
+/** \brief Processes the value being input for a manual "die roll" entry.
+ * If the entry is whole number, this function passes the value to the
+ * "Combat Results" object for additional processing before passing back
+ * a return value.
+ *
+ * \return True if the value of the "die roll" entry proves to be valid;
+ * false otherwise.
+ *
+ */
 bool LoneWolfCombatResultsFrame::processManualDieRoll()
 {
     wxString dieRollStr = dieRollInput->GetValue();
     long dieRoll;
 
+    // Did the user enter a whole number?
     if (!dieRollStr.ToLong(&dieRoll))
     {
         printDieRollError();
@@ -487,6 +638,9 @@ bool LoneWolfCombatResultsFrame::processManualDieRoll()
     else
     {
         bool setDieRollSuccessful = results->setDieRoll(dieRoll);
+
+        /* Was the input accepted by the "Combat Results" object
+        accepted as a valid "die roll"? */
         if (setDieRollSuccessful)
         {
             return true;
@@ -499,12 +653,16 @@ bool LoneWolfCombatResultsFrame::processManualDieRoll()
     }
 }
 
+/** \brief Initiates the calculation of results for a combat exchange.
+ *
+ */
 void LoneWolfCombatResultsFrame::calculateCombatResults()
 {
-    processHeroCSinput();
-    processEnemyCSinput();
-
     bool doCombatResults = true;
+
+    /* If the user chose to manually enter a "die roll",
+    process the user input, and calculate the combat
+    result only if the "die roll" value is valid. */
     if (dieRollInput->IsEnabled())
     {
         doCombatResults = processManualDieRoll();
@@ -512,6 +670,7 @@ void LoneWolfCombatResultsFrame::calculateCombatResults()
 
     else
     {
+        // Randomly generate a value for the "die roll"
         results->rollDie();
     }
 
