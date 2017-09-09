@@ -1,11 +1,14 @@
-/***************************************************************
- * Name:      LoneWolfCombatResultsApp.cpp
- * Purpose:   Code for Application Class
- * Author:    Mike Schulenberg ()
- * Created:   2017-07-31
- * Copyright: Mike Schulenberg ()
- * License:
- **************************************************************/
+/**
+ * \file LoneWolfCombatResultsApp.cpp
+ * \author Mike Schulenberg <mike.schulenberg@gmail.com>
+ * \version 1.0
+ *
+ * \par Description
+ * This class initializes the GUI for a program that calculates
+ * combat results for the 'Lone Wolf' adventure gamebooks
+ * by Joe Dever.
+ *
+ */
 
 #include "wx_pch.h"
 #include "LoneWolfCombatResultsApp.h"

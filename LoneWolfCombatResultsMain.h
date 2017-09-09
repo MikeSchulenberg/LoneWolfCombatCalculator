@@ -1,13 +1,14 @@
-/***************************************************************
- * Name:      LoneWolfCombatResultsMain.h
- * Purpose:   Defines Application Frame
- * Author:    Mike Schulenberg ()
- * Created:   2017-07-31
- * Copyright: Mike Schulenberg ()
- * License:
- **************************************************************/
-
- // TODO: finish adding code comments
+/**
+ * \file LoneWolfCombatResultsMain.h
+ * \author Mike Schulenberg <mike.schulenberg@gmail.com>
+ * \version 1.0
+ *
+ * \par Description
+ * This class implements a GUI for a program that calculates
+ * combat results for the 'Lone Wolf' adventure gamebooks
+ * by Joe Dever.
+ *
+ */
 
 #ifndef LONEWOLFCOMBATRESULTSMAIN_H
 #define LONEWOLFCOMBATRESULTSMAIN_H

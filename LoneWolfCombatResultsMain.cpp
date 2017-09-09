@@ -1,11 +1,14 @@
-/***************************************************************
- * Name:      LoneWolfCombatResultsMain.cpp
- * Purpose:   Code for Application Frame
- * Author:    Mike Schulenberg ()
- * Created:   2017-07-31
- * Copyright: Mike Schulenberg ()
- * License:
- **************************************************************/
+/**
+ * \file LoneWolfCombatResultsMain.cpp
+ * \author Mike Schulenberg <mike.schulenberg@gmail.com>
+ * \version 1.0
+ *
+ * \par Description
+ * This class implements a GUI for a program that calculates
+ * combat results for the 'Lone Wolf' adventure gamebooks
+ * by Joe Dever.
+ *
+ */
 
 #include <wx/msgdlg.h>
 #include <wx/aboutdlg.h>
@@ -214,7 +217,6 @@ void LoneWolfCombatResultsFrame::OnAbout(wxCommandEvent& event)
     info.SetName(_("Lone Wolf Combat Calculator"));
     info.SetVersion(_("1.0"));
     info.SetDescription(_("This program calculates combat results for the 'Lone Wolf' adventure gamebooks by Joe Dever."));
-    info.SetCopyright(_("Code (C) 2017 Mike Schulenberg <mike.schulenberg@gmail.com>"));
 
     wxAboutBox(info);
 }
