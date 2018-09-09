@@ -10,7 +10,7 @@ Mike Schulenberg
 ## Development
 This program was written in C++ using Code::Blocks, the included wxSmith plugin, and the wxWidgets library.
 
-## Download an Executable Version for Windows
+## Download an Executable for Windows
 [Lone Wolf Combat Calculator](https://www.dropbox.com/s/e47y3g8rjnzcbou/LoneWolfCombatCalculator.zip?dl=1)
 
 #### ZIP File Contents
